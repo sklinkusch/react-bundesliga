@@ -10,4 +10,9 @@ const matches = [
   ["WÜR", "SCP"],
 ]
 
-export default matches
+const newMatches = matches.map(match => {
+  const [home, away] = match 
+  return { home, away, homeGoals: 0, awayGoals: 0}
+})
+
+export default newMatches
