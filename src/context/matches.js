@@ -1,13 +1,13 @@
 const matches = [
-  ["FCB", "FCA"],
-  ["BVB", "LEV"],
-  ["HOF", "BSC"],
-  ["WOB", "M05"],
-  ["FRA", "SCF"],
-  ["UNI", "RBL"],
-  ["KÖL", "S04"],
-  ["SVW", "MGL"],
-  ["STU", "BIE"],
+  ["FCH", "KSC"],
+  ["HSV", "BRA"],
+  ["H96", "FCN"],
+  ["AUE", "OSN"],
+  ["BOC", "SVS"],
+  ["FÜR", "DÜS"],
+  ["KIE", "D98"],
+  ["REG", "STP"],
+  ["WÜR", "SCP"],
 ]
 
 export default matches
