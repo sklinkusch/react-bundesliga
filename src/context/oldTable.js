@@ -1,129 +1,129 @@
 const oldTable = [
   {
-    short: "BAY",
-    name: "Bayern München",
-    goals: 94,
-    countergoals: 42,
-    points: 75
+    short: "BOC",
+    name: "VfL Bochum",
+    goals: 63,
+    countergoals: 38,
+    points: 64
   },
   {
-    short: "RBL",
-    name: "RB Leipzig",
-    goals: 59,
-    countergoals: 30,
-    points: 65
+    short: "KIE",
+    name: "Holstein Kiel",
+    goals: 55,
+    countergoals: 32,
+    points: 62
   },
   {
-    short: "BVB",
-    name: "Borussia Dortmund",
-    goals: 72,
-    countergoals: 45,
-    points: 61
-  },
-  {
-    short: "WOB",
-    name: "VfL Wolfsburg",
-    goals: 59,
-    countergoals: 34,
-    points: 61
-  },
-  {
-    short: "FRA",
-    name: "Eintracht Frankfurt",
+    short: "FÜR",
+    name: "Greuther Fürth",
     goals: 66,
-    countergoals: 52,
-    points: 57
-  },
-  {
-    short: "LEV",
-    name: "Bayer Leverkusen",
-    goals: 52,
-    countergoals: 36,
-    points: 52,
-  },
-  {
-    short: "UNI",
-    name: "1. FC Union Berlin",
-    goals: 48,
     countergoals: 42,
+    points: 61
+  },
+  {
+    short: "DÜS",
+    name: "Fortuna Düsseldorf",
+    goals: 53,
+    countergoals: 43,
+    points: 56
+  },
+  {
+    short: "HSV",
+    name: "Hamburger SV",
+    goals: 67,
+    countergoals: 47,
+    points: 55
+  },
+  {
+    short: "FCH",
+    name: "Heidenheim",
+    goals: 48,
+    countergoals: 47,
+    points: 51,
+  },
+  {
+    short: "KSC",
+    name: "Karlsruher SC",
+    goals: 49,
+    countergoals: 43,
+    points: 49
+  },
+  {
+    short: "D98",
+    name: "Darmstadt 98",
+    goals: 60,
+    countergoals: 53,
+    points: 48
+  },
+  {
+    short: "STP",
+    name: "FC St. Pauli",
+    goals: 51,
+    countergoals: 53,
     points: 47
   },
   {
-    short: "MGL",
-    name: "Borussia Mönchengladbach",
-    goals: 60,
-    countergoals: 54,
+    short: "SCP",
+    name: "SC Paderborn",
+    goals: 52,
+    countergoals: 44,
     points: 46
   },
   {
-    short: "STU",
-    name: "VfB Stuttgart",
-    goals: 56,
-    countergoals: 53,
-    points: 45
-  },
-  {
-    short: "SCF",
-    name: "SC Freiburg",
-    goals: 51,
+    short: "H96",
+    name: "Hannover 96",
+    goals: 52,
     countergoals: 49,
-    points: 45
+    points: 42
   },
   {
-    short: "HOF",
-    name: "TSG 1899 Hoffenheim",
-    goals: 50,
-    countergoals: 53,
-    points: 40
+    short: "FCN",
+    name: "1. FC Nürnberg",
+    goals: 44,
+    countergoals: 50,
+    points: 41
   },
   {
-    short: "FCA",
-    name: "FC Augsburg",
+    short: "AUE",
+    name: "Erzgebirge Aue",
+    goals: 42,
+    countergoals: 52,
+    points: 41
+  },
+  {
+    short: "REG",
+    name: "Jahn Regensburg",
     goals: 34,
-    countergoals: 49,
-    points: 36
-  },
-  {
-    short: "M05",
-    name: "1. FSV Mainz 05",
-    goals: 36,
-    countergoals: 54,
-    points: 36
-  },
-  {
-    short: "BSC",
-    name: "Hertha BSC Berlin",
-    goals: 40,
     countergoals: 50,
     points: 35
   },
   {
-    short: "BIE",
-    name: "Arminia Bielefeld",
-    goals: 24,
-    countergoals: 52,
-    points: 32
+    short: "SVS",
+    name: "SV Sandhausen",
+    goals: 40,
+    countergoals: 57,
+    points: 34
   },
   {
-    short: "SVW",
-    name: "Werder Bremen",
+    short: "OSN",
+    name: "VfL Osnabrück",
     goals: 34,
-    countergoals: 53,
-    points: 31,
+    countergoals: 56,
+    points: 33,
   },
   {
-    short: "KÖL",
-    name: "1. FC Köln",
-    goals: 33,
-    countergoals: 60,
-    points: 30
+    short: "BRA",
+    name: "Eintracht Braunschweig",
+    goals: 30,
+    countergoals: 55,
+    points: 31
   },
   {
-    short: "S04",
-    name: "FC Schalke 04",
-    goals: 25,
-    countergoals: 85,
-    points: 16
+    short: "WÜR",
+    name: "Würzburger Kickers",
+    goals: 36,
+    countergoals: 68,
+    points: 24
   },
 ]
 
