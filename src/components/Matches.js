@@ -1,26 +1,35 @@
 import React from 'react'
-import AppContext from '../context/AppContext'
 import "../styles/Matches.css"
 
 const Matches = (props) => {
+  const { matches, setMatches } = props
+  const doNewMatches = (index, match) => {
+    const matchesNew = matches.slice()
+    matchesNew[index] = match
+    setMatches(matchesNew)
+  }
   return (
     <div>
-      <AppContext.Consumer>
-        {context => {
-          const { matches } = context
-          return matches.map((match, index) => {
-            const [team1, team2] = match
+          {matches.map((match, index) => {
+            const {home, away, homeGoals, awayGoals} = match
+            const changeHomeGoals = (event) => {
+              const newMatch = { ...match, homeGoals: event.target.value }
+              doNewMatches(index, newMatch)
+            }
+            const changeAwayGoals = (event) => {
+              const newMatch = { ...match, awayGoals: event.target.value }
+              doNewMatches(index, newMatch)
+            }
             return (
               <div style={{ display: "flex", flexDirection: "row"}} key={index}>
-                <label htmlFor="teamHome">{team1}</label>
-                <input name="teamHome" type="number" min={0}></input>
-                <input name="teamAway" type="number" min={0}></input>
-                <label htmlFor="teamAway">{team2}</label>
+                <label htmlFor="teamHome">{home}</label>
+                <input name="teamHome" type="number" min={0} value={homeGoals} onChange={changeHomeGoals}></input>
+                <input name="teamAway" type="number" min={0} value={awayGoals} onChange={changeAwayGoals}></input>
+                <label htmlFor="teamAway">{away}</label>
               </div>
             )
           })
-        }}
-      </AppContext.Consumer>
+        }
     </div>
   )
 }

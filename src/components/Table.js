@@ -1,5 +1,4 @@
 import React from 'react'
-import AppContext from '../context/AppContext'
 
 const sortFunction = (a,b) => {
   const { points: aPoints, goals: aGoals, countergoals: aCounterGoals } = a
@@ -34,15 +33,11 @@ const Row = ({club, index}) => {
 
 
 const Table = (props) => {
+  const {newTable} = props
+  const sortedTable = newTable.sort((a,b) => sortFunction(a,b))
   return (
     <div style={{ width: "100%", height: "100vh"}}>
-    <AppContext.Consumer>
-    {context => {
-      const { oldTable } = context
-      const sortedTable = oldTable.sort((a,b) => sortFunction(a,b))
-      return sortedTable.map((club, index) => (<Row club={club} key={club.short} index={index} />))
-    }}
-  </AppContext.Consumer>
+      {sortedTable.map((club, index) => (<Row club={club} key={club.short} index={index} />))}
   </div>
   )
 }
