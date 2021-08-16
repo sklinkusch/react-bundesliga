@@ -6,9 +6,19 @@ import oldTable from "../context/oldTable"
 import dayMatches from "../context/matches"
 
 function App() {
+const matchKeys = Object.keys(dayMatches)
+
+const lastMatches = dayMatches[matchKeys[matchKeys.length - 1]]
+
+const newMatches = lastMatches.map(match => {
+  const { teams, goals } = match 
+  const [ home, away ] = teams
+  const [ homeGoals, awayGoals ] = goals 
+  return { home, away, homeGoals, awayGoals }
+})
   const [tableOld] = useState(oldTable)
   const [tableNew, setTableNew] = useState(oldTable)
-  const [matches, setMatches] = useState(dayMatches)
+  const [matches, setMatches] = useState(newMatches)
   const getTableIndex = (val) => {
       return tableOld.reduce((acc, curr, index) => {
         const { short } = curr
