@@ -36,6 +36,44 @@ const matches = {
       teams: ["KÖL", "S04"],
       goals: [3, 1]
     }
+  ],
+  2: [
+    {
+      teams: ["SCF", "BVB"],
+      goals: [1, 3]
+    },
+    {
+      teams: ["B04", "FCA"],
+      goals: [1, 2]
+    },
+    {
+      teams: ["RBL", "KÖL"],
+      goals: [2, 2]
+    },
+    {
+      teams: ["SVW", "VfB"],
+      goals: [2, 2]
+    },
+    {
+      teams: ["BSC", "SGE"],
+      goals: [1, 1]
+    },
+    {
+      teams: ["HOF", "BOC"],
+      goals: [3, 2]
+    },
+    {
+      teams: ["S04", "MGL"],
+      goals: [2, 2]
+    },
+    {
+      teams: ["M05", "UNI"],
+      goals: [0, 0]
+    },
+    {
+      teams: ["FCB", "WOB"],
+      goals: [2, 0]
+    }
   ]
 }
 
