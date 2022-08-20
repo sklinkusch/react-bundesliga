@@ -82,23 +82,23 @@ const matches = {
     },
     {
       teams: ["BVB", "SVW"],
-      goals: [null, null]
+      goals: [2, 3]
     },
     {
       teams: ["B04", "HOF"],
-      goals: [null, null]
+      goals: [0, 3]
     },
     {
       teams: ["WOB", "S04"],
-      goals: [null, null]
+      goals: [0, 0]
     },
     {
       teams: ["FCA", "M05"],
-      goals: [null, null]
+      goals: [1, 2]
     },
     {
       teams: ["VfB", "SCF"],
-      goals: [null, null]
+      goals: [0, 1]
     },
     {
       teams: ["UNI", "RBL"],
