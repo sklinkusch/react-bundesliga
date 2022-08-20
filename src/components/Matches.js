@@ -8,6 +8,7 @@ const Matches = () => {
     <div style={{maxHeight: "100vh", overflowY: "scroll"}}>
       {Object.values(matches).map((day, index) => (
         <div key={index + 1} style={{ borderBottom: index === (numberOfDays - 1) ? "none" : "1px solid black"}}>
+          <h5 style={{ margin: 0 }}>{index + 1}. Spieltag</h5>
           {day.map(match => {
             const { teams, goals } = match 
             const [home, away] = teams 
