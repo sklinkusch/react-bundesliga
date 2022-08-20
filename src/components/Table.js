@@ -25,7 +25,7 @@ const Row = ({club, index}) => {
   return (
   <div style={{ display: "flex", flexDirection: "row" }}>
     <div style={{ width: "6%", textAlign: "center"}}>{index + 1}</div>
-    <div style={{ width: "44%", textAlign: "left"}}>{club.name}</div>
+    <div style={{ width: "44%", textAlign: "left"}}>{club.team}</div>
     <div style={{ width: "15%", textAlign: "center"}}>{`${club.goals}:${club.countergoals}`}</div>
     <div style={{ width: "10%", textAlign: "center"}}>{club.points}</div>
   </div>
@@ -37,7 +37,7 @@ const Table = (props) => {
   const sortedTable = newTable.sort((a,b) => sortFunction(a,b))
   return (
     <div style={{ width: "100%", height: "100vh"}}>
-      {sortedTable.map((club, index) => (<Row club={club} key={club.short} index={index} />))}
+      {sortedTable.map((club, index) => (<Row club={club} key={club.team} index={index} />))}
   </div>
   )
 }
