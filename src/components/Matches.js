@@ -1,8 +1,8 @@
 import React from 'react'
+import matches from '../data/matches_2022-23'
 import "../styles/Matches.css"
 
-const Matches = (props) => {
-  const { matches } = props
+const Matches = () => {
   const numberOfDays = Object.keys(matches).length
   return (
     <div style={{maxHeight: "100vh", overflowY: "scroll"}}>
