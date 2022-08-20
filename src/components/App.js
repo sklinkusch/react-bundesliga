@@ -11,17 +11,6 @@ const matchArray = Object.values(dayMatches).reduce((acc, curr) => {
 function App() {
 const [table, setTable] = useState([])
 const [allMatches] = useState(dayMatches)
-const matchKeys = Object.keys(dayMatches)
-
-const lastMatches = dayMatches[matchKeys[matchKeys.length - 1]]
-
-const newMatches = lastMatches.map(match => {
-  const { teams: MatchTeams, goals: matchGoals } = match 
-  const [ home, away ] = MatchTeams
-  const [ homeGoals, awayGoals ] = matchGoals
-  return { home, away, homeGoals, awayGoals }
-})
-  const [matches] = useState(newMatches)
   useEffect(() => {
     const allTeams = allMatches[1].reduce((acc, currMatch) => {
       const teamArray = [ ...acc ]
@@ -58,7 +47,7 @@ const newMatches = lastMatches.map(match => {
       }, 0)
       const goalDifference = goals -  countergoals
       const ownMatches = matchArray.filter(match => match.teams.includes(team) && match.goals[0] != null)
-      return { team, points, goals, countergoals, goalDifference, ownMatches }
+      return { team, points, goals, countergoals, goalDifference, ownMatches, matchNo: ownMatches.length }
     })
     // sort first by all points
     const firstSortPoints = teamData.sort((a, b) => b.points - a.points)
@@ -176,7 +165,7 @@ const newMatches = lastMatches.map(match => {
   return (
     <div className="App">
       <header className="App-header">
-        <Matches matches={matches} />
+        <Matches matches={allMatches} />
         <Table newTable={table} />
       </header>
     </div>

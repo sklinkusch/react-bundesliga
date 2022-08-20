@@ -3,36 +3,27 @@ import "../styles/Matches.css"
 
 const Matches = (props) => {
   const { matches } = props
-  // const doNewMatches = (index, match) => {
-  //   const matchesNew = matches.slice()
-  //   matchesNew[index] = match
-  //   setMatches(matchesNew)
-  // }
+  const numberOfDays = Object.keys(matches).length
   return (
-    <div>
-          {matches.map((match, index) => {
-            const {home, away, homeGoals, awayGoals} = match
-            // const changeHomeGoals = (event) => {
-            //   const newMatch = { ...match, homeGoals: event.target.value }
-            //   doNewMatches(index, newMatch)
-            // }
-            // const changeAwayGoals = (event) => {
-            //   const newMatch = { ...match, awayGoals: event.target.value }
-            //   doNewMatches(index, newMatch)
-            // }
+    <div style={{maxHeight: "100vh", overflowY: "scroll"}}>
+      {Object.values(matches).map((day, index) => (
+        <div key={index + 1} style={{ borderBottom: index === (numberOfDays - 1) ? "none" : "1px solid black"}}>
+          {day.map(match => {
+            const { teams, goals } = match 
+            const [home, away] = teams 
+            const [homeGoals, awayGoals] = goals
             return (
-              <div style={{ display: "flex", flexDirection: "row"}} key={index}>
-                {/* <label htmlFor="teamHome">{home}</label>
-                <input name="teamHome" type="number" min={0} value={homeGoals} onChange={changeHomeGoals}></input>
-                <input name="teamAway" type="number" min={0} value={awayGoals} onChange={changeAwayGoals}></input>
-                <label htmlFor="teamAway">{away}</label> */}
-                <span style={{ flexBasis: "50px", flexGrow: 0, flexShrink: 0, textAlign: "left" }}>{home}</span>
-                <span style={{ flexBasis: "100px", flexGrow: 0, flexShrink: 0, textAlign: "center" }}>{`${homeGoals}:${awayGoals}`}</span>
+            <div style={{ display: "flex", flexDirection: "row" }} key={`${home}-${away}-${index}`}>
+              <span style={{ flexBasis: "50px", flexGrow: 0, flexShrink: 0, textAlign: "left" }}>{home}</span>
+                {typeof homeGoals === 'number' && typeof awayGoals === 'number' ? (
+                  <span style={{ flexBasis: "100px", flexGrow: 0, flexShrink: 0, textAlign: "center" }}>{`${homeGoals}:${awayGoals}`}</span>
+                ) : (<span style={{ flexBasis: "100px", flexGrow: 0, flexShrink: 0 }}>&nbsp;</span>)}
                 <span style={{ flexBasis: "50px", flexGrow: 0, flexShrink: 0, textAlign: "right" }}>{away}</span>
-              </div>
+            </div>
             )
-          })
-        }
+          })}
+        </div>
+      ))}
     </div>
   )
 }

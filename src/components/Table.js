@@ -1,4 +1,5 @@
 import React from 'react'
+import { getTeamName } from '../data/helpers'
 
 const sortFunction = (a,b) => {
   const { points: aPoints, goals: aGoals, countergoals: aCounterGoals } = a
@@ -22,10 +23,15 @@ const sortFunction = (a,b) => {
 }
 
 const Row = ({club, index}) => {
+  const getSign = (value) => {
+    return value > 0 ? '+' : value < 0 ? '–' : '±'
+  }
   return (
   <div style={{ display: "flex", flexDirection: "row" }}>
     <div style={{ width: "6%", textAlign: "center"}}>{index + 1}</div>
-    <div style={{ width: "44%", textAlign: "left"}}>{club.team}</div>
+    <div style={{ width: "34%", textAlign: "left"}}>{getTeamName(club.team)}</div>
+    <div style={{ width: "10%", textAlign: "right"}}>{club.matchNo}</div>
+    <div style={{ width: "10%", textAlign: "right"}}>{getSign(club.goalDifference)}{Math.abs(club.goalDifference)}</div>
     <div style={{ width: "15%", textAlign: "center"}}>{`${club.goals}:${club.countergoals}`}</div>
     <div style={{ width: "10%", textAlign: "center"}}>{club.points}</div>
   </div>
