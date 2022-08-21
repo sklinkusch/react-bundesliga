@@ -106,11 +106,11 @@ const matches = {
     },
     {
       teams: ["SGE", "KÖL"],
-      goals: [null, null]
+      goals: [1, 1]
     },
     {
       teams: ["BOC", "FCB"],
-      goals: [null, null]
+      goals: [0, 7]
     }
   ],
   4: [

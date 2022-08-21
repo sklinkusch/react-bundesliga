@@ -29,7 +29,7 @@ const Row = ({club, index}) => {
     return value > 0 ? '+' : value < 0 ? '–' : '±'
   }
   return (
-  <div style={{ display: "flex", flexDirection: "row", paddingRight: "25px" }}>
+  <div style={{ display: "flex", flexDirection: "row", paddingRight: "25px", color: club.live ? "blue" : "black", fontWeight: club.live ? "bold" : "normal" }}>
     <div style={{ width: "6%", textAlign: "center"}}>{index + 1}</div>
     <div style={{ width: "10%", textAlign: "center", minWidth: "15px"}}><Logo code={club.team} /></div>
     <div style={{ width: "29%", textAlign: "left", minWidth: "195px"}}>{getTeamName(club.team)}</div>
@@ -119,7 +119,18 @@ const Table = () => {
         return acc
       }, 0)
       const ownMatches = matchArray.filter(match => match.teams.includes(team) && match.goals[0] != null)
-      return { team, points, goals, countergoals, goalDifference, ownMatches, matchNo: ownMatches.length, victories, ties, losses }
+      const live = ownMatches.reduce((acc, curr) => {
+        let identifier = acc
+        if (curr.live) {
+          identifier = true
+        } else if (identifier === true) {
+          identifier = true
+        } else {
+          identifier = false
+        }
+        return identifier
+      }, false)
+      return { team, points, goals, countergoals, goalDifference, ownMatches, matchNo: ownMatches.length, victories, ties, losses, live }
     })
     // sort first by all points
     const firstSortPoints = teamData.sort((a, b) => b.points - a.points)
