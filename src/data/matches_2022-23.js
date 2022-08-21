@@ -151,6 +151,73 @@ const matches = {
       goals: [null, null]
     }
   ],
+  5: [
+    {
+      teams: ["BVB", "HOF"],
+      goals: [null, null]
+    },
+    {
+      teams: ["B04", "SCF"],
+      goals: [null, null]
+    },
+    {
+      teams: ["UNI", "FCB"],
+      goals: [null, null]
+    },
+    {
+      teams: ["BOC", "SVW"],
+      goals: [null, null]
+    },
+    {
+      teams: ["VfB", "S04"],
+      goals: [null, null]
+    },
+    {
+      teams: ["WOB", "KÖL"],
+      goals: [null, null]
+    },
+    {
+      teams: ["SGE", "RBL"],
+      goals: [null, null]
+    },
+    {
+      teams: ["FCA", "BSC"],
+      goals: [null, null]
+    },
+    {
+      teams: ["MGL", "M05"],
+      goals: [null, null]
+    }
+  ],
+  6: [],
+  7: [],
+  8: [],
+  9: [],
+  10: [],
+  11: [],
+  12: [],
+  13: [],
+  14: [],
+  15: [],
+  16: [],
+  17: [],
+  18: [],
+  19: [],
+  20: [],
+  21: [],
+  22: [],
+  23: [],
+  24: [],
+  25: [],
+  26: [],
+  27: [],
+  28: [],
+  29: [],
+  30: [],
+  31: [],
+  32: [],
+  33: [],
+  34: []
 }
 
 export default matches
