@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { getTeamName } from '../data/helpers'
 import dayMatches from "../data/matches_2022-23"
+import Logo from './Logo'
 
 const sortFunction = (a,b) => {
   const { points: aPoints, goals: aGoals, countergoals: aCounterGoals } = a
@@ -30,6 +31,7 @@ const Row = ({club, index}) => {
   return (
   <div style={{ display: "flex", flexDirection: "row", paddingRight: "25px" }}>
     <div style={{ width: "6%", textAlign: "center"}}>{index + 1}</div>
+    <div style={{ width: "10%", textAlign: "center", minWidth: "15px"}}><Logo code={club.team} /></div>
     <div style={{ width: "29%", textAlign: "left", minWidth: "195px"}}>{getTeamName(club.team)}</div>
     <div style={{ width: "4%", textAlign: "right", minWidth: "10px" }}>{club.matchNo}</div>
     <div style={{ width: "4%", textAlign: "right", minWidth: "10px" }}>{club.victories}</div>

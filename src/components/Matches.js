@@ -1,6 +1,7 @@
 import React from 'react'
 import matches from '../data/matches_2022-23'
 import "../styles/Matches.css"
+import Logo from './Logo'
 
 const Matches = () => {
   const numberOfDays = Object.keys(matches).length
@@ -15,11 +16,11 @@ const Matches = () => {
             const [homeGoals, awayGoals] = goals
             return (
             <div style={{ display: "flex", flexDirection: "row" }} key={`${home}-${away}-${index}`}>
-              <span style={{ flexBasis: "50px", flexGrow: 0, flexShrink: 0, textAlign: "left" }}>{home}</span>
+              <div style={{ flexBasis: "50px", flexGrow: 0, flexShrink: 0 }}><Logo code={home} /></div>
                 {typeof homeGoals === 'number' && typeof awayGoals === 'number' ? (
                   <span style={{ flexBasis: "100px", flexGrow: 0, flexShrink: 0, textAlign: "center" }}>{`${homeGoals}:${awayGoals}`}</span>
                 ) : (<span style={{ flexBasis: "100px", flexGrow: 0, flexShrink: 0 }}>&nbsp;</span>)}
-                <span style={{ flexBasis: "50px", flexGrow: 0, flexShrink: 0, textAlign: "right" }}>{away}</span>
+                <div style={{ flexBasis: "50px", flexGrow: 0, flexShrink: 0 }}><Logo code={away} /></div>
             </div>
             )
           })}
