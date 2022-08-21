@@ -227,8 +227,82 @@ const matches = {
       goals: [null, null]
     }
   ],
-  7: [],
-  8: [],
+  7: [
+    {
+      teams: ["M05", "BSC"],
+      goals: [null, null]
+    },
+    {
+      teams: ["B04", "SVW"],
+      goals: [null, null]
+    },
+    {
+      teams: ["FCA", "FCB"],
+      goals: [null, null]
+    },
+    {
+      teams: ["BVB", "S04"],
+      goals: [null, null]
+    },
+    {
+      teams: ["VfB", "SGE"],
+      goals: [null, null]
+    },
+    {
+      teams: ["MGL", "RBL"],
+      goals: [null, null]
+    },
+    {
+      teams: ["UNI", "WOB"],
+      goals: [null, null]
+    },
+    {
+      teams: ["BOC", "KÖL"],
+      goals: [null, null]
+    },
+    {
+      teams: ["HOF", "SCF"],
+      goals: [null, null]
+    }
+  ],
+  8: [
+    {
+      teams: ["FCB", "B04"],
+      goals: [null, null]
+    },
+    {
+      teams: ["RBL", "BOC"],
+      goals: [null, null]
+    },
+    {
+      teams: ["SCF", "M05"],
+      goals: [null, null]
+    },
+    {
+      teams: ["KÖL", "BVB"],
+      goals: [null, null]
+    },
+    {
+      teams: ["SGE", "UNI"],
+      goals: [null, null]
+    },
+    {
+      teams: ["WOB", "VfB"],
+      goals: [null, null]
+    },
+    {
+      teams: ["BSC", "HOF"],
+      goals: [null, null]
+    },
+    {
+      teams: ["S04", "FCA"],
+      goals: [null, null]
+    },
+    {
+      teams: ["SVW", "MGL"],
+      goals: [null, null]
+    }
+  ],
   9: [],
   10: [],
   11: [],
