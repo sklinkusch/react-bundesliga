@@ -1,31 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import matches from '../data/matches_2022-23'
 import "../styles/Matches.css"
 import Logo from './Logo'
 
 const Matches = () => {
-  const numberOfDays = Object.keys(matches).length
+  const [selectedDay, setSelectedDay] = useState(1)
+  const onSelectDay = (event) => {
+    const value = event.target.value
+    setSelectedDay(value)
+  }
   return (
     <div style={{maxHeight: "100vh", overflowY: "scroll"}}>
-      {Object.values(matches).map((day, index) => (
-        <div key={index + 1} style={{ borderBottom: index === (numberOfDays - 1) ? "none" : "1px solid black"}}>
-          <h5 style={{ margin: 0 }}>{index + 1}. Spieltag</h5>
-          {day.map(match => {
-            const { teams, goals } = match 
-            const [home, away] = teams 
-            const [homeGoals, awayGoals] = goals
-            return (
-            <div style={{ display: "flex", flexDirection: "row" }} key={`${home}-${away}-${index}`}>
+      <select onChange={onSelectDay}>
+        {Object.keys(matches).map(key => (<option key={key} value={key}>{`${key}. Spieltag`}</option>))}
+      </select>
+      <div>
+        <h5 style={{ margin: 0 }}>{selectedDay}. Spieltag</h5>
+        {matches[selectedDay].map(match => {
+          const { teams, goals } = match 
+          const [home, away] = teams 
+          const [homeGoals, awayGoals] = goals
+          return (
+            <div style={{ display: "flex", flexDirection: "row" }}>
               <div style={{ flexBasis: "50px", flexGrow: 0, flexShrink: 0 }}><Logo code={home} /></div>
-                {typeof homeGoals === 'number' && typeof awayGoals === 'number' ? (
-                  <span style={{ flexBasis: "100px", flexGrow: 0, flexShrink: 0, textAlign: "center" }}>{`${homeGoals}:${awayGoals}`}</span>
+              {typeof homeGoals === 'number' && typeof awayGoals === 'number' ? (
+                <span style={{ flexBasis: "100px", flexGrow: 0, flexShrink: 0, textAlign: "center" }}>{`${homeGoals}:${awayGoals}`}</span>
                 ) : (<span style={{ flexBasis: "100px", flexGrow: 0, flexShrink: 0 }}>&nbsp;</span>)}
-                <div style={{ flexBasis: "50px", flexGrow: 0, flexShrink: 0 }}><Logo code={away} /></div>
+              <div style={{ flexBasis: "50px", flexGrow: 0, flexShrink: 0 }}><Logo code={away} /></div>
             </div>
-            )
-          })}
-        </div>
-      ))}
+          )})}
+      </div>
     </div>
   )
 }
