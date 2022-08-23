@@ -50,75 +50,97 @@ const Table = () => {
   useEffect(() => {
     const allTeams = allMatches[1].reduce((acc, currMatch) => {
       const teamArray = [ ...acc ]
-      const newArray = teamArray.concat(currMatch.teams)
-      return newArray
+      if (currMatch.hasOwnProperty("teams")) {
+        const newArray = teamArray.concat(currMatch.teams)
+        return newArray
+      } else {
+        return teamArray
+      }
     },[])
     const matchArray = Object.values(dayMatches).reduce((acc, curr) => {
       return acc.concat(curr)
     },[])
     const teamData = allTeams.map(team => {
       const points = matchArray.reduce((acc, curr) => {
-        const index = curr.teams.indexOf(team)
-        const indexOp = index === 0 ? 1 : index === 1 ? 0 : -1
-        if (index !== -1 && curr.goals[index] != null) {
-          if (curr.goals[index] > curr.goals[indexOp]) {
-            return acc + 3
-          } else if (curr.goals[index] === curr.goals[indexOp]) {
-            return acc + 1
+        if (curr.hasOwnProperty("teams")) {
+          const index = curr.teams.indexOf(team)
+          const indexOp = index === 0 ? 1 : index === 1 ? 0 : -1
+          if (index !== -1 && curr.goals[index] != null) {
+            if (curr.goals[index] > curr.goals[indexOp]) {
+              return acc + 3
+            } else if (curr.goals[index] === curr.goals[indexOp]) {
+              return acc + 1
+            }
           }
+          return acc
         }
         return acc
       }, 0)
       const goals = matchArray.reduce((acc, curr) => {
-        const index = curr.teams.indexOf(team)
-        if (index !== -1 && curr.goals[index] != null) {
-          return acc + curr.goals[index]
+        if (curr.hasOwnProperty("teams")) {
+          const index = curr.teams.indexOf(team)
+          if (index !== -1 && curr.goals[index] != null) {
+            return acc + curr.goals[index]
+          }
+          return acc
         }
         return acc
       }, 0)
       const countergoals = matchArray.reduce((acc, curr) => {
-        const index = curr.teams.indexOf(team)
-        const indexOp = index === 0 ? 1 : index === 1 ? 0 : -1
-        if (indexOp !== -1 && curr.goals[indexOp] != null) {
-          return acc + curr.goals[indexOp]
+        if (curr.hasOwnProperty("teams")) {
+          const index = curr.teams.indexOf(team)
+          const indexOp = index === 0 ? 1 : index === 1 ? 0 : -1
+          if (indexOp !== -1 && curr.goals[indexOp] != null) {
+            return acc + curr.goals[indexOp]
+          }
+          return acc
         }
         return acc
       }, 0)
       const goalDifference = goals -  countergoals
       const victories = matchArray.reduce((acc, curr) => {
-        const index = curr.teams.indexOf(team)
-        const indexOp = index === 0 ? 1 : index === 1 ? 0 : -1
-        if (index !== -1 && curr.goals[index] != null) {
-          if (curr.goals[index] > curr.goals[indexOp]) {
-            return acc + 1
+        if (curr.hasOwnProperty("teams")) {
+          const index = curr.teams.indexOf(team)
+          const indexOp = index === 0 ? 1 : index === 1 ? 0 : -1
+          if (index !== -1 && curr.goals[index] != null) {
+            if (curr.goals[index] > curr.goals[indexOp]) {
+              return acc + 1
+            }
+            return acc
           }
           return acc
         }
         return acc
       }, 0)
       const ties = matchArray.reduce((acc, curr) => {
-        const index = curr.teams.indexOf(team)
-        const indexOp = index === 0 ? 1 : index === 1 ? 0 : -1
-        if (index !== -1 && curr.goals[index] != null) {
-          if (curr.goals[index] === curr.goals[indexOp]) {
-            return acc + 1
+        if (curr.hasOwnProperty("teams")) {
+          const index = curr.teams.indexOf(team)
+          const indexOp = index === 0 ? 1 : index === 1 ? 0 : -1
+          if (index !== -1 && curr.goals[index] != null) {
+            if (curr.goals[index] === curr.goals[indexOp]) {
+              return acc + 1
+            }
+            return acc
           }
           return acc
         }
         return acc
       }, 0)
       const losses = matchArray.reduce((acc, curr) => {
-        const index = curr.teams.indexOf(team)
-        const indexOp = index === 0 ? 1 : index === 1 ? 0 : -1
-        if (index !== -1 && curr.goals[index] != null) {
-          if (curr.goals[index] < curr.goals[indexOp]) {
-            return acc + 1
+        if (curr.hasOwnProperty("teams")) {
+          const index = curr.teams.indexOf(team)
+          const indexOp = index === 0 ? 1 : index === 1 ? 0 : -1
+          if (index !== -1 && curr.goals[index] != null) {
+            if (curr.goals[index] < curr.goals[indexOp]) {
+              return acc + 1
+            }
+            return acc
           }
           return acc
         }
         return acc
       }, 0)
-      const ownMatches = matchArray.filter(match => match.teams.includes(team) && match.goals[0] != null)
+      const ownMatches = matchArray.filter(match => (match.hasOwnProperty("teams") && match.hasOwnProperty("goals")) ? match.teams.includes(team) && match.goals[0] != null : false)
       const live = ownMatches.reduce((acc, curr) => {
         let identifier = acc
         if (curr.live) {

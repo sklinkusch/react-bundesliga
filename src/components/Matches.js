@@ -9,6 +9,7 @@ const Matches = () => {
     const value = event.target.value
     setSelectedDay(value)
   }
+  const teamColumn = { flexBasis: "50px", flexGrow: 0, flexShrink: 0 }
   return (
     <div style={{maxHeight: "100vh", overflowY: "scroll"}}>
       <select onChange={onSelectDay}>
@@ -17,16 +18,16 @@ const Matches = () => {
       <div>
         <h5 style={{ margin: 0 }}>{selectedDay}. Spieltag</h5>
         {matches[selectedDay].map(match => {
-          const { teams, goals, live = false } = match 
-          const [home, away] = teams 
-          const [homeGoals, awayGoals] = goals
+          const { teams = [], goals = [], live = false } = match 
+          const [home = null, away = null] = teams 
+          const [homeGoals = null, awayGoals = null] = goals
           return (
             <div style={{ display: "flex", flexDirection: "row" }}>
-              <div style={{ flexBasis: "50px", flexGrow: 0, flexShrink: 0 }}><Logo code={home} /></div>
+              {home ? <div style={teamColumn}><Logo code={home} /></div> : <div style={teamColumn}>&nbsp;</div>}
               {typeof homeGoals === 'number' && typeof awayGoals === 'number' ? (
                 <span style={{ flexBasis: "100px", flexGrow: 0, flexShrink: 0, textAlign: "center", color: live ? "blue" : "black", fontWeight: live ? "bold" : "normal" }}>{`${homeGoals}:${awayGoals}`}</span>
                 ) : (<span style={{ flexBasis: "100px", flexGrow: 0, flexShrink: 0 }}>&nbsp;</span>)}
-              <div style={{ flexBasis: "50px", flexGrow: 0, flexShrink: 0 }}><Logo code={away} /></div>
+              {away ? <div style={{ flexBasis: "50px", flexGrow: 0, flexShrink: 0 }}><Logo code={away} /></div> : <div style={teamColumn}>&nbsp;</div>}
             </div>
           )})}
       </div>
