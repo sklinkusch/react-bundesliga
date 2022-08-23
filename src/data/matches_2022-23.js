@@ -417,7 +417,42 @@ const matches = {
       goals: [null, null]
     }
   ],
-  12: [],
+  12: [
+    {
+      teams: ["FCB", "M05"],
+      goals: [null, null]
+    },
+    {
+      teams: ["RBL", "B04"],
+      goals: [null, null]
+    },
+    {
+      teams: ["UNI", "MGL"],
+      goals: [null, null]
+    },
+    {
+      teams: ["KÖL", "HOF"],
+      goals: [null, null]
+    },
+    {
+      teams: ["SGE", "BVB"],
+      goals: [null, null]
+    },
+    {
+      teams: ["WOB", "BOC"],
+      goals: [null, null]
+    },
+    {
+      teams: ["VfB", "FCA"],
+      goals: [null, null]
+    },
+    {
+      teams: ["S04", "SCF"],
+      goals: [null, null]
+    },
+    {teams: ["SVW", "BSC"],
+      goals: [null, null]}
+  ],
   13: [],
   14: [],
   15: [],
