@@ -116,7 +116,7 @@ const matches = {
   4: [
     {
       teams: ["SCF", "BOC"],
-      goals: [null, null]
+      goals: [1, 0]
     },
     {
       teams: ["RBL", "WOB"],
