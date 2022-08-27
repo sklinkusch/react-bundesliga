@@ -140,7 +140,7 @@ const matches = {
     },
     {
       teams: ["FCB", "MGL"],
-      goals: [null, null]
+      goals: [1, 1]
     },
     {
       teams: ["KÖL", "VfB"],
