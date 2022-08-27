@@ -1,3 +1,4 @@
+/** @jsxImportSource theme-ui */
 import React, { useEffect, useState } from 'react'
 import { getTeamName } from '../data/helpers'
 import dayMatches from "../data/matches_2022-23"
@@ -29,18 +30,20 @@ const Row = ({club, index, sep}) => {
     return value > 0 ? '+' : value < 0 ? '–' : '±'
   }
   return (
-    <div style={{ width: "100%"}}>
-      <div style={{ display: "flex", flexDirection: "row", width: "80%", minWidth: "335px", color: club.live ? "blue" : "black", fontWeight: club.live ? "bold" : "normal", borderBottom: sep ? "2px dashed black" : "none" }}>
-        <div style={{ width: "4%", textAlign: "center", minWidth: "10px"}}>{index + 1}</div>
-        <div style={{ width: "10%", textAlign: "center", minWidth: "15px"}}><Logo code={club.team} /></div>
-        <div style={{ width: "29%", textAlign: "left", minWidth: "195px"}}>{getTeamName(club.team)}</div>
-        <div style={{ width: "6%", textAlign: "right", minWidth: "15px", marginRight: "5px" }}>{club.matchNo}</div>
-        <div style={{ width: "4%", textAlign: "right", minWidth: "10px" }}>{club.victories}</div>
-        <div style={{ width: "4%", textAlign: "right", minWidth: "10px" }}>{club.ties}</div>
-        <div style={{ width: "4%", textAlign: "right", minWidth: "10px" }}>{club.losses}</div>
-        <div style={{ width: "7%", textAlign: "right", minWidth: "15px"}}>{getSign(club.goalDifference)}{Math.abs(club.goalDifference)}</div>
-        <div style={{ width: "8%", textAlign: "center", minWidth: "50px"}}>{`${club.goals}:${club.countergoals}`}</div>
-        <div style={{ width: "4%", textAlign: "right", minWidth: "10px"}}>{club.points}</div>
+    <div sx={{ width: "100%"}}>
+      <div sx={{ display: "flex", flexDirection: "row", width: "80%", minWidth: "335px", color: club.live ? "blue" : "black", fontWeight: club.live ? "bold" : "normal", borderBottom: sep ? "2px dashed black" : "none" }}>
+        <div sx={{ width: "4%", textAlign: "center", minWidth: "10px"}}>{index + 1}</div>
+        <div sx={{ width: "10%", textAlign: "center", minWidth: "15px"}}><Logo code={club.team} /></div>
+        <div sx={{ width: "29%", textAlign: "left", minWidth: "195px"}}>{getTeamName(club.team)}</div>
+        <div sx={{ width: "6%", textAlign: "right", minWidth: "15px", marginRight: "5px" }}>{club.matchNo}</div>
+        <div sx={{ width: "4%", textAlign: "right", minWidth: "10px" }}>{club.victories}</div>
+        <div sx={{ width: "4%", textAlign: "right", minWidth: "10px" }}>{club.ties}</div>
+        <div sx={{ width: "4%", textAlign: "right", minWidth: "10px" }}>{club.losses}</div>
+        <div sx={{ width: "7%", textAlign: "right", minWidth: "15px"}}>{getSign(club.goalDifference)}{Math.abs(club.goalDifference)}</div>
+        <div sx={{ width: "4%", textAlign: "right", minWidth: "30px"}}>{club.goals}</div>
+        <div sx={{ width: "1%", textAlign: "center", minWidth: "5px"}}>:</div>
+        <div sx={{ width: "4%", textAlign: "left", minWidth: "30px"}}>{club.countergoals}</div>
+        <div sx={{ width: "4%", textAlign: "right", minWidth: "10px"}}>{club.points}</div>
       </div>
     </div>
 )}
@@ -272,7 +275,7 @@ const Table = () => {
   }, [allMatches])
   const sortedTable = table.sort((a,b) => sortFunction(a,b))
   return (
-    <div style={{ width: "100%", height: "100vh", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+    <div sx={{ width: "100%", height: "100vh", display: "flex", flexDirection: "column", justifyContent: "center" }}>
       {sortedTable.map((club, index) => {
         if (separators.includes(index)) return <Row club={club} key={club.team} index={index} sep={true} />
         return <Row club={club} key={club.team} index={index} />
