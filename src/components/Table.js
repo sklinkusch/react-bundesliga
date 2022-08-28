@@ -31,19 +31,19 @@ const Row = ({club, index, sep}) => {
   }
   return (
     <div sx={{ width: "100%"}}>
-      <div sx={{ display: "flex", flexDirection: "row", width: "80%", minWidth: "335px", color: club.live ? "blue" : "black", fontWeight: club.live ? "bold" : "normal", borderBottom: sep ? "2px dashed black" : "none" }}>
-        <div sx={{ width: "4%", textAlign: "center", minWidth: "10px"}}>{index + 1}</div>
-        <div sx={{ width: "10%", textAlign: "center", minWidth: "15px"}}><Logo code={club.team} /></div>
-        <div sx={{ width: "29%", textAlign: "left", minWidth: "195px"}}>{getTeamName(club.team)}</div>
-        <div sx={{ width: "6%", textAlign: "right", minWidth: "15px", marginRight: "5px" }}>{club.matchNo}</div>
-        <div sx={{ width: "4%", textAlign: "right", minWidth: "10px" }}>{club.victories}</div>
-        <div sx={{ width: "4%", textAlign: "right", minWidth: "10px" }}>{club.ties}</div>
-        <div sx={{ width: "4%", textAlign: "right", minWidth: "10px" }}>{club.losses}</div>
-        <div sx={{ width: "7%", textAlign: "right", minWidth: "15px"}}>{getSign(club.goalDifference)}{Math.abs(club.goalDifference)}</div>
-        <div sx={{ width: "4%", textAlign: "right", minWidth: "30px"}}>{club.goals}</div>
-        <div sx={{ width: "1%", textAlign: "center", minWidth: "5px"}}>:</div>
-        <div sx={{ width: "4%", textAlign: "left", minWidth: "30px"}}>{club.countergoals}</div>
-        <div sx={{ width: "4%", textAlign: "right", minWidth: "10px"}}>{club.points}</div>
+      <div sx={{ display: "flex", flexDirection: "row", width: "550px", color: club.live ? "blue" : "black", fontWeight: club.live ? "bold" : "normal", borderBottom: sep ? "2px dashed black" : "none", px: "3px" }}>
+        <div sx={{ width: "26px", textAlign: "center"}}>{index + 1}</div>
+        <div sx={{ width: "65px", textAlign: "center"}}><Logo code={club.team} /></div>
+        <div sx={{ width: "195px", textAlign: "left"}}>{getTeamName(club.team)}</div>
+        <div sx={{ width: "39px", textAlign: "right", marginRight: "5px" }}>{club.matchNo}</div>
+        <div sx={{ width: "26px", textAlign: "right"}}>{club.victories}</div>
+        <div sx={{ width: "26px", textAlign: "right"}}>{club.ties}</div>
+        <div sx={{ width: "26px", textAlign: "right"}}>{club.losses}</div>
+        <div sx={{ width: "46px", textAlign: "right"}}>{getSign(club.goalDifference)}{Math.abs(club.goalDifference)}</div>
+        <div sx={{ width: "30px", textAlign: "right"}}>{club.goals}</div>
+        <div sx={{ width: "4px", textAlign: "center"}}>:</div>
+        <div sx={{ width: "30px", textAlign: "left"}}>{club.countergoals}</div>
+        <div sx={{ width: "30px", textAlign: "right"}}>{club.points}</div>
       </div>
     </div>
 )}

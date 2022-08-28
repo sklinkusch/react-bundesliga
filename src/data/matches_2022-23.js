@@ -144,7 +144,7 @@ const matches = {
     },
     {
       teams: ["KÖL", "VfB"],
-      goals: [null, null]
+      goals: [0, 0]
     },
     {
       teams: ["SVW", "SGE"],
