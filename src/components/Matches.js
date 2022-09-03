@@ -1,9 +1,8 @@
 /** @jsxImportSource theme-ui */
 import React, { useState } from 'react'
-import matches from '../data/matches_2022-23'
 import Logo from './Logo'
 
-const Matches = () => {
+const Matches = ({ matches }) => {
   const [selectedDay, setSelectedDay] = useState(1)
   const onSelectDay = (event) => {
     const value = event.target.value

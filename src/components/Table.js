@@ -1,7 +1,6 @@
 /** @jsxImportSource theme-ui */
 import React, { useEffect, useState } from 'react'
 import { getTeamName } from '../data/helpers'
-import dayMatches from "../data/matches_2022-23"
 import Logo from './Logo'
 
 const sortFunction = (a,b) => {
@@ -49,10 +48,9 @@ const Row = ({club, index, sep}) => {
 )}
 
 
-const Table = () => {
-  const separators = [0, 3, 5, 6, 14, 15]
+const Table = ({ matches, separators }) => {
   const [table, setTable] = useState([])
-  const [allMatches] = useState(dayMatches)
+  const [allMatches] = useState(matches)
   useEffect(() => {
     const allTeams = allMatches[1].reduce((acc, currMatch) => {
       const teamArray = [ ...acc ]
@@ -63,7 +61,7 @@ const Table = () => {
         return teamArray
       }
     },[])
-    const matchArray = Object.values(dayMatches).reduce((acc, curr) => {
+    const matchArray = Object.values(matches).reduce((acc, curr) => {
       return acc.concat(curr)
     },[])
     const teamData = allTeams.map(team => {
@@ -272,7 +270,7 @@ const Table = () => {
       return sortedSet
     }).reduce((acc, curr) => acc.concat(curr))
     setTable(sortedEqualPoints)
-  }, [allMatches])
+  }, [allMatches, matches])
   const sortedTable = table.sort((a,b) => sortFunction(a,b))
   return (
     <div sx={{ width: "100%", height: "100vh", display: "flex", flexDirection: "column", justifyContent: "center" }}>
