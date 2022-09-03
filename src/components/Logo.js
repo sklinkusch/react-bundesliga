@@ -14,6 +14,7 @@ import FCH from "../images/FCH.svg"
 import FCK from "../images/FCK.svg"
 import FCM from "../images/FCM.svg"
 import FCN from "../images/FCN.svg"
+import FCU from "../images/FCU.svg"
 import H96 from "../images/H96.svg"
 import HOF from "../images/HOF.svg"
 import HSV from "../images/HSV.svg"
@@ -33,7 +34,6 @@ import SGF from "../images/SGF.svg"
 import STP from "../images/STP.png"
 import SVS from "../images/SVS.svg"
 import SVW from "../images/SVW.svg"
-import UNI from "../images/UNI.svg"
 import VfB from "../images/VfB.svg"
 import WOB from "../images/WOB.svg"
 import { getTeamName } from "../data/helpers"
@@ -70,6 +70,8 @@ const Logo = ({code}) => {
       return <img src={FCM} alt={getTeamName("FCM")} title={getTeamName("FCM")} sx={styles} />
     case "FCN":
       return <img src={FCN} alt={getTeamName("FCN")} title={getTeamName("FCN")} sx={styles} />
+    case "FCU":
+      return <img src={FCU} alt={getTeamName("FCU")} title={getTeamName("FCU")} sx={stylesUnion} />
     case "H96":
       return <img src={H96} alt={getTeamName("H96")} title={getTeamName("H96")} sx={styles} />
     case "HOF":
@@ -108,8 +110,6 @@ const Logo = ({code}) => {
       return <img src={SVS} alt={getTeamName("SVS")} title={getTeamName("SVS")} sx={styles} />
     case "SVW":
       return <img src={SVW} alt={getTeamName("SVW")} title={getTeamName("SVW")} sx={styles} />
-    case "UNI":
-      return <img src={UNI} alt={getTeamName("UNI")} title={getTeamName("UNI")} sx={stylesUnion} />
     case "VfB":
       return <img src={VfB} alt={getTeamName("VfB")} title={getTeamName("VfB")} sx={styles} />
     case "WOB":

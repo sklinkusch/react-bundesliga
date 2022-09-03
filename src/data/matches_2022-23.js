@@ -9,7 +9,7 @@ const matches = {
       goals: [1, 2]
     },
     {
-      teams: ["UNI", "BSC"],
+      teams: ["FCU", "BSC"],
       goals: [3, 1]
     },
     {
@@ -67,7 +67,7 @@ const matches = {
       goals: [2, 2]
     },
     {
-      teams: ["M05", "UNI"],
+      teams: ["M05", "FCU"],
       goals: [0, 0]
     },
     {
@@ -101,7 +101,7 @@ const matches = {
       goals: [0, 1]
     },
     {
-      teams: ["UNI", "RBL"],
+      teams: ["FCU", "RBL"],
       goals: [2, 1]
     },
     {
@@ -123,7 +123,7 @@ const matches = {
       goals: [2, 0],
     },
     {
-      teams: ["S04", "UNI"],
+      teams: ["S04", "FCU"],
       goals: [1, 6]
     },
     {
@@ -158,23 +158,23 @@ const matches = {
     },
     {
       teams: ["B04", "SCF"],
-      goals: [null, null]
+      goals: [2, 3]
     },
     {
-      teams: ["UNI", "FCB"],
-      goals: [null, null]
-    },
-    {
-      teams: ["BOC", "SVW"],
-      goals: [null, null]
-    },
-    {
-      teams: ["VfB", "S04"],
-      goals: [null, null]
+      teams: ["FCU", "FCB"],
+      goals: [1, 1]
     },
     {
       teams: ["WOB", "KÖL"],
-      goals: [null, null]
+      goals: [2, 4]
+    },
+    {
+      teams: ["BOC", "SVW"],
+      goals: [0, 2]
+    },
+    {
+      teams: ["VfB", "S04"],
+      goals: [1, 1]
     },
     {
       teams: ["SGE", "RBL"],
@@ -219,7 +219,7 @@ const matches = {
       goals: [null, null]
     },
     {
-      teams: ["KÖL", "UNI"],
+      teams: ["KÖL", "FCU"],
       goals: [null, null]
     },
     {
@@ -253,7 +253,7 @@ const matches = {
       goals: [null, null]
     },
     {
-      teams: ["UNI", "WOB"],
+      teams: ["FCU", "WOB"],
       goals: [null, null]
     },
     {
@@ -283,7 +283,7 @@ const matches = {
       goals: [null, null]
     },
     {
-      teams: ["SGE", "UNI"],
+      teams: ["SGE", "FCU"],
       goals: [null, null]
     },
     {
@@ -333,7 +333,7 @@ const matches = {
       goals: [null, null]
     },
     {
-      teams: ["VfB", "UNI"],
+      teams: ["VfB", "FCU"],
       goals: [null, null]
     },
     {
@@ -351,7 +351,7 @@ const matches = {
       goals: [null, null]
     },
     {
-      teams: ["UNI", "BVB"],
+      teams: ["FCU", "BVB"],
       goals: [null, null]
     },
     {
@@ -405,7 +405,7 @@ const matches = {
       goals: [null, null]
     },
     {
-      teams: ["BOC", "UNI"],
+      teams: ["BOC", "FCU"],
       goals: [null, null]
     },
     {
@@ -427,7 +427,7 @@ const matches = {
       goals: [null, null]
     },
     {
-      teams: ["UNI", "MGL"],
+      teams: ["FCU", "MGL"],
       goals: [null, null]
     },
     {
@@ -461,7 +461,7 @@ const matches = {
       goals: [null, null]
     },
     {
-      teams: ["B04", "UNI"],
+      teams: ["B04", "FCU"],
       goals: [null, null]
     },
     {
@@ -503,7 +503,7 @@ const matches = {
       goals: [null, null]
     },
     {
-      teams: ["UNI", "FCA"],
+      teams: ["FCU", "FCA"],
       goals: [null, null]
     },
     {
