@@ -13,7 +13,7 @@ function Liga2_22_23 () {
       <Table matches={matches} separators={separators} />
       <div></div>
       <div>
-        <Link to="">Zur Hauptseite</Link>
+        <Link to="/">Zur Hauptseite</Link>
       </div>
     </header>
   )
