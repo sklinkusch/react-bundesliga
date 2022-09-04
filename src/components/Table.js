@@ -33,7 +33,7 @@ const Row = ({club, index, sep, isThird}) => {
       <div sx={{ display: "flex", flexDirection: "row", width: "550px", color: club.live ? "blue" : "black", fontWeight: club.live ? "bold" : "normal", borderBottom: sep ? "2px dashed black" : "none", px: "3px", backgroundColor: isThird && club.team.endsWith("2") ? "#aaaaaa" : "none" }}>
         <div sx={{ width: "26px", textAlign: "center"}}>{index + 1}</div>
         <div sx={{ width: "65px", textAlign: "center"}}><Logo code={club.team} /></div>
-        <div sx={{ width: "195px", textAlign: "left"}}>{getTeamName(club.team)}</div>
+        <div sx={{ width: "275px", textAlign: "left"}}>{getTeamName(club.team)}</div>
         <div sx={{ width: "39px", textAlign: "right", marginRight: "5px" }}>{club.matchNo}</div>
         <div sx={{ width: "26px", textAlign: "right"}}>{club.victories}</div>
         <div sx={{ width: "26px", textAlign: "right"}}>{club.ties}</div>
