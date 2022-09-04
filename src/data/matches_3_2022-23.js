@@ -282,11 +282,11 @@ const matches = {
     },
     {
       teams: ["SVM", "SVE"],
-      goals: [null, null]
+      goals: [0, 0]
     },
     {
       teams: ["ZWI", "VKÖ"],
-      goals: [null, null]
+      goals: [0, 0]
     },
     {
       teams: ["FCS", "WIE"],
