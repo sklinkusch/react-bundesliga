@@ -186,7 +186,7 @@ const matches = {
     },
     {
       teams: ["MGL", "M05"],
-      goals: [null, null]
+      goals: [0, 1]
     }
   ],
   6: [
