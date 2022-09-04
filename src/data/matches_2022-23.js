@@ -182,7 +182,8 @@ const matches = {
     },
     {
       teams: ["FCA", "BSC"],
-      goals: [null, null]
+      goals: [0, 2],
+      live: true
     },
     {
       teams: ["MGL", "M05"],
