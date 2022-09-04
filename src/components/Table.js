@@ -24,13 +24,13 @@ const sortFunction = (a,b) => {
   return 0
 }
 
-const Row = ({club, index, sep}) => {
+const Row = ({club, index, sep, isThird}) => {
   const getSign = (value) => {
     return value > 0 ? '+' : value < 0 ? '–' : '±'
   }
   return (
     <div sx={{ width: "100%"}}>
-      <div sx={{ display: "flex", flexDirection: "row", width: "550px", color: club.live ? "blue" : "black", fontWeight: club.live ? "bold" : "normal", borderBottom: sep ? "2px dashed black" : "none", px: "3px" }}>
+      <div sx={{ display: "flex", flexDirection: "row", width: "550px", color: club.live ? "blue" : "black", fontWeight: club.live ? "bold" : "normal", borderBottom: sep ? "2px dashed black" : "none", px: "3px", backgroundColor: isThird && club.team.endsWith("2") ? "#aaaaaa" : "none" }}>
         <div sx={{ width: "26px", textAlign: "center"}}>{index + 1}</div>
         <div sx={{ width: "65px", textAlign: "center"}}><Logo code={club.team} /></div>
         <div sx={{ width: "195px", textAlign: "left"}}>{getTeamName(club.team)}</div>
@@ -48,7 +48,7 @@ const Row = ({club, index, sep}) => {
 )}
 
 
-const Table = ({ matches, separators }) => {
+const Table = ({ matches, separators, isThird }) => {
   const [table, setTable] = useState([])
   const [allMatches] = useState(matches)
   useEffect(() => {
@@ -275,8 +275,8 @@ const Table = ({ matches, separators }) => {
   return (
     <div sx={{ width: "100%", height: "100vh", display: "flex", flexDirection: "column", justifyContent: "center" }}>
       {sortedTable.map((club, index) => {
-        if (separators.includes(index)) return <Row club={club} key={club.team} index={index} sep={true} />
-        return <Row club={club} key={club.team} index={index} />
+        if (separators.includes(index)) return <Row club={club} key={club.team} index={index} sep={true} isThird={isThird} />
+        return <Row club={club} key={club.team} index={index} isThird={isThird} />
       })
       }
   </div>

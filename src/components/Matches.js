@@ -16,12 +16,12 @@ const Matches = ({ matches }) => {
       </select>
       <div>
         <h5 sx={{ margin: 0 }}>{selectedDay}. Spieltag</h5>
-        {matches[selectedDay].map(match => {
+        {matches[selectedDay].map((match, index) => {
           const { teams = [], goals = [], live = false } = match 
           const [home = null, away = null] = teams 
           const [homeGoals = null, awayGoals = null] = goals
           return (
-            <div sx={{ display: "flex", flexDirection: "row" }}>
+            <div sx={{ display: "flex", flexDirection: "row" }} key={`${home}-${away}-${index}`}>
               {home ? <div sx={teamColumn}><Logo code={home} /></div> : <div sx={teamColumn}>&nbsp;</div>}
               {typeof homeGoals === 'number' && typeof awayGoals === 'number' ? (
                 <span sx={{ flexBasis: "100px", flexGrow: 0, flexShrink: 0, textAlign: "center", color: live ? "blue" : "black", fontWeight: live ? "bold" : "normal" }}>{`${homeGoals}:${awayGoals}`}</span>
