@@ -296,7 +296,7 @@ const matches = {
   8: [
     {
       teams: ["OSN", "RWE"],
-      goals: [null, null]
+      goals: [1, 0]
     },
     {
       teams: ["WIE", "SCF2"],
