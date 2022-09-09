@@ -268,11 +268,11 @@ const matches = {
   8: [
     {
       teams: ["FCN", "BIE"],
-      goals: [null, null]
+      goals: [1, 0]
     },
     {
       teams: ["KIE", "HSV"],
-      goals: [null, null]
+      goals: [2, 3]
     },
     {
       teams: ["P07", "JRE"],
