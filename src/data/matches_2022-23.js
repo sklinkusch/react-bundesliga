@@ -192,7 +192,7 @@ const matches = {
   6: [
     {
       teams: ["SVW", "FCA"],
-      goals: [null, null]
+      goals: [0, 1]
     },
     {
       teams: ["RBL", "BVB"],
