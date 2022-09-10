@@ -216,7 +216,7 @@ const matches = {
     },
     {
       teams: ["S04", "BOC"],
-      goals: [null, null]
+      goals: [3, 1]
     },
     {
       teams: ["KÖL", "FCU"],
