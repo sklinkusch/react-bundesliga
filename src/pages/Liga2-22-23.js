@@ -8,11 +8,12 @@ import { Link } from 'react-router-dom'
 function Liga2_22_23 () {
   const separators = [1, 2, 14, 15]
   return (
-    <header className='App-header' sx={{ display: "grid", gridTemplateColumns: "250px 1fr", columnGap: "20px" }}>
+    <header className='App-header'>
+      <div sx={{ display: "grid", gridTemplateColumns: "250px 1fr", columnGap: "20px", height: "calc(100vh - 50px)" }}>
       <Matches matches={matches} />
       <Table matches={matches} separators={separators} />
-      <div></div>
-      <div>
+      </div>
+      <div sx={{ width: "100%", height: "50px", margin: 0, textAlign: "center"}}>
         <Link to="/">Zur Hauptseite</Link>
       </div>
     </header>
