@@ -276,15 +276,15 @@ const matches = {
     },
     {
       teams: ["P07", "JRE"],
-      goals: [null, null]
+      goals: [3, 0]
     },
     {
       teams: ["H96", "EBS"],
-      goals: [null, null]
+      goals: [1, 1]
     },
     {
       teams: ["KSC", "FCH"],
-      goals: [null, null]
+      goals: [0, 0]
     },
     {
       teams: ["DÜS", "ROS"],
