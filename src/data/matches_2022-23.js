@@ -195,24 +195,24 @@ const matches = {
       goals: [0, 1]
     },
     {
-      teams: ["RBL", "BVB"],
-      goals: [null, null]
-    },
-    {
-      teams: ["BSC", "B04"],
-      goals: [null, null]
-    },
-    {
       teams: ["FCB", "VfB"],
-      goals: [null, null]
+      goals: [2, 2]
+    },
+    {
+      teams: ["RBL", "BVB"],
+      goals: [3, 0]
     },
     {
       teams: ["HOF", "M05"],
-      goals: [null, null]
+      goals: [4, 1]
     },
     {
       teams: ["SGE", "WOB"],
-      goals: [null, null]
+      goals: [0, 1]
+    },
+    {
+      teams: ["BSC", "B04"],
+      goals: [2, 2]
     },
     {
       teams: ["S04", "BOC"],
