@@ -178,18 +178,15 @@ const matches = {
     },
     {
       teams: ["BAK", "ECB"],
-      goals: [2, 0],
-      live: true
+      goals: [2, 1]
     },
     {
       teams: ["BSC2", "GFC"],
-      goals: [1, 0],
-      live: true
+      goals: [2, 1]
     },
     {
       teams: ["ZFC", "CHL"],
-      goals: [0, 0],
-      live: true
+      goals: [0, 1]
     }
   ],
   6: [],
@@ -220,11 +217,7 @@ const matches = {
   31: [],
   32: [],
   33: [],
-  34: [],
-  35: [],
-  36: [],
-  37: [],
-  38: []
+  34: []
 }
 
 export default matches
