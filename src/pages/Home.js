@@ -27,6 +27,12 @@ const Home = () => {
           <Link to="/liga3/22-23">Saison 2022/23</Link>
         </ul>
       </div>
+      <div>
+        <h2>Regionalliga Nordost</h2>
+        <ul>
+          <Link to="/rlno/22-23">Saison 2022/23</Link>
+        </ul>
+      </div>
     </header>
   )
 }
