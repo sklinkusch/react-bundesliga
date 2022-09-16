@@ -306,11 +306,11 @@ const matches = {
   9: [
     {
       teams: ["SVS", "H96"],
-      goals: [null, null]
+      goals: [2, 3]
     },
     {
       teams: ["EBS", "KSC"],
-      goals: [null, null]
+      goals: [2, 1]
     },
     {
       teams: ["BIE", "KIE"],
