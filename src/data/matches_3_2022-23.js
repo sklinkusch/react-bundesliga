@@ -332,7 +332,7 @@ const matches = {
     },
     {
       teams: ["SCV", "SVM"],
-      goals: [null, null]
+      goals: [2, 2]
     }
   ],
   9: [],
