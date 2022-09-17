@@ -250,7 +250,7 @@ const matches = {
     },
     {
       teams: ["MGL", "RBL"],
-      goals: [null, null]
+      goals: [3, 0]
     },
     {
       teams: ["FCU", "WOB"],
