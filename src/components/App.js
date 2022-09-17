@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Liga22223 from "../pages/Liga2-22-23";
 import Liga32223 from "../pages/Liga3-22-23";
 import RLNO2223 from "../pages/RLNO-22-23";
+import WLiga12223 from "../pages/WLiga1-22-23"
 import Home from "../pages/Home";
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
           <Route path="/liga3/*" element={<Liga32223 />} />
           <Route path="/rlno/22-23" element={<RLNO2223 />} />
           <Route path="/rlno/*" element={<RLNO2223 />} />
+          <Route path="/wliga1/22-23" element={<WLiga12223 />} />
+          <Route path="/wliga1/*" element={<WLiga12223 />} />
           <Route path="" element={<Home />} />
           <Route path="*" element={<Home />} />
         </Routes>
