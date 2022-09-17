@@ -6,7 +6,7 @@ const matches = {
     },
     {
       teams: ["WOB", "ESS"],
-      goals: [null, null]
+      goals: [4, 0]
     },
     {
       teams: ["KÖL", "HOF"],
