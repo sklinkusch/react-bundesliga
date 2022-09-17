@@ -204,11 +204,12 @@ const matches = {
     },
     {
       teams: ["CHL", "BAK"],
-      goals: [null, null]
+      goals: [2, 1]
     },
     {
       teams: ["ECB", "CFC"],
-      goals: [null, null]
+      goals: [3, 1],
+      live: true
     },
     {
       teams: ["HBS", "LKL"],
