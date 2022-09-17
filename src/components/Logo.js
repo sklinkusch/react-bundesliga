@@ -20,6 +20,7 @@ import DÜS from "../images/DÜS.svg"
 import EBS from "../images/EBS.svg"
 import ECB from "../images/ECB.svg"
 import ERF from "../images/ERF.svg"
+import ESS from "../images/ESS.png"
 import FCA from "../images/FCA.svg"
 import FCB from "../images/FCB.svg"
 import FCH from "../images/FCH.svg"
@@ -48,6 +49,7 @@ import MÜN from "../images/MÜN.svg"
 import OLD from "../images/OLD.svg"
 import OSN from "../images/OSN.png"
 import P07 from "../images/P07.svg"
+import POT from "../images/POT.svg"
 import RBL from "../images/RBL.svg"
 import ROS from "../images/ROS.svg"
 import RWE from "../images/RWE.svg"
@@ -119,6 +121,8 @@ const Logo = ({code}) => {
       return <img src={ECB} alt={getTeamName("ECB")} title={getTeamName("ECB")} sx={styles} />
     case "ERF":
       return <img src={ERF} alt={getTeamName("ERF")} title={getTeamName("ERF")} sx={styles} />
+    case "ESS":
+      return <img src={ESS} alt={getTeamName("ESS")} title={getTeamName("ESS")} sx={styles} />
     case "FCA":
       return <img src={FCA} alt={getTeamName("FCA")} title={getTeamName("FCA")} sx={styles} />
     case "FCB":
@@ -175,6 +179,8 @@ const Logo = ({code}) => {
       return <img src={OSN} alt={getTeamName("OSN")} title={getTeamName("OSN")} sx={styles} />
     case "P07":
       return <img src={P07} alt={getTeamName("P07")} title={getTeamName("P07")} sx={styles} />
+    case "POT":
+      return <img src={POT} alt={getTeamName("POT")} title={getTeamName("POT")} sx={styles} />
     case "RBL":
       return <img src={RBL} alt={getTeamName("RBL")} title={getTeamName("RBL")} sx={styles} />
     case "ROS":
