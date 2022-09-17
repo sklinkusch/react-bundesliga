@@ -208,8 +208,7 @@ const matches = {
     },
     {
       teams: ["ECB", "CFC"],
-      goals: [3, 1],
-      live: true
+      goals: [3, 1]
     },
     {
       teams: ["HBS", "LKL"],
