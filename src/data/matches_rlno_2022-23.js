@@ -212,15 +212,15 @@ const matches = {
     },
     {
       teams: ["HBS", "LKL"],
-      goals: [null, null]
+      goals: [1, 3]
     },
     {
       teams: ["GFC", "VBL"],
-      goals: [null, null]
+      goals: [5, 0]
     },
     {
       teams: ["TBB", "SVB"],
-      goals: [null, null]
+      goals: [0, 1]
     },
     {
       teams: ["ERF", "CZJ"],
