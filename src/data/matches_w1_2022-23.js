@@ -18,11 +18,11 @@ const matches = {
     },
     {
       teams: ["DUI", "B04"],
-      goals: [null, null]
+      goals: [0, 1]
     },
     {
       teams: ["SVW", "POT"],
-      goals: [null, null]
+      goals: [1, 1]
     }
   ],
   2: [
