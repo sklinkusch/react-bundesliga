@@ -224,7 +224,7 @@ const matches = {
     },
     {
       teams: ["ERF", "CZJ"],
-      goals: [null, null]
+      goals: [1, 1]
     }
   ],
   7: [],
