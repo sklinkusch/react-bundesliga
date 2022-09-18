@@ -366,11 +366,11 @@ const matches = {
     },
     {
       teams: ["SCF2", "OSN"],
-      goals: [null, null]
+      goals: [1, 1]
     },
     {
       teams: ["SCV", "DUI"],
-      goals: [null, null]
+      goals: [1, 0]
     },
     {
       teams: ["RWE", "FCS"],
