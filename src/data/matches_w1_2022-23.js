@@ -10,11 +10,11 @@ const matches = {
     },
     {
       teams: ["KÖL", "HOF"],
-      goals: [null, null]
+      goals: [3, 1]
     },
     {
       teams: ["SVM", "SCF"],
-      goals: [null, null]
+      goals: [1, 2]
     },
     {
       teams: ["DUI", "B04"],
