@@ -6,7 +6,7 @@ import Table from '../components/Table'
 import { Link } from 'react-router-dom'
 
 function Liga1_22_23 () {
-  const separators = [0, 3, 5, 6, 14, 15]
+  const separators = [0, 3, 4, 5, 14, 15]
   return (
     <header className='App-header'>
       <div sx={{ display: "grid", gridTemplateColumns: "250px 1fr", columnGap: "20px", height: "calc(100vh - 50px)" }}>
