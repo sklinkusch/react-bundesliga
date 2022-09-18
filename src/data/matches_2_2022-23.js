@@ -330,15 +330,15 @@ const matches = {
     },
     {
       teams: ["SGF", "P07"],
-      goals: [null, null]
+      goals: [2, 1]
     },
     {
       teams: ["FCH", "FCK"],
-      goals: [null, null]
+      goals: [2, 2]
     },
     {
       teams: ["JRE", "STP"],
-      goals: [null, null]
+      goals: [2, 0]
     }
   ],
   10: [
