@@ -262,7 +262,7 @@ const matches = {
     },
     {
       teams: ["HOF", "SCF"],
-      goals: [null, null]
+      goals: [0, 0]
     }
   ],
   8: [
