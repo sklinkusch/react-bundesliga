@@ -374,7 +374,7 @@ const matches = {
     },
     {
       teams: ["RWE", "FCS"],
-      goals: [null, null]
+      goals: [1, 0]
     }
   ],
   10: [],
