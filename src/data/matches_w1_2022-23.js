@@ -28,7 +28,7 @@ const matches = {
   2: [
     {
       teams: ["B04", "KÖL"],
-      goals: [null, null]
+      goals: [1, 0]
     },
     {
       teams: ["HOF", "WOB"],
