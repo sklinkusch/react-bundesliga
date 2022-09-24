@@ -32,7 +32,7 @@ const matches = {
     },
     {
       teams: ["HOF", "WOB"],
-      goals: [null, null]
+      goals: [1, 2]
     },
     {
       teams: ["POT", "DUI"],
