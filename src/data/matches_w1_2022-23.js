@@ -36,11 +36,11 @@ const matches = {
     },
     {
       teams: ["POT", "DUI"],
-      goals: [null, null]
+      goals: [0, 3]
     },
     {
       teams: ["FCB", "SVW"],
-      goals: [null, null]
+      goals: [3, 0]
     },
     {
       teams: ["ESS", "SVM"],
