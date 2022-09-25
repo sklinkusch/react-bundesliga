@@ -44,11 +44,11 @@ const matches = {
     },
     {
       teams: ["ESS", "SVM"],
-      goals: [null, null]
+      goals: [1, 0]
     },
     {
       teams: ["SCF", "SGE"],
-      goals: [null, null]
+      goals: [2, 4]
     }
   ],
   3: [
