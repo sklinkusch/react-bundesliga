@@ -268,7 +268,7 @@ const matches = {
   8: [
     {
       teams: ["FCB", "B04"],
-      goals: [null, null]
+      goals: [4, 0]
     },
     {
       teams: ["RBL", "BOC"],
