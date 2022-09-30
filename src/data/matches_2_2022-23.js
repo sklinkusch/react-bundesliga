@@ -343,12 +343,12 @@ const matches = {
   ],
   10: [
     {
-      teams: ["P07", "D98"],
-      goals: [null, null]
+      teams: ["H96", "HSV"],
+      goals: [1, 2]
     },
     {
-      teams: ["H96", "HSV"],
-      goals: [null, null]
+      teams: ["P07", "D98"],
+      goals: [1, 2]
     },
     {
       teams: ["SGF", "SVS"],
