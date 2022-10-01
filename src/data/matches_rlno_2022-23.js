@@ -246,15 +246,15 @@ const matches = {
     },
     {
       teams: ["SVB", "L47"],
-      goals: [null, null]
+      goals: [2, 2]
     },
     {
       teams: ["TBB", "GFC"],
-      goals: [null, null]
+      goals: [0, 3]
     },
     {
       teams: ["CFC", "CHL"],
-      goals: [null, null]
+      goals: [0, 1]
     },
     {
       teams: ["BAK", "AGL"],
