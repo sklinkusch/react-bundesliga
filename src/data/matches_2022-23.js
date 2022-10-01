@@ -272,23 +272,23 @@ const matches = {
     },
     {
       teams: ["RBL", "BOC"],
-      goals: [null, null]
+      goals: [4, 0]
     },
     {
       teams: ["SCF", "M05"],
-      goals: [null, null]
+      goals: [2, 1]
     },
     {
       teams: ["KÖL", "BVB"],
-      goals: [null, null]
+      goals: [3, 2]
     },
     {
       teams: ["SGE", "FCU"],
-      goals: [null, null]
+      goals: [2, 0]
     },
     {
       teams: ["WOB", "VfB"],
-      goals: [null, null]
+      goals: [3, 2]
     },
     {
       teams: ["BSC", "HOF"],
