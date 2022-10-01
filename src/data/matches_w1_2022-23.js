@@ -58,7 +58,7 @@ const matches = {
     },
     {
       teams: ["KÖL", "POT"],
-      goals: [null, null]
+      goals: [4, 2]
     },
     {
       teams: ["SGE", "SVM"],
