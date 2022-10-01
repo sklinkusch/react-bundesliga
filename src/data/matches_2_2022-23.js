@@ -352,15 +352,15 @@ const matches = {
     },
     {
       teams: ["SGF", "SVS"],
-      goals: [null, null]
+      goals: [1, 1]
     },
     {
       teams: ["KIE", "ROS"],
-      goals: [null, null]
+      goals: [1, 1]
     },
     {
       teams: ["DÜS", "BIE"],
-      goals: [null, null]
+      goals: [4, 1]
     },
     {
       teams: ["STP", "FCH"],
