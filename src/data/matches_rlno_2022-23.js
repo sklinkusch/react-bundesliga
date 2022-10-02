@@ -258,11 +258,11 @@ const matches = {
     },
     {
       teams: ["BAK", "AGL"],
-      goals: [null, null]
+      goals: [4, 0]
     },
     {
       teams: ["ZFC", "LUC"],
-      goals: [null, null]
+      goals: [3, 1]
     }
   ],
   8: [],
