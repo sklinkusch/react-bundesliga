@@ -61,12 +61,12 @@ const matches = {
       goals: [4, 2]
     },
     {
-      teams: ["SGE", "SVM"],
-      goals: [null, null]
+      teams: ["SGE", "SVW"],
+      goals: [3, 1]
     },
     {
       teams: ["SVM", "HOF"],
-      goals: [null, null]
+      goals: [0, 2]
     },
     {
       teams: ["DUI", "FCB"],
