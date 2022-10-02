@@ -300,7 +300,7 @@ const matches = {
     },
     {
       teams: ["S04", "FCA"],
-      goals: [null, null]
+      goals: [2, 3]
     }
   ],
   9: [
