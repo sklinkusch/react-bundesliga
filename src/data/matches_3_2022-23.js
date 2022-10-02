@@ -408,11 +408,11 @@ const matches = {
     },
     {
       teams: ["VKÖ", "OLD"],
-      goals: [null, null]
+      goals: [1, 2]
     },
     {
       teams: ["WIE", "RWE"],
-      goals: [null, null]
+      goals: [3, 1]
     },
     {
       teams: ["FCI", "ZWI"],
