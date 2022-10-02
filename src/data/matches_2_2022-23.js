@@ -368,15 +368,15 @@ const matches = {
     },
     {
       teams: ["KSC", "FCN"],
-      goals: [null, null]
+      goals: [3, 0]
     },
     {
       teams: ["FCM", "JRE"],
-      goals: [null, null]
+      goals: [1, 0]
     },
     {
       teams: ["FCK", "EBS"],
-      goals: [null, null]
+      goals: [1, 1]
     }
   ],
   11: [
