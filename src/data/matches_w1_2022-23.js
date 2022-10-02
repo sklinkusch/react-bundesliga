@@ -70,11 +70,11 @@ const matches = {
     },
     {
       teams: ["DUI", "FCB"],
-      goals: [null, null]
+      goals: [0, 4]
     },
     {
       teams: ["SCF", "ESS"],
-      goals: [null, null]
+      goals: [5, 2]
     }
   ],
   4: [
