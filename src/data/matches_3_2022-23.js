@@ -416,7 +416,7 @@ const matches = {
     },
     {
       teams: ["FCI", "ZWI"],
-      goals: [null, null]
+      goals: [0, 0]
     }
   ],
   11: [],
