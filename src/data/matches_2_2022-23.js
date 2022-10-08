@@ -402,7 +402,7 @@ const matches = {
     },
     {
       teams: ["HSV", "FCK"],
-      goals: [null, null]
+      goals: [1, 1]
     },
     {
       teams: ["FCH", "H96"],
