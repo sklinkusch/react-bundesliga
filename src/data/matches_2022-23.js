@@ -310,19 +310,19 @@ const matches = {
     },
     {
       teams: ["M05", "RBL"],
-      goals: [null, null]
+      goals: [1, 1]
     },
     {
       teams: ["FCA", "WOB"],
-      goals: [null, null]
+      goals: [1, 1]
     },
     {
       teams: ["B04", "S04"],
-      goals: [null, null]
+      goals: [4, 0]
     },
     {
       teams: ["BOC", "SGE"],
-      goals: [null, null]
+      goals: [3, 0]
     },
     {
       teams: ["BVB", "FCB"],
