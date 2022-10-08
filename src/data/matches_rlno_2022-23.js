@@ -276,15 +276,15 @@ const matches = {
     },
     {
       teams: ['ERF', 'BSC2'],
-      goals: [null, null]
+      goals: [2, 1]
     },
     {
       teams: ['BFC', 'TBB'],
-      goals: [null, null]
+      goals: [4, 1]
     },
     {
       teams: ['ECB', 'LKL'],
-      goals: [null, null]
+      goals: [3, 1]
     },
     {
       teams: ['HBS', 'VBL'],
