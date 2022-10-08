@@ -382,11 +382,11 @@ const matches = {
   11: [
     {
       teams: ["BIE", "KSC"],
-      goals: [null, null]
+      goals: [1, 2]
     },
     {
       teams: ["JRE", "SGF"],
-      goals: [null, null]
+      goals: [2, 2]
     },
     {
       teams: ["D98", "DÜS"],
