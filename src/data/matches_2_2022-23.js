@@ -406,15 +406,15 @@ const matches = {
     },
     {
       teams: ["FCH", "H96"],
-      goals: [null, null]
+      goals: [2, 1]
     },
     {
       teams: ["FCN", "KIE"],
-      goals: [null, null]
+      goals: [2, 3]
     },
     {
       teams: ["SVS", "FCM"],
-      goals: [null, null]
+      goals: [1, 0]
     }
   ],
   12: [
