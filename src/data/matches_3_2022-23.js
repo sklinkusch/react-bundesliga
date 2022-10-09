@@ -450,11 +450,11 @@ const matches = {
     },
     {
       teams: ['DRE', 'OSN'],
-      goals: [null, null]
+      goals: [3, 2]
     },
     {
       teams: ['SCF2', 'RWE'],
-      goals: [null, null]
+      goals: [0, 3]
     },
     {
       teams: ['HFC', 'BVB2'],
