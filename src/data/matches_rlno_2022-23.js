@@ -288,19 +288,19 @@ const matches = {
     },
     {
       teams: ['HBS', 'VBL'],
-      goals: [null, null]
+      goals: [0, 1]
     },
     {
       teams: ['GFC', 'SVB'],
-      goals: [null, null]
+      goals: [0, 2]
     },
     {
       teams: ['L47', 'ZFC'],
-      goals: [null, null]
+      goals: [2, 1]
     },
     {
       teams: ['LUC', 'BAK'],
-      goals: [null, null]
+      goals: [0, 1]
     }
   ],
   9: [],
