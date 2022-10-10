@@ -458,7 +458,7 @@ const matches = {
     },
     {
       teams: ['HFC', 'BVB2'],
-      goals: [null, null]
+      goals: [0, 0]
     }
   ],
   12: [],
