@@ -79,6 +79,10 @@ const matches = {
   ],
   4: [
     {
+      teams: ["HOF", "SCF"],
+      goals: [3, 2]
+    },
+    {
       teams: ["POT", "WOB"],
       goals: [null, null]
     },
@@ -87,7 +91,7 @@ const matches = {
       goals: [null, null],
     },
     {
-      teams: ["HOF", "SCF"],
+      teams: ["FCB", "KÖL"],
       goals: [null, null]
     },
     {
@@ -96,10 +100,6 @@ const matches = {
     },
     {
       teams: ["SVW", "DUI"],
-      goals: [null, null]
-    },
-    {
-      teams: ["FCB", "KÖL"],
       goals: [null, null]
     }
   ],
