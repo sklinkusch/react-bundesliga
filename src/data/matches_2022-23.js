@@ -348,19 +348,19 @@ const matches = {
     },
     {
       teams: ["SGE", "B04"],
-      goals: [null, null]
+      goals: [5, 1]
     },
     {
       teams: ["WOB", "MGL"],
-      goals: [null, null]
+      goals: [2, 2]
     },
     {
       teams: ["VfB", "BOC"],
-      goals: [null, null]
+      goals: [4, 1]
     },
     {
       teams: ["SVW", "M05"],
-      goals: [null, null]
+      goals: [0, 2]
     },
     {
       teams: ["RBL", "BSC"],
