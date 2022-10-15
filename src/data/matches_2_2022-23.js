@@ -427,27 +427,27 @@ const matches = {
       goals: [3, 0]
     },
     {
-      teams: ["P07", "SVS"],
-      goals: [null, null]
-    },
-    {
-      teams: ["KIE", "FCH"],
-      goals: [null, null]
-    },
-    {
       teams: ["DÜS", "FCN"],
-      goals: [null, null]
+      goals: [0, 1]
+    },
+    {
+      teams: ["KSC", "D98"],
+      goals: [1, 2]
+    },
+    {
+      teams: ["FCM", "EBS"],
+      goals: [0, 2]
     },
     {
       teams: ["H96", "BIE"],
       goals: [null, null]
     },
     {
-      teams: ["KSC", "D98"],
+      teams: ["P07", "SVS"],
       goals: [null, null]
     },
     {
-      teams: ["FCM", "EBS"],
+      teams: ["KIE", "FCH"],
       goals: [null, null]
     },
     {
