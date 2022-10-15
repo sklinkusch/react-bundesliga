@@ -84,7 +84,7 @@ const matches = {
     },
     {
       teams: ["POT", "WOB"],
-      goals: [null, null]
+      goals: [0, 2]
     },
     {
       teams: ["B04", "SVM"],
