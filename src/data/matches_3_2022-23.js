@@ -468,27 +468,27 @@ const matches = {
     },
     {
       teams: ["RWE", "DRE"],
-      goals: [null, null]
+      goals: [1, 1]
     },
     {
       teams: ["VKÖ", "SVE"],
-      goals: [null, null]
+      goals: [0, 2]
     },
     {
       teams: ["FCS", "ZWI"],
-      goals: [null, null]
+      goals: [3, 2]
     },
     {
       teams: ["SCF2", "WMA"],
-      goals: [null, null]
+      goals: [3, 2]
     },
     {
       teams: ["OSN", "MÜN"],
-      goals: [null, null]
+      goals: [0, 2]
     },
     {
       teams: ["FCI", "SVM"],
-      goals: [null, null]
+      goals: [3, 1]
     },
     {
       teams: ["BAY", "SCV"],
