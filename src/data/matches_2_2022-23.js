@@ -420,11 +420,11 @@ const matches = {
   12: [
     {
       teams: ["SGF", "ROS"],
-      goals: [null, null]
+      goals: [2, 2]
     },
     {
       teams: ["STP", "HSV"],
-      goals: [null, null]
+      goals: [3, 0]
     },
     {
       teams: ["P07", "SVS"],
