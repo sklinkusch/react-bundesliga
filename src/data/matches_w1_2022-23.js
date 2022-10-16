@@ -96,11 +96,11 @@ const matches = {
     },
     {
       teams: ["ESS", "SGE"],
-      goals: [null, null]
+      goals: [0, 4]
     },
     {
       teams: ["SVW", "DUI"],
-      goals: [null, null]
+      goals: [0, 0]
     }
   ],
   5: [
