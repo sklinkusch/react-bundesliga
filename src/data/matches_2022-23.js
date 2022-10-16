@@ -372,7 +372,7 @@ const matches = {
     },
     {
       teams: ["FCU", "BVB"],
-      goals: [null, null]
+      goals: [2, 0]
     },
     {
       teams: ["FCB", "SCF"],
