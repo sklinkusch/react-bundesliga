@@ -330,11 +330,11 @@ const matches = {
     },
     {
       teams: ["BAK", "L47"],
-      goals: [null, null]
+      goals: [6, 0]
     },
     {
       teams: ["CFC", "LUC"],
-      goals: [null, null]
+      goals: [2, 0]
     },
     {
       teams: ["LKL", "CHL"],
