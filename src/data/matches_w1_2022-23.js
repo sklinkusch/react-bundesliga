@@ -88,11 +88,11 @@ const matches = {
     },
     {
       teams: ["B04", "SVM"],
-      goals: [null, null],
+      goals: [0, 1],
     },
     {
       teams: ["FCB", "KÖL"],
-      goals: [null, null]
+      goals: [4, 0]
     },
     {
       teams: ["ESS", "SGE"],
