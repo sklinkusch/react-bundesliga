@@ -338,7 +338,7 @@ const matches = {
     },
     {
       teams: ["LKL", "CHL"],
-      goals: [null, null]
+      goals: [3, 0]
     }
   ],
   10: [],
