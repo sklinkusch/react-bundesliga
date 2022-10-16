@@ -444,15 +444,15 @@ const matches = {
     },
     {
       teams: ["P07", "SVS"],
-      goals: [null, null]
+      goals: [3, 0]
     },
     {
       teams: ["KIE", "FCH"],
-      goals: [null, null]
+      goals: [3, 1]
     },
     {
       teams: ["FCK", "JRE"],
-      goals: [null, null]
+      goals: [0, 3]
     }
   ],
   13: [
