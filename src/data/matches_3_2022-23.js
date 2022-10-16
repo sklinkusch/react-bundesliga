@@ -492,11 +492,11 @@ const matches = {
     },
     {
       teams: ["BAY", "SCV"],
-      goals: [null, null]
+      goals: [1, 3]
     },
     {
       teams: ["BVB2", "DUI"],
-      goals: [null, null]
+      goals: [2, 0]
     },
     {
       teams: ["WIE", "OLD"],
