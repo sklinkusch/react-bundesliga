@@ -500,7 +500,7 @@ const matches = {
     },
     {
       teams: ["WIE", "OLD"],
-      goals: [null, null]
+      goals: [3, 1]
     }
   ],
   13: [],
