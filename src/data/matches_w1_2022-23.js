@@ -105,15 +105,11 @@ const matches = {
   ],
   5: [
     {
-      teams: ["SGE", "DUI"],
-      goals: [null, null]
+      teams: ["SVM", "POT"],
+      goals: [2, 0]
     },
     {
-      teams: ["WOB", "FCB"],
-      goals: [null, null]
-    },
-    {
-      teams: ["KÖL", "SVW"],
+      teams: ["SCF", "B04"],
       goals: [null, null]
     },
     {
@@ -121,11 +117,15 @@ const matches = {
       goals: [null, null]
     },
     {
-      teams: ["SCF", "B04"],
+      teams: ["WOB", "FCB"],
       goals: [null, null]
     },
     {
-      teams: ["SVM", "POT"],
+      teams: ["SGE", "DUI"],
+      goals: [null, null]
+    },
+    {
+      teams: ["KÖL", "SVW"],
       goals: [null, null]
     }
   ],
