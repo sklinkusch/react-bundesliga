@@ -503,7 +503,48 @@ const matches = {
       goals: [3, 1]
     }
   ],
-  13: [],
+  13: [
+    {
+      teams: ["ZWI", "SCF2"],
+      goals: [0, 1]
+    },
+    {
+      teams: ["DUI", "VKÖ"],
+      goals: [null, null]
+    },
+    {
+      teams: ["MÜN", "WIE"],
+      goals: [null, null]
+    },
+    {
+      teams: ["WMA", "RWE"],
+      goals: [null, null]
+    },
+    {
+      teams: ["SVE", "OSN"],
+      goals: [null, null]
+    },
+    {
+      teams: ["SVM", "BVB2"],
+      goals: [null, null]
+    },
+    {
+      teams: ["DRE", "FCS"],
+      goals: [null, null]
+    },
+    {
+      teams: ["OLD", "FCI"],
+      goals: [null, null]
+    },
+    {
+      teams: ["SCV", "AUE"],
+      goals: [null, null]
+    },
+    {
+      teams: ["HFC", "BAY"],
+      goals: [null, null]
+    }
+  ],
   14: [],
   15: [],
   16: [],
