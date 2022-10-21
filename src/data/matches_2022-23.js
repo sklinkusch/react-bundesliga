@@ -381,6 +381,10 @@ const matches = {
   ],
   11: [
     {
+      teams: ["M05", "KÖL"],
+      goals: [5, 0]
+    },
+    {
       teams: ["BVB", "VfB"],
       goals: [null, null]
     },
@@ -393,11 +397,11 @@ const matches = {
       goals: [null, null]
     },
     {
-      teams: ["M05", "KÖL"],
+      teams: ["HOF", "FCB"],
       goals: [null, null]
     },
     {
-      teams: ["HOF", "FCB"],
+      teams: ["FCA", "RBL"],
       goals: [null, null]
     },
     {
@@ -406,10 +410,6 @@ const matches = {
     },
     {
       teams: ["BOC", "FCU"],
-      goals: [null, null]
-    },
-    {
-      teams: ["FCA", "RBL"],
       goals: [null, null]
     },
     {
