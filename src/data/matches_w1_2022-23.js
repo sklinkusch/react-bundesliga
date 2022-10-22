@@ -110,7 +110,7 @@ const matches = {
     },
     {
       teams: ["SCF", "B04"],
-      goals: [null, null]
+      goals: [3, 2]
     },
     {
       teams: ["ESS", "HOF"],
