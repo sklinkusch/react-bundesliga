@@ -466,15 +466,15 @@ const matches = {
     },
     {
       teams: ["FCN", "H96"],
-      goals: [null, null]
+      goals: [0, 0]
     },
     {
       teams: ["JRE", "SVS"],
-      goals: [null, null]
+      goals: [2, 1]
     },
     {
       teams: ["EBS", "P07"],
-      goals: [null, null]
+      goals: [0, 0]
     },
     {
       teams: ["BIE", "STP"],
