@@ -356,15 +356,15 @@ const matches = {
     },
     {
       teams: ["CHL", "BSC2"],
-      goals: [null, null]
+      goals: [4, 2]
     },
     {
       teams: ["ECB", "VBL"],
-      goals: [null, null]
+      goals: [2, 1]
     },
     {
       teams: ["L47", "CFC"],
-      goals: [null, null]
+      goals: [0, 2]
     },
     {
       teams: ["LUC", "CZJ"],
