@@ -478,7 +478,7 @@ const matches = {
     },
     {
       teams: ["BIE", "STP"],
-      goals: [null, null]
+      goals: [2, 0]
     },
     {
       teams: ["HSV", "FCM"],
