@@ -482,15 +482,15 @@ const matches = {
     },
     {
       teams: ["HSV", "FCM"],
-      goals: [null, null]
+      goals: [2, 3]
     },
     {
       teams: ["FCH", "SGF"],
-      goals: [null, null]
+      goals: [3, 1]
     },
     {
       teams: ["KSC", "DÜS"],
-      goals: [null, null]
+      goals: [0, 2]
     }
   ],
   14: [
