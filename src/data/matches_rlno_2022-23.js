@@ -368,15 +368,15 @@ const matches = {
     },
     {
       teams: ["LUC", "CZJ"],
-      goals: [null, null]
+      goals: [1, 1]
     },
     {
       teams: ["HBS", "GFC"],
-      goals: [null, null]
+      goals: [0, 0]
     },
     {
       teams: ["ZFC", "BAK"],
-      goals: [null, null]
+      goals: [0, 2]
     }
   ],
   11: [],
