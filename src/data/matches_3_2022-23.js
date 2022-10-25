@@ -542,7 +542,7 @@ const matches = {
     },
     {
       teams: ["HFC", "BAY"],
-      goals: [null, null]
+      goals: [3, 0]
     }
   ],
   14: [],
