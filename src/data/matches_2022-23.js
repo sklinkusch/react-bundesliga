@@ -414,7 +414,7 @@ const matches = {
     },
     {
       teams: ["BSC", "S04"],
-      goals: [null, null]
+      goals: [2, 1]
     }
   ],
   12: [
