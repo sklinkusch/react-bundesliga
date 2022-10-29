@@ -11,7 +11,7 @@ import Home from "../pages/Home";
 function App() {
   return (
     <div className="App" sx={{ textAlign: "center" }}>
-      <BrowserRouter>
+      <BrowserRouter basename={`${process.env.PUBLIC_URL}`}>
         <Routes>
           <Route path="/liga1/22-23" element={<Liga12223 />} />
           <Route path="/liga1/*" element={<Liga12223 />} />
