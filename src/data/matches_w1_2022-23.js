@@ -131,7 +131,19 @@ const matches = {
   ],
   6: [
     {
+      teams: ["DUI", "KÖL"],
+      goals: [2, 1]
+    },
+    {
+      teams: ["HOF", "SGE"],
+      goals: [null, null]
+    },
+    {
       teams: ["POT", "SCF"],
+      goals: [null, null]
+    },
+    {
+      teams: ["FCB", "SVM"],
       goals: [null, null]
     },
     {
@@ -139,19 +151,7 @@ const matches = {
       goals: [null, null]
     },
     {
-      teams: ["HOF", "SGE"],
-      goals: [null, null]
-    },
-    {
-      teams: ["DUI", "KÖL"],
-      goals: [null, null]
-    },
-    {
       teams: ["SVW", "WOB"],
-      goals: [null, null]
-    },
-    {
-      teams: ["FCB", "SVM"],
       goals: [null, null]
     }
   ],
