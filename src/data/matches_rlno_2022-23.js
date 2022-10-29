@@ -394,15 +394,15 @@ const matches = {
     },
     {
       teams: ["CFC", "ZFC"],
-      goals: [null, null]
+      goals: [4, 0]
     },
     {
       teams: ["GFC", "ERF"],
-      goals: [null, null]
+      goals: [0, 2]
     },
     {
       teams: ["VBL", "CHL"],
-      goals: [null, null]
+      goals: [0, 2]
     },
     {
       teams: ["CZJ", "L47"],
