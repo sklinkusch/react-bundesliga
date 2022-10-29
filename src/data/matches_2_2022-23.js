@@ -516,7 +516,7 @@ const matches = {
     },
     {
       teams: ["STP", "D98"],
-      goals: [null, null]
+      goals: [1, 1]
     },
     {
       teams: ["P07", "HSV"],
