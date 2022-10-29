@@ -504,15 +504,15 @@ const matches = {
     },
     {
       teams: ["KIE", "DÜS"],
-      goals: [null, null]
+      goals: [1, 2]
     },
     {
       teams: ["JRE", "ROS"],
-      goals: [null, null]
+      goals: [0, 3]
     },
     {
       teams: ["FCK", "FCN"],
-      goals: [null, null]
+      goals: [0, 0]
     },
     {
       teams: ["STP", "D98"],
