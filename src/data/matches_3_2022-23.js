@@ -576,11 +576,11 @@ const matches = {
     },
     {
       teams: ["SCF2", "OLD"],
-      goals: [null, null]
+      goals: [1, 0]
     },
     {
       teams: ["FCI", "VKÖ"],
-      goals: [null, null]
+      goals: [1, 3]
     },
     {
       teams: ["OSN", "HFC"],
