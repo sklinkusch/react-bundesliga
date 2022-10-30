@@ -444,7 +444,7 @@ const matches = {
     },
     {
       teams: ["FCU", "MGL"],
-      goals: [null, null]
+      goals: [2, 1]
     },
     {
       teams: ["S04", "SCF"],
