@@ -520,15 +520,15 @@ const matches = {
     },
     {
       teams: ["P07", "HSV"],
-      goals: [null, null]
+      goals: [2, 3]
     },
     {
       teams: ["H96", "KSC"],
-      goals: [null, null]
+      goals: [1, 0]
     },
     {
       teams: ["SVS", "EBS"],
-      goals: [null, null]
+      goals: [2, 2]
     }
   ],
   15: [],
