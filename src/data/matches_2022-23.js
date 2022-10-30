@@ -452,7 +452,7 @@ const matches = {
     },
     {
       teams: ["KÖL", "HOF"],
-      goals: [null, null]
+      goals: [1, 1]
     }
   ],
   13: [
