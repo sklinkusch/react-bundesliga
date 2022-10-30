@@ -140,19 +140,19 @@ const matches = {
     },
     {
       teams: ["POT", "SCF"],
-      goals: [null, null]
+      goals: [0, 5]
     },
     {
       teams: ["FCB", "SVM"],
-      goals: [null, null]
+      goals: [3, 1]
     },
     {
       teams: ["B04", "ESS"],
-      goals: [null, null]
+      goals: [6, 0]
     },
     {
       teams: ["SVW", "WOB"],
-      goals: [null, null]
+      goals: [2, 3]
     }
   ],
   7: [
