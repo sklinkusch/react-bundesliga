@@ -584,7 +584,7 @@ const matches = {
     },
     {
       teams: ["OSN", "HFC"],
-      goals: [null, null]
+      goals: [3, 2]
     }
   ],
   15: [],
