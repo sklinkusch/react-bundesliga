@@ -432,11 +432,11 @@ const matches = {
     },
     {
       teams: ["CHL", "TBB"],
-      goals: [null, null]
+      goals: [4, 0]
     },
     {
       teams: ["ZFC", "CZJ"],
-      goals: [null, null]
+      goals: [2, 1]
     },
     {
       teams: ["ECB", "GFC"],
