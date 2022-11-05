@@ -157,7 +157,11 @@ const matches = {
   ],
   7: [
     {
-      teams: ["SGE", "KÖL"],
+      teams: ["HOF", "B04"],
+      goals: [3, 1]
+    },
+    {
+      teams: ["SCF", "FCB"],
       goals: [null, null]
     },
     {
@@ -165,15 +169,11 @@ const matches = {
       goals: [null, null]
     },
     {
-      teams: ["HOF", "B04"],
-      goals: [null, null]
-    },
-    {
       teams: ["ESS", "POT"],
       goals: [null, null]
     },
     {
-      teams: ["SCF", "FCB"],
+      teams: ["SGE", "KÖL"],
       goals: [null, null]
     },
     {
