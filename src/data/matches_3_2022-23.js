@@ -618,15 +618,15 @@ const matches = {
     },
     {
       teams: ["OLD", "RWE"],
-      goals: [null, null]
+      goals: [3, 5]
     },
     {
       teams: ["ZWI", "OSN"],
-      goals: [null, null]
+      goals: [4, 3]
     },
     {
       teams: ["MÜN", "FCS"],
-      goals: [null, null]
+      goals: [0, 1]
     }
   ],
   16: [],
