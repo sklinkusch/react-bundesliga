@@ -482,7 +482,7 @@ const matches = {
     },
     {
       teams: ["SVW", "S04"],
-      goals: [null, null]
+      goals: [2, 1]
     },
     {
       teams: ["B04", "FCU"],
