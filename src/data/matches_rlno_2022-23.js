@@ -440,19 +440,19 @@ const matches = {
     },
     {
       teams: ["ECB", "GFC"],
-      goals: [null, null]
+      goals: [3, 1]
     },
     {
       teams: ["L47", "LKL"],
-      goals: [null, null]
+      goals: [4, 2]
     },
     {
       teams: ["HBS", "SVB"],
-      goals: [null, null]
+      goals: [1, 5]
     },
     {
       teams: ["ERF", "BFC"],
-      goals: [null, null]
+      goals: [4, 1]
     }
   ],
   13: [],
