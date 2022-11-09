@@ -588,19 +588,19 @@ const matches = {
     },
     {
       teams: ["SGF", "HSV"],
-      goals: [null, null]
+      goals: [1, 0]
     },
     {
       teams: ["ROS", "FCN"],
-      goals: [null, null]
+      goals: [1, 1]
     },
     {
       teams: ["SVS", "FCH"],
-      goals: [null, null]
+      goals: [3, 4]
     },
     {
       teams: ["JRE", "EBS"],
-      goals: [null, null]
+      goals: [1, 1]
     },
     {
       teams: ["FCM", "D98"],
