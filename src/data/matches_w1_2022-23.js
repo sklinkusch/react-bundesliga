@@ -174,11 +174,11 @@ const matches = {
     },
     {
       teams: ["SGE", "KÖL"],
-      goals: [null, null]
+      goals: [2, 0]
     },
     {
       teams: ["SVM", "SVW"],
-      goals: [null, null]
+      goals: [2, 0]
     }
   ],
   8: [
