@@ -512,23 +512,23 @@ const matches = {
     },
     {
       teams: ["KÖL", "B04"],
-      goals: [null, null]
+      goals: [1, 2]
     },
     {
       teams: ["RBL", "SCF"],
-      goals: [null, null]
+      goals: [3, 1]
     },
     {
       teams: ["FCU", "FCA"],
-      goals: [null, null]
+      goals: [2, 2]
     },
     {
       teams: ["SGE", "HOF"],
-      goals: [null, null]
+      goals: [4, 2]
     },
     {
       teams: ["S04", "M05"],
-      goals: [null, null]
+      goals: [1, 0]
     }
   ],
   15: [],
