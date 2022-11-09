@@ -652,23 +652,23 @@ const matches = {
     },
     {
       teams: ["OSN", "SCV"],
-      goals: [null, null]
+      goals: [2, 1]
     },
     {
       teams: ["WMA", "ZWI"],
-      goals: [null, null]
+      goals: [2, 1]
     },
     {
       teams: ["RWE", "SVM"],
-      goals: [null, null]
+      goals: [0, 0]
     },
     {
       teams: ["FCS", "OLD"],
-      goals: [null, null]
+      goals: [3, 1]
     },
     {
       teams: ["SCF2", "MÜN"],
-      goals: [null, null]
+      goals: [2, 0]
     }
   ],
   17: [],
