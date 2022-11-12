@@ -538,28 +538,23 @@ const matches = {
     },
     {
       teams: ["B04", "VfB"],
-      goals: [null, null],
-      date: "12.11.22"
+      goals: [2, 0]
     },
     {
       teams: ["HOF", "WOB"],
-      goals: [null, null],
-      date: "12.11.22"
+      goals: [1, 2]
     },
     {
       teams: ["FCA", "BOC"],
-      goals: [null, null],
-      date: "12.11.22"
+      goals: [0, 1]
     },
     {
       teams: ["BSC", "KÖL"],
-      goals: [null, null],
-      date: "12.11.22"
+      goals: [2, 0]
     },
     {
       teams: ["SVW", "RBL"],
-      goals: [null, null],
-      date: "12.11.22"
+      goals: [1, 2]
     },
     {
       teams: ["S04", "FCB"],
