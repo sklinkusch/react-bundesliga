@@ -466,31 +466,34 @@ const matches = {
     },
     {
       teams: ["LKL", "ZFC"],
-      goals: [null, null]
+      goals: [0, 1]
     },
     {
       teams: ["GFC", "CHL"],
-      goals: [null, null]
+      goals: [2, 2]
     },
     {
       teams: ["HBS", "ERF"],
-      goals: [null, null]
+      goals: [1, 1]
     },
     {
       teams: ["VBL", "LUC"],
-      goals: [null, null]
+      goals: [0, 0]
     },
     {
       teams: ["BFC", "ECB"],
-      goals: [null, null]
+      goals: [null, null],
+      date: "13.11.22"
     },
     {
       teams: ["SVB", "CFC"],
-      goals: [null, null]
+      goals: [null, null],
+      date: "13.11.22"
     },
     {
       teams: ["TBB", "AGL"],
-      goals: [null, null]
+      goals: [null, null],
+      date: "13.11.22"
     }
   ],
   14: [],
