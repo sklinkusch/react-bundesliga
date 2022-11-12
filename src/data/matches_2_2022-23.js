@@ -618,31 +618,35 @@ const matches = {
     },
     {
       teams: ["HSV", "SVS"],
-      goals: [null, null]
+      goals: [4, 2]
     },
     {
       teams: ["FCH", "JRE"],
-      goals: [null, null]
+      goals: [5, 4]
     },
     {
       teams: ["KSC", "STP"],
-      goals: [null, null]
+      goals: [4, 4]
     },
     {
       teams: ["EBS", "ROS"],
-      goals: [null, null]
+      goals: [null, null],
+      date: "12.11.22"
     },
     {
       teams: ["BIE", "FCM"],
-      goals: [null, null]
+      goals: [null, null],
+      date: "13.11.22"
     },
     {
       teams: ["D98", "SGF"],
-      goals: [null, null]
+      goals: [null, null],
+      date: "13.11.22"
     },
     {
       teams: ["FCN", "P07"],
-      goals: [null, null]
+      goals: [null, null],
+      date: "13.11.22"
     }
   ],
   18: [],
