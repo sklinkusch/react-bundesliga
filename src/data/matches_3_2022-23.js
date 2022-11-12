@@ -678,39 +678,42 @@ const matches = {
     },
     {
       teams: ["DUI", "FCI"],
-      goals: [null, null]
+      goals: [0, 1]
     },
     {
       teams: ["SVE", "SCF2"],
-      goals: [null, null]
+      goals: [3, 0]
     },
     {
       teams: ["SVM", "OSN"],
-      goals: [null, null]
+      goals: [0, 3]
     },
     {
       teams: ["HFC", "FCS"],
-      goals: [null, null]
+      goals: [1, 2]
     },
     {
       teams: ["DRE", "ZWI"],
-      goals: [null, null]
+      goals: [0, 0]
     },
     {
       teams: ["SCV", "WIE"],
-      goals: [null, null]
+      goals: [1, 1]
     },
     {
       teams: ["OLD", "WMA"],
-      goals: [null, null]
+      goals: [null, null],
+      date: "13.11.22"
     },
     {
       teams: ["VKÖ", "BAY"],
-      goals: [null, null]
+      goals: [null, null],
+      date: "13.11.22"
     },
     {
       teams: ["MÜN", "RWE"],
-      goals: [null, null]
+      goals: [null, null],
+      date: "14.11.22"
     }
   ],
   18: [],
