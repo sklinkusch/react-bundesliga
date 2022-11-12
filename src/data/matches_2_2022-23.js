@@ -604,7 +604,7 @@ const matches = {
     },
     {
       teams: ["FCM", "D98"],
-      goals: [null, null]
+      goals: [0, 1]
     }
   ],
   17: [],
