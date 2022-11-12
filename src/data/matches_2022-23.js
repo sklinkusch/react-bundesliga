@@ -558,8 +558,7 @@ const matches = {
     },
     {
       teams: ["S04", "FCB"],
-      goals: [null, null],
-      date: "12.11.22"
+      goals: [0, 2]
     },
     {
       teams: ["M05", "SGE"],
