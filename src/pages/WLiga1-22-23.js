@@ -1,11 +1,15 @@
 /** @jsxImportSource theme-ui */
-import React from 'react'
+import React, { useEffect } from 'react'
 import Matches from '../components/Matches'
 import matches from '../data/matches_w1_2022-23'
 import Table from '../components/Table'
 import { Link } from 'react-router-dom'
+/* eslint-disable react-hooks/exhaustive-deps */
 
-function WLiga1_22_23 () {
+function WLiga1_22_23 ({ title }) {
+  useEffect(() => {
+    document.title = title
+  },[title])
   const separators = [0, 1, 9]
   return (
     <header className='App-header'>

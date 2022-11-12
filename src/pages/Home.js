@@ -1,8 +1,12 @@
 /** @jsxImportSource theme-ui */
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+/* eslint-disable react-hooks/exhaustive-deps */
 
-const Home = () => {
+const Home = ({ title }) => {
+  useEffect(() => {
+    document.title = title
+  },[title])
   return (
     <header className='App-header' sx={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)' }}>
       <div>

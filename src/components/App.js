@@ -13,18 +13,18 @@ function App() {
     <div className="App" sx={{ textAlign: "center" }}>
       <BrowserRouter basename={`${process.env.PUBLIC_URL}`}>
         <Routes>
-          <Route path="/liga1/22-23" element={<Liga12223 />} />
-          <Route path="/liga1/*" element={<Liga12223 />} />
-          <Route path="/liga2/22-23" element={<Liga22223 />} />
-          <Route path="/liga2/*" element={<Liga22223 />} />
-          <Route path="/liga3/22-23" element={<Liga32223 />} />
-          <Route path="/liga3/*" element={<Liga32223 />} />
-          <Route path="/rlno/22-23" element={<RLNO2223 />} />
-          <Route path="/rlno/*" element={<RLNO2223 />} />
-          <Route path="/wliga1/22-23" element={<WLiga12223 />} />
-          <Route path="/wliga1/*" element={<WLiga12223 />} />
-          <Route path="" element={<Home />} />
-          <Route path="*" element={<Home />} />
+          <Route path="/liga1/22-23" element={<Liga12223 title="1. Fußball-Bundesliga der Männer, Saison 2022/23" />} />
+          <Route path="/liga1/*" element={<Liga12223 title="1. Fußball-Bundesliga der Männer, Saison 2022/23" />} />
+          <Route path="/liga2/22-23" element={<Liga22223 title="2. Fußball-Bundesliga der Männer, Saison 2022/23" />} />
+          <Route path="/liga2/*" element={<Liga22223 title="2. Fußball-Bundesliga der Männer, Saison 2022/23" />} />
+          <Route path="/liga3/22-23" element={<Liga32223 title="3. Fußball-Liga der Männer, Saison 2022/23" />} />
+          <Route path="/liga3/*" element={<Liga32223 title="3. Fußball-Liga der Männer, Saison 2022/23" />} />
+          <Route path="/rlno/22-23" element={<RLNO2223 title="Fußball-Regionalliga Nordost der Männer, Saison 2022/23" />} />
+          <Route path="/rlno/*" element={<RLNO2223 title="Fußball-Regionalliga Nordost der Männer, Saison 2022/23" />} />
+          <Route path="/wliga1/22-23" element={<WLiga12223 title="1. Fußball-Bundesliga der Frauen, Saison 2022/23" />} />
+          <Route path="/wliga1/*" element={<WLiga12223 title="1. Fußball-Bundesliga der Frauen, Saison 2022/23" />} />
+          <Route path="" element={<Home title="Übersicht über Fußball-Ligen" />} />
+          <Route path="*" element={<Home title="Übersicht über Fußball-Ligen" />} />
         </Routes>
       </BrowserRouter>
     </div>
