@@ -630,8 +630,7 @@ const matches = {
     },
     {
       teams: ["EBS", "ROS"],
-      goals: [null, null],
-      date: "12.11.22"
+      goals: [0, 1]
     },
     {
       teams: ["BIE", "FCM"],
