@@ -634,18 +634,15 @@ const matches = {
     },
     {
       teams: ["BIE", "FCM"],
-      goals: [null, null],
-      date: "13.11.22"
+      goals: [3, 1]
     },
     {
       teams: ["D98", "SGF"],
-      goals: [null, null],
-      date: "13.11.22"
+      goals: [1, 1]
     },
     {
       teams: ["FCN", "P07"],
-      goals: [null, null],
-      date: "13.11.22"
+      goals: [2, 1]
     }
   ],
   18: [],
