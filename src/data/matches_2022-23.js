@@ -566,8 +566,7 @@ const matches = {
     },
     {
       teams: ["SCF", "FCU"],
-      goals: [null, null],
-      date: "13.11.22"
+      goals: [4, 1]
     }
   ],
   16: [
