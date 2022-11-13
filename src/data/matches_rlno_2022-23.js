@@ -482,18 +482,15 @@ const matches = {
     },
     {
       teams: ["BFC", "ECB"],
-      goals: [null, null],
-      date: "13.11.22"
+      goals: [4, 1]
     },
     {
       teams: ["SVB", "CFC"],
-      goals: [null, null],
-      date: "13.11.22"
+      goals: [0, 2]
     },
     {
       teams: ["TBB", "AGL"],
-      goals: [null, null],
-      date: "13.11.22"
+      goals: [0, 6]
     }
   ],
   14: [],
