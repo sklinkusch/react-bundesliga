@@ -702,13 +702,11 @@ const matches = {
     },
     {
       teams: ["OLD", "WMA"],
-      goals: [null, null],
-      date: "13.11.22"
+      goals: [1, 1]
     },
     {
       teams: ["VKÖ", "BAY"],
-      goals: [null, null],
-      date: "13.11.22"
+      goals: [2, 1]
     },
     {
       teams: ["MÜN", "RWE"],
