@@ -710,8 +710,7 @@ const matches = {
     },
     {
       teams: ["MÜN", "RWE"],
-      goals: [null, null],
-      date: "14.11.22"
+      goals: [1, 1]
     }
   ],
   18: [],
