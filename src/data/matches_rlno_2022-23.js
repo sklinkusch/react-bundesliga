@@ -493,7 +493,50 @@ const matches = {
       goals: [0, 6]
     }
   ],
-  14: [],
+  14: [
+    {
+      teams: ["LUC", "TBB"],
+      goals: [3, 1]
+    },
+    {
+      teams: ["L47", "VBL"],
+      goals: [0, 1]
+    },
+    {
+      teams: ["AGL", "GFC"],
+      goals: [2, 3]
+    },
+    {
+      teams: ["ERF", "SVB"],
+      goals: [null, null],
+      date: "26.11.22"
+    },
+    {
+      teams: ["ECB", "HBS"],
+      goals: [null, null],
+      date: "27.11.22"
+    },
+    {
+      teams: ["ZFC", "BSC2"],
+      goals: [null, null],
+      date: "27.11.22"
+    },
+    {
+      teams: ["CFC", "CZJ"],
+      goals: [null, null],
+      date: "27.11.22"
+    },
+    {
+      teams: ["CHL", "BFC"],
+      goals: [null, null],
+      date: "29.11.22"
+    },
+    {
+      teams: ["BAK", "LKL"],
+      goals: [null, null],
+      date: "30.11.22"
+    }
+  ],
   15: [],
   16: [],
   17: [],
