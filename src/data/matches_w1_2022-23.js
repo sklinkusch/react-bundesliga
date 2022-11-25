@@ -184,10 +184,14 @@ const matches = {
   8: [
     {
       teams: ["POT", "HOF"],
-      goals: [null, null]
+      goals: [1, 3]
     },
     {
       teams: ["SGE", "B04"],
+      goals: [null, null]
+    },
+    {
+      teams: ["SVW", "SCF"],
       goals: [null, null]
     },
     {
@@ -196,10 +200,6 @@ const matches = {
     },
     {
       teams: ["DUI", "SVM"],
-      goals: [null, null]
-    },
-    {
-      teams: ["SVW", "SCF"],
       goals: [null, null]
     },
     {
