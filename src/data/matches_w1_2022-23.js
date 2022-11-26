@@ -192,7 +192,7 @@ const matches = {
     },
     {
       teams: ["SVW", "SCF"],
-      goals: [null, null]
+      goals: [1, 2]
     },
     {
       teams: ["KÖL", "WOB"],
