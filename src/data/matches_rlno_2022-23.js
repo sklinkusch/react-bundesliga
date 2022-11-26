@@ -508,7 +508,7 @@ const matches = {
     },
     {
       teams: ["ERF", "SVB"],
-      goals: [null, null],
+      goals: [6, 2],
       date: "26.11.22"
     },
     {
