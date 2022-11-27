@@ -508,13 +508,11 @@ const matches = {
     },
     {
       teams: ["ERF", "SVB"],
-      goals: [6, 2],
-      date: "26.11.22"
+      goals: [6, 2]
     },
     {
       teams: ["ECB", "HBS"],
-      goals: [null, null],
-      date: "27.11.22"
+      goals: [4, 0]
     },
     {
       teams: ["ZFC", "BSC2"],
