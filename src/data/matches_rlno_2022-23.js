@@ -516,8 +516,7 @@ const matches = {
     },
     {
       teams: ["ZFC", "BSC2"],
-      goals: [null, null],
-      date: "27.11.22"
+      goals: [2, 1]
     },
     {
       teams: ["CFC", "CZJ"],
