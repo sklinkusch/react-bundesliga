@@ -196,11 +196,11 @@ const matches = {
     },
     {
       teams: ["KÖL", "WOB"],
-      goals: [null, null]
+      goals: [0, 4]
     },
     {
       teams: ["DUI", "SVM"],
-      goals: [null, null]
+      goals: [1, 0]
     },
     {
       teams: ["FCB", "ESS"],
