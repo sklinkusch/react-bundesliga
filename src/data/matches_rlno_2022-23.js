@@ -524,8 +524,7 @@ const matches = {
     },
     {
       teams: ["CHL", "BFC"],
-      goals: [null, null],
-      date: "29.11.22"
+      goals: [1, 1]
     },
     {
       teams: ["BAK", "LKL"],
