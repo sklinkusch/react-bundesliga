@@ -209,19 +209,11 @@ const matches = {
   ],
   9: [
     {
-      teams: ["WOB", "SGE"],
-      goals: [null, null]
-    },
-    {
-      teams: ["B04", "POT"],
-      goals: [null, null]
-    },
-    {
       teams: ["HOF", "FCB"],
-      goals: [null, null]
+      goals: [0, 4]
     },
     {
-      teams: ["ESS", "SVW"],
+      teams: ["WOB", "SGE"],
       goals: [null, null]
     },
     {
@@ -229,7 +221,15 @@ const matches = {
       goals: [null, null]
     },
     {
+      teams: ["B04", "POT"],
+      goals: [null, null]
+    },
+    {
       teams: ["SVM", "KÖL"],
+      goals: [null, null]
+    },
+    {
+      teams: ["ESS", "SVW"],
       goals: [null, null]
     }
   ],
