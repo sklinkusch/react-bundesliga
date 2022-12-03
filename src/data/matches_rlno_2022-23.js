@@ -528,8 +528,7 @@ const matches = {
     },
     {
       teams: ["BAK", "LKL"],
-      goals: [null, null],
-      date: "30.11.22"
+      goals: [1, 2]
     }
   ],
   15: [],
