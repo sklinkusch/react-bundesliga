@@ -214,7 +214,7 @@ const matches = {
     },
     {
       teams: ["WOB", "SGE"],
-      goals: [null, null]
+      goals: [5, 0]
     },
     {
       teams: ["SCF", "DUI"],
