@@ -546,11 +546,11 @@ const matches = {
     },
     {
       teams: ["BFC", "AGL"],
-      goals: [null, null]
+      goals: [2, 1]
     },
     {
       teams: ["SVB", "CZJ"],
-      goals: [null, null]
+      goals: [0, 1]
     },
     {
       teams: ["LKL", "CFC"],
