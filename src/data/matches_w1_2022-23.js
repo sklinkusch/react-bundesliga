@@ -218,7 +218,7 @@ const matches = {
     },
     {
       teams: ["SCF", "DUI"],
-      goals: [null, null]
+      goals: [4, 1]
     },
     {
       teams: ["B04", "POT"],
