@@ -562,11 +562,11 @@ const matches = {
     },
     {
       teams: ["GFC", "LUC"],
-      goals: [null, null]
+      goals: [1, 1]
     },
     {
       teams: ["ERF", "ECB"],
-      goals: [null, null]
+      goals: [2, 2]
     }
   ],
   16: [],
