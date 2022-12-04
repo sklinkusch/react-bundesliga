@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-bundesliga/static/css/main.e6c13ad2.css",
-    "main.js": "/react-bundesliga/static/js/main.a5993003.js",
+    "main.js": "/react-bundesliga/static/js/main.515eb2ac.js",
     "static/js/496.86160386.chunk.js": "/react-bundesliga/static/js/496.86160386.chunk.js",
     "static/media/LKL.png": "/react-bundesliga/static/media/LKL.dba175225e2b106fab63.png",
     "static/media/BAK.png": "/react-bundesliga/static/media/BAK.2af5be238c36eb4a2595.png",
@@ -78,11 +78,11 @@
     "index.html": "/react-bundesliga/index.html",
     "static/media/HSV.svg": "/react-bundesliga/static/media/HSV.c804956066283185bcf92cc69b080e73.svg",
     "main.e6c13ad2.css.map": "/react-bundesliga/static/css/main.e6c13ad2.css.map",
-    "main.a5993003.js.map": "/react-bundesliga/static/js/main.a5993003.js.map",
+    "main.515eb2ac.js.map": "/react-bundesliga/static/js/main.515eb2ac.js.map",
     "496.86160386.chunk.js.map": "/react-bundesliga/static/js/496.86160386.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.a5993003.js"
+    "static/js/main.515eb2ac.js"
   ]
 }
