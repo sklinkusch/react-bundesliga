@@ -236,7 +236,7 @@ const matches = {
   10: [
     {
       teams: ["SGE", "POT"],
-      goals: [null, null]
+      goals: [3, 0]
     },
     {
       teams: ["WOB", "SVM"],
