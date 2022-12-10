@@ -239,6 +239,10 @@ const matches = {
       goals: [3, 0]
     },
     {
+      teams: ["FCB", "B04"],
+      goals: [2, 0]
+    },
+    {
       teams: ["WOB", "SVM"],
       goals: [null, null]
     },
@@ -254,10 +258,6 @@ const matches = {
       teams: ["SVW", "HOF"],
       goals: [null, null]
     },
-    {
-      teams: ["FCB", "B04"],
-      goals: [null, null]
-    }
   ],
   11: [
     {
