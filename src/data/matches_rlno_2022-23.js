@@ -599,13 +599,13 @@ const matches = {
       goals: [null, null]
     },
     {
-      teams: ["LUC", "BFC"],
+      teams: ["CHL", "ERF"],
       goals: [null, null]
     },
     {
-      teams: ["CHL", "ERF"],
-      goals: [null, null]
-    }
+      teams: ["LUC", "BFC"],
+      goals: [3, 2]
+    },
   ],
   17: [],
   18: [],
