@@ -244,11 +244,11 @@ const matches = {
     },
     {
       teams: ["WOB", "SVM"],
-      goals: [null, null]
+      goals: [3, 0]
     },
     {
       teams: ["KÖL", "SCF"],
-      goals: [null, null]
+      goals: [0, 0]
     },
     {
       teams: ["DUI", "ESS"],
