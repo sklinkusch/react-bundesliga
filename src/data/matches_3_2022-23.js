@@ -762,23 +762,23 @@ const matches = {
     },
     {
       teams: ["AUE", "BAY"],
-      goals: [null, null]
+      goals: [4, 0]
     },
     {
       teams: ["MÜN", "ZWI"],
-      goals: [null, null]
+      goals: [3, 1]
     },
     {
       teams: ["SVE", "FCI"],
-      goals: [null, null]
+      goals: [4, 3]
     },
     {
       teams: ["SVM", "SCF2"],
-      goals: [null, null]
+      goals: [1, 2]
     },
     {
       teams: ["SCV", "RWE"],
-      goals: [null, null]
+      goals: [1, 1]
     },
     {
       teams: ["OLD", "DRE"],
