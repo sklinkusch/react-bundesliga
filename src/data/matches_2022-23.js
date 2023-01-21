@@ -572,7 +572,7 @@ const matches = {
   16: [
     {
       teams: ["RBL", "FCB"],
-      goals: [null, null],
+      goals: [1, 1],
       date: "20.01.23"
     },
     {
