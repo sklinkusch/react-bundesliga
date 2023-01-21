@@ -607,7 +607,44 @@ const matches = {
       goals: [3, 2]
     },
   ],
-  17: [],
+  17: [
+    {
+      teams: ["ERF", "AGL"],
+      goals: [null, null]
+    },
+    {
+      teams: ["BFC", "L47"],
+      goals: [3, 2]
+    },
+    {
+      teams: ["TBB", "BAK"],
+      goals: [0, 0]
+    },
+    {
+      teams: ["ECB", "CHL"],
+      goals: [null, null]
+    },
+    {
+      teams: ["GFC", "ZFC"],
+      goals: [null, null]
+    },
+    {
+      teams: ["VBL", "CFC"],
+      goals: [null, null]
+    },
+    {
+      teams: ["LKL", "SVB"],
+      goals: [null, null]
+    },
+    {
+      teams: ["HBS", "LUC"],
+      goals: [null, null]
+    },
+    {
+      teams: ["BSC2", "CZJ"],
+      goals: [null, null]
+    }
+  ],
   18: [],
   19: [],
   20: [],
