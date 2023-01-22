@@ -642,7 +642,7 @@ const matches = {
     },
     {
       teams: ["BSC2", "CZJ"],
-      goals: [null, null]
+      goals: [1, 0]
     }
   ],
   18: [],
