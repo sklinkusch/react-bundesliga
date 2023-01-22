@@ -782,11 +782,11 @@ const matches = {
     },
     {
       teams: ["OLD", "DRE"],
-      goals: [null, null]
+      goals: [1, 3]
     },
     {
       teams: ["HFC", "WIE"],
-      goals: [null, null]
+      goals: [2, 3]
     },
     {
       teams: ["DUI", "WMA"],
