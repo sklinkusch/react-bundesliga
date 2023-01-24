@@ -794,7 +794,7 @@ const matches = {
     },
     {
       teams: ["BVB2", "OSN"],
-      goals: [null, null]
+      goals: [1, 2]
     }
   ],
   20: [],
