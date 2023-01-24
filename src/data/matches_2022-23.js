@@ -624,17 +624,17 @@ const matches = {
     },
     {
       teams: ["FCB", "KÖL"],
-      goals: [null, null],
+      goals: [1, 1],
       date: "24.01.23"
     },
     {
       teams: ["HOF", "VfB"],
-      goals: [null, null],
+      goals: [2, 2],
       date: "24.01.23"
     },
     {
       teams: ["BSC", "WOB"],
-      goals: [null, null],
+      goals: [0, 5],
       date: "24.01.23"
     },
     {
