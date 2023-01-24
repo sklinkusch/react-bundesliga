@@ -790,7 +790,7 @@ const matches = {
     },
     {
       teams: ["DUI", "WMA"],
-      goals: [null, null]
+      goals: [1, 3]
     },
     {
       teams: ["BVB2", "OSN"],
