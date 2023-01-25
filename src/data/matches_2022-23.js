@@ -644,22 +644,22 @@ const matches = {
     },
     {
       teams: ["B04", "BOC"],
-      goals: [null, null],
+      goals: [2, 0],
       date: "25.01.23"
     },
     {
       teams: ["SCF", "SGE"],
-      goals: [null, null],
+      goals: [1, 1],
       date: "25.01.23"
     },
     {
       teams: ["FCA", "MGL"],
-      goals: [null, null],
+      goals: [1, 0],
       date: "25.01.23"
     },
     {
       teams: ["SVW", "FCU"],
-      goals: [null, null],
+      goals: [1, 2],
       date: "25.01.23"
     }
   ],
