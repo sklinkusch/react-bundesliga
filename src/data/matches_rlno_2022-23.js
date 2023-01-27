@@ -572,7 +572,7 @@ const matches = {
   16: [
     {
       teams: ["AGL", "HBS"],
-      goals: [null, null]
+      goals: [1, 1]
     },
     {
       teams: ["CFC", "BSC2"],
@@ -580,7 +580,7 @@ const matches = {
     },
     {
       teams: ["L47", "GFC"],
-      goals: [null, null]
+      goals: [1, 1]
     },
     {
       teams: ["SVB", "ECB"],
@@ -596,11 +596,11 @@ const matches = {
     },
     {
       teams: ["BAK", "VBL"],
-      goals: [null, null]
+      goals: [2, 1]
     },
     {
       teams: ["CHL", "ERF"],
-      goals: [null, null]
+      goals: [1, 1]
     },
     {
       teams: ["LUC", "BFC"],
