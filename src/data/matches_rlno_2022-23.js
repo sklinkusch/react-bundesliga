@@ -652,11 +652,11 @@ const matches = {
     },
     {
       teams: ["BFC", "ZFC"],
-      goals: [null, null]
+      goals: [2, 1]
     },
     {
       teams: ["BSC2", "LKL"],
-      goals: [null, null]
+      goals: [1, 2]
     },
     {
       teams: ["ERF", "LUC"],
