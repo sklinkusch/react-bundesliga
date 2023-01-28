@@ -656,15 +656,15 @@ const matches = {
     },
     {
       teams: ["KIE", "SGF"],
-      goals: [null, null]
+      goals: [2, 1]
     },
     {
       teams: ["FCH", "ROS"],
-      goals: [null, null]
+      goals: [2, 0]
     },
     {
       teams: ["D98", "JRE"],
-      goals: [null, null]
+      goals: [2, 0]
     },
     {
       teams: ["H96", "FCK"],
