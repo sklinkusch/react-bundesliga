@@ -664,11 +664,11 @@ const matches = {
     },
     {
       teams: ["ECB", "AGL"],
-      goals: [null, null]
+      goals: [0, 2]
     },
     {
       teams: ["HBS", "L47"],
-      goals: [null, null]
+      goals: [1, 1]
     },
     {
       teams: ["GFC", "BAK"],
