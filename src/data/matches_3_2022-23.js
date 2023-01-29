@@ -828,11 +828,11 @@ const matches = {
     },
     {
       teams: ["VKÖ", "WMA"],
-      goals: [null, null]
+      goals: [1, 4]
     },
     {
       teams: ["BVB2", "WIE"],
-      goals: [null, null]
+      goals: [0, 1]
     },
     {
       teams: ["MÜN", "DRE"],
