@@ -683,7 +683,53 @@ const matches = {
       goals: [1, 1]
     }
   ],
-  19: [],
+  19: [
+    {
+      teams: ["LKL", "VBL"],
+      goals: [1, 2],
+      date: "03.02.23"
+    },
+    {
+      teams: ["CZJ", "TBB"],
+      goals: [3, 0],
+      date: "03.02.23"
+    },
+    {
+      teams: ["AGL", "CHL"],
+      goals: [4, 0],
+      date: "03.02.23"
+    },
+    {
+      teams: ["", ""],
+      goals: [null, null],
+      date: ""
+    },
+    {
+      teams: ["", ""],
+      goals: [null, null],
+      date: ""
+    },
+    {
+      teams: ["", ""],
+      goals: [null, null],
+      date: ""
+    },
+    {
+      teams: ["", ""],
+      goals: [null, null],
+      date: ""
+    },
+    {
+      teams: ["", ""],
+      goals: [null, null],
+      date: ""
+    },
+    {
+      teams: ["", ""],
+      goals: [null, null],
+      date: ""
+    }
+  ],
   20: [],
   21: [],
   22: [],
