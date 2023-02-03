@@ -683,7 +683,53 @@ const matches = {
       goals: [4, 2]
     }
   ],
-  19: [],
+  19: [
+    {
+      teams: ["SVS", "D98"],
+      goals: [0, 4],
+      date: "03.02.23"
+    },
+    {
+      teams: ["P07", "DÜS"],
+      goals: [4, 1],
+      date: "03.02.23"
+    },
+    {
+      teams: ["JRE", "BIE"],
+      goals: [null, null],
+      date: "04.02.23"
+    },
+    {
+      teams: ["EBS", "FCH"],
+      goals: [null, null],
+      date: "04.02.23"
+    },
+    {
+      teams: ["FCK", "KIE"],
+      goals: [null, null],
+      date: "04.02.23"
+    },
+    {
+      teams: ["SGF", "FCN"],
+      goals: [null, null],
+      date: "04.02.23"
+    },
+    {
+      teams: ["ROS", "HSV"],
+      goals: [null, null],
+      date: "05.02.23"
+    },
+    {
+      teams: ["STP", "H96"],
+      goals: [null, null],
+      date: "05.02.23"
+    },
+    {
+      teams: ["FCM", "KSC"],
+      goals: [null, null],
+      date: "05.02.23"
+    }
+  ],
   20: [],
   21: [],
   22: [],
