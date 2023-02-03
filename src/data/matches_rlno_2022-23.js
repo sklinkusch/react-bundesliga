@@ -542,7 +542,8 @@ const matches = {
     },
     {
       teams: ["BSC2", "BAK"],
-      goals: [null, null]
+      goals: [null, null],
+      date: "08.02.23"
     },
     {
       teams: ["BFC", "AGL"],
@@ -554,11 +555,13 @@ const matches = {
     },
     {
       teams: ["LKL", "CFC"],
-      goals: [null, null]
+      goals: [2, 2],
+      date: "31.01.23"
     },
     {
       teams: ["HBS", "CHL"],
-      goals: [null, null]
+      goals: [null, null],
+      date: "15.02.023"
     },
     {
       teams: ["GFC", "LUC"],
