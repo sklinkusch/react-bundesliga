@@ -836,7 +836,7 @@ const matches = {
     },
     {
       teams: ["MÜN", "DRE"],
-      goals: [null, null]
+      goals: [1, 2]
     },
   ],
   21: [],
