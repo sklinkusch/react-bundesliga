@@ -847,32 +847,32 @@ const matches = {
     },
     {
       teams: ["OSN", "AUE"],
-      goals: [null, null],
+      goals: [3, 1],
       date: "04.02.23"
     },
     {
       teams: ["FCS", "SVE"],
-      goals: [null, null],
+      goals: [0, 4],
       date: "04.02.23"
     },
     {
       teams: ["FCI", "BVB2"],
-      goals: [null, null],
+      goals: [1, 2],
       date: "04.02.23"
     },
     {
       teams: ["WIE", "VKÖ"],
-      goals: [null, null],
+      goals: [1, 1],
       date: "04.02.23"
     },
     {
       teams: ["ZWI", "SVM"],
-      goals: [null, null],
+      goals: [1, 1],
       date: "04.02.23"
     },
     {
       teams: ["DRE", "HFC"],
-      goals: [null, null],
+      goals: [7, 1],
       date: "04.02.23"
     },
     {
