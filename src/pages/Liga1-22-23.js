@@ -11,7 +11,7 @@ function Liga1_22_23 ({title}) {
     document.title = title
   },[title])
   useEffect(() => {
-    fetch('https://buli-api.vercel.app/ligamen?season=2022-23')
+    fetch('https://buli-api.vercel.app/liga1men?season=2022-23')
     .then(response => response.json())
     .then(data => {
       if (typeof data === 'object' && Object.keys(data).length > 0) {
