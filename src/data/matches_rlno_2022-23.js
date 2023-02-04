@@ -703,34 +703,34 @@ const matches = {
       date: "03.02.23"
     },
     {
-      teams: ["", ""],
-      goals: [null, null],
-      date: ""
+      teams: ["BAK", "BFC"],
+      goals: [0, 2],
+      date: "04.02.23"
     },
     {
-      teams: ["", ""],
-      goals: [null, null],
-      date: ""
+      teams: ["SVB", "BSC2"],
+      goals: [1, 0],
+      date: "04.02.23"
     },
     {
-      teams: ["", ""],
+      teams: ["CFC", "GFC"],
       goals: [null, null],
-      date: ""
+      date: "05.02.23"
     },
     {
-      teams: ["", ""],
+      teams: ["LUC", "ECB"],
       goals: [null, null],
-      date: ""
+      date: "05.02.23"
     },
     {
-      teams: ["", ""],
+      teams: ["L47", "ERF"],
       goals: [null, null],
-      date: ""
+      date: "05.02.23"
     },
     {
-      teams: ["", ""],
+      teams: ["ZFC", "HBS"],
       goals: [null, null],
-      date: ""
+      date: "05.02.23"
     }
   ],
   20: [],
