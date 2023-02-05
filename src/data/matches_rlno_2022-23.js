@@ -714,17 +714,17 @@ const matches = {
     },
     {
       teams: ["CFC", "GFC"],
-      goals: [null, null],
+      goals: [2, 0],
       date: "05.02.23"
     },
     {
       teams: ["LUC", "ECB"],
-      goals: [null, null],
+      goals: [1, 0],
       date: "05.02.23"
     },
     {
       teams: ["L47", "ERF"],
-      goals: [null, null],
+      goals: [3, 4],
       date: "05.02.23"
     },
     {
