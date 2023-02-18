@@ -96,11 +96,13 @@ const Logo = ({code}) => {
     case "BOC":
       return <img src={BOC} alt={getTeamName("BOC")} title={getTeamName("BOC")} sx={styles} />
     case "BSC":
-    case "BSC2":
       return <img src={BSC} alt={getTeamName("BSC")} title={getTeamName("BSC")} sx={styles} />
+    case "BSC2":
+      return <img src={BSC} alt={getTeamName("BSC2")} title={getTeamName("BSC2")} sx={styles} />
     case "BVB":
-    case "BVB2":
       return <img src={BVB} alt={getTeamName("BVB")} title={getTeamName("BVB")} sx={styles} />
+    case "BVB2":
+      return <img src={BVB} alt={getTeamName("BVB2")} title={getTeamName("BVB2")} sx={styles} />
     case "CFC":
       return <img src={CFC} alt={getTeamName("CFC")} title={getTeamName("CFC")} sx={styles} />
     case "CHL":
@@ -190,8 +192,9 @@ const Logo = ({code}) => {
     case "S04":
       return <img src={S04} alt={getTeamName("S04")} title={getTeamName("S04")} sx={styles} />
     case "SCF":
-    case "SCF2":
       return <img src={SCF} alt={getTeamName("SCF")} title={getTeamName("SCF")} sx={styles} />
+    case "SCF2":
+      return <img src={SCF} alt={getTeamName("SCF2")} title={getTeamName("SCF2")} sx={styles} />
     case "SCV":
       return <img src={SCV} alt={getTeamName("SCV")} title={getTeamName("SCV")} sx={styles} />
     case "SGE":
