@@ -27,10 +27,28 @@ const Row = ({club, index, sep, isThird}) => {
 )}
 
 const Table = ({ table, separators, isThird = false }) => {
+  let newSeparators = []
+  if (isThird) {
+    const secondTeamIndexes = table.map((club, index) => {
+      if (club.team.endsWith("2")) return index
+      return null
+    }).filter(item => typeof item === 'number')
+    const numberIndexesFirst = secondTeamIndexes.reduce((acc, curr) => {
+      const arr = [ ...acc ]
+      if (curr <= separators[0]) arr[0]++
+      if (curr <= separators[1]) arr[1]++
+      if (curr <= separators[2]) arr[2]++
+      return arr
+    }, [0, 0, 0])
+    const [ sep1, sep2, sep3, ...otherSeps ] = separators
+    newSeparators = [ sep1 + numberIndexesFirst[0], sep2 + numberIndexesFirst[1], sep3 + numberIndexesFirst[2], ...otherSeps ]
+  } else {
+    newSeparators = separators.slice()
+  }
   return (
     <div sx={{ width: "100%", height: "100vh", display: "flex", flexDirection: "column", justifyContent: "center" }}>
       {table.map((club, index) => {
-        if (separators.includes(index)) return <Row club={club} key={club.team} index={index} sep={true} isThird={isThird} />
+        if (newSeparators.includes(index)) return <Row club={club} key={club.team} index={index} sep={true} isThird={isThird} />
         return <Row club={club} key={club.team} index={index} isThird={isThird} />
       })
       }
