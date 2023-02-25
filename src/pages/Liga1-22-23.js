@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 
 function Liga1_22_23 ({title}) {
   const [matches, setMatches] = useState({})
+  const [table, setTable] = useState([])
   useEffect(() => {
     document.title = title
   },[title])
@@ -15,7 +16,9 @@ function Liga1_22_23 ({title}) {
     .then(response => response.json())
     .then(data => {
       if (typeof data === 'object' && Object.keys(data).length > 0) {
-        setMatches(data)
+        const { matches: apiMatches = {}, table: apiTable = [] } = data
+        setMatches(apiMatches)
+        setTable(apiTable)
       }
     })
   },[])
@@ -25,8 +28,8 @@ function Liga1_22_23 ({title}) {
       <div sx={{ display: "grid", gridTemplateColumns: "250px 1fr", columnGap: "20px", height: "calc(100vh - 50px)" }}>
         {typeof matches === 'object' && Object.keys(matches).length > 0 && (
           <>
-            <Matches matches={matches} />
-            <Table matches={matches} separators={separators} />
+            {Object.keys(matches).length > 0 && (<Matches matches={matches} />)}
+            {table.length > 0 && <Table table={table} separators={separators} />}
           </>
         )}
       </div>

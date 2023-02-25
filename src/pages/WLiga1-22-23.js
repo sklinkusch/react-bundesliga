@@ -1,7 +1,7 @@
 /** @jsxImportSource theme-ui */
 import React, { useEffect, useState } from 'react'
 import Matches from '../components/Matches'
-import { TableNew } from '../components/Table'
+import Table from '../components/Table'
 import { Link } from 'react-router-dom'
 /* eslint-disable react-hooks/exhaustive-deps */
 
@@ -29,7 +29,7 @@ function WLiga1_22_23 ({ title }) {
         { typeof matches === 'object' && Object.keys(matches).length > 0 && (
           <>
             {Object.keys(matches).length > 0 && <Matches matches={matches} />}
-            {table.length > 0 && <TableNew table={table} separators={separators} />}
+            {table.length > 0 && <Table table={table} separators={separators} />}
           </>
         )}
       </div>
