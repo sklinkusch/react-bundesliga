@@ -29,7 +29,7 @@ function Liga3_22_23 ({ title }) {
         {typeof matches === 'object' && Object.keys(matches).length > 0 && (
           <>
             {Object.keys(matches).length > 0 && (<Matches matches={matches} />)}
-            {table.length > 0 && <Table table={table} separators={separators} />}
+            {table.length > 0 && <Table table={table} separators={separators} isThird={true} />}
           </>
         )}
       </div>
