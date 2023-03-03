@@ -22,7 +22,7 @@ function RLNO_22_23 ({ title }) {
       }
     })
   },[])
-  const separators = [0, 13]
+  const separators = [0, 13, 16]
   return (
     <header className='App-header'>
       <div sx={{ display: "grid", gridTemplateColumns: "250px 1fr", columnGap: "20px", height: "calc(100vh - 50px)" }}>
