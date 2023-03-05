@@ -2,12 +2,13 @@
 import React, { useEffect, useState } from 'react'
 import Matches from '../components/Matches'
 import Table from '../components/Table'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 /* eslint-disable react-hooks/exhaustive-deps */
 
 function Liga2_22_23 ({ title }) {
   const [matches, setMatches] = useState({})
   const [table, setTable] = useState([])
+  const [queryParams] = useSearchParams()
   useEffect(() => {
     document.title = title
   },[title])
@@ -28,7 +29,7 @@ function Liga2_22_23 ({ title }) {
       <div sx={{ display: "grid", gridTemplateColumns: "250px 1fr", columnGap: "20px", height: "calc(100vh - 50px)" }}>
         {typeof matches === 'object' && Object.keys(matches).length > 0 && (
           <>
-            {Object.keys(matches).length > 0 && (<Matches matches={matches} />)}
+            {Object.keys(matches).length > 0 && (<Matches matches={matches} selDay={queryParams.get("day")} />)}
             {table.length > 0 && <Table table={table} separators={separators} />}
           </>
         )}
