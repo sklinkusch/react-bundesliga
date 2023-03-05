@@ -2,8 +2,8 @@
 import React, { useState } from 'react'
 import Logo from './Logo'
 
-const Matches = ({ matches }) => {
-  const [selectedDay, setSelectedDay] = useState(1)
+const Matches = ({ matches, selDay }) => {
+  const [selectedDay, setSelectedDay] = useState(selDay || 1)
   const onSelectDay = (event) => {
     const value = event.target.value
     setSelectedDay(value)
@@ -12,7 +12,7 @@ const Matches = ({ matches }) => {
   return (
     <div sx={{maxHeight: "100vh", overflowY: "auto"}}>
       <select onChange={onSelectDay}>
-        {Object.keys(matches).map(key => (<option key={key} value={key}>{`${key}. Spieltag`}</option>))}
+        {Object.keys(matches).map(key => (<option key={key} selected={key === selectedDay} value={key}>{`${key}. Spieltag`}</option>))}
       </select>
       <div>
         <h5 sx={{ margin: 0 }}>{selectedDay}. Spieltag</h5>
