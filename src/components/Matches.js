@@ -17,7 +17,7 @@ const Matches = ({ matches, selDay }) => {
       <div>
         <h5 sx={{ margin: 0 }}>{selectedDay}. Spieltag</h5>
         {matches[selectedDay].map((match, index) => {
-          const { teams = [], goals = [], live = false, date = null } = match 
+          const { teams = [], goals = [], live = false, date = null, remark = null } = match 
           const [home = null, away = null] = teams 
           const [homeGoals = null, awayGoals = null] = goals
           if (typeof homeGoals === 'number' && typeof awayGoals === 'number' ) {
@@ -25,6 +25,15 @@ const Matches = ({ matches, selDay }) => {
               <div sx={{ display: "flex", flexDirection: "row" }} key={`${home}-${away}-${index}`}>
                 {home ? <div sx={teamColumn}><Logo code={home} /></div> : <div sx={teamColumn}>&nbsp;</div>}
                 <span sx={{ flexBasis: "100px", flexGrow: 0, flexShrink: 0, textAlign: "center", color: live ? "blue" : "black", fontWeight: live ? "bold" : "normal" }}>{`${homeGoals}:${awayGoals}`}</span>
+                {away ? <div sx={{ flexBasis: "50px", flexGrow: 0, flexShrink: 0 }}><Logo code={away} /></div> : <div sx={teamColumn}>&nbsp;</div>}
+              </div>
+            )
+          }
+          if (homeGoals == null && awayGoals == null && typeof remark === "string") {
+            return (
+              <div sx={{ display: "flex", flexDirection: "row" }} key={`${home}-${away}-${index}`}>
+                {home ? <div sx={teamColumn}><Logo code={home} /></div> : <div sx={teamColumn}>&nbsp;</div>}
+                <span sx={{ flexBasis: "100px", flexGrow: 0, flexShrink: 0}}>{remark}</span>
                 {away ? <div sx={{ flexBasis: "50px", flexGrow: 0, flexShrink: 0 }}><Logo code={away} /></div> : <div sx={teamColumn}>&nbsp;</div>}
               </div>
             )
