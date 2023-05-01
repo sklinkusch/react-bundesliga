@@ -2,13 +2,14 @@
 import React, { useState, useEffect } from 'react'
 import Matches from '../components/Matches'
 import Table from '../components/Table'
-import { Link, useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams, useNavigate } from 'react-router-dom'
 /* eslint-disable react-hooks/exhaustive-deps */
 
 function Liga1_22_23 ({title}) {
   const [matches, setMatches] = useState({})
   const [table, setTable] = useState([])
   const [queryParams] = useSearchParams()
+  const navigate = useNavigate()
   useEffect(() => {
     document.title = title
   },[title])
@@ -20,6 +21,32 @@ function Liga1_22_23 ({title}) {
         const { matches: apiMatches = {}, table: apiTable = [] } = data
         setMatches(apiMatches)
         setTable(apiTable)
+        if (apiMatches && !queryParams.get("day")) {
+          const sumObject = Object.keys(apiMatches).reduce((acc, currDay) => {
+            const obj = { ...acc }
+            const origValue = apiMatches[currDay]
+            const sumValue = origValue.reduce((sum, currMatch) => {
+              const sumGoals = typeof currMatch.goals[0] === 'number' && typeof currMatch.goals[1] === 'number' 
+                ? currMatch.goals[0] + currMatch.goals[1]
+                : null
+              if (sum && sumGoals) {
+                return sum + sumGoals
+              } else if (sum) {
+                return sum
+              } else if (sumGoals) {
+                return sumGoals
+              }
+              return null
+            }, null)
+            obj[currDay] = sumValue
+            return obj
+          }, {})
+          const keysWithNumberVals = Object.keys(sumObject).filter(key => (typeof sumObject[key] === 'number'))
+          const sortedKeys = keysWithNumberVals.sort((a, b) => Number(b) - Number(a))
+          if (sortedKeys.length > 0) {
+            navigate(`/liga1/22-23?day=${Number(sortedKeys[0])}`)
+          }
+        }
       }
     })
   },[])
