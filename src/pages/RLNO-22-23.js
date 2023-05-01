@@ -44,7 +44,7 @@ function RLNO_22_23 ({ title }) {
           const keysWithNumberVals = Object.keys(sumObject).filter(key => (typeof sumObject[key] === 'number'))
           const sortedKeys = keysWithNumberVals.sort((a, b) => Number(b) - Number(a))
           if (sortedKeys.length > 0) {
-            navigate(`/liga1/22-23?day=${Number(sortedKeys[0])}`)
+            navigate(`/rlno/22-23?day=${Number(sortedKeys[0])}`)
           }
         }
       }
