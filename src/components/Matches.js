@@ -1,12 +1,15 @@
 /** @jsxImportSource theme-ui */
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Logo from './Logo'
 
-const Matches = ({ matches, selDay }) => {
+const Matches = ({ matches, selDay, source }) => {
   const [selectedDay, setSelectedDay] = useState(selDay || 1)
+  const navigate = useNavigate()
   const onSelectDay = (event) => {
     const value = event.target.value
     setSelectedDay(value)
+    navigate(`${source}?day=${value}`)
   }
   const teamColumn = { flexBasis: "50px", flexGrow: 0, flexShrink: 0 }
   return (
