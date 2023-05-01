@@ -56,7 +56,7 @@ function Liga2_22_23 ({ title }) {
       <div sx={{ display: "grid", gridTemplateColumns: "250px 1fr", columnGap: "20px", height: "calc(100vh - 50px)" }}>
         {typeof matches === 'object' && Object.keys(matches).length > 0 && (
           <>
-            {Object.keys(matches).length > 0 && (<Matches matches={matches} selDay={queryParams.get("day")} />)}
+            {Object.keys(matches).length > 0 && (<Matches matches={matches} selDay={queryParams.get("day")} source="/liga2/22-23" />)}
             {table.length > 0 && <Table table={table} separators={separators} />}
           </>
         )}
