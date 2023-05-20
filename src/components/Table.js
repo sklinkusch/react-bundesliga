@@ -3,13 +3,14 @@ import React from 'react'
 import { getTeamName } from '../data/helpers'
 import Logo from './Logo'
 
-const Row = ({club, index, sep, isThird}) => {
+const Row = ({club, index, sep, color, isThird}) => {
+  const bgc = color || "none"
   const getSign = (value) => {
     return value > 0 ? '+' : value < 0 ? '–' : '±'
   }
   return (
     <div sx={{ width: "100%", maxHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-      <div sx={{ display: "flex", flexDirection: "row", width: "550px", color: club.live ? "blue" : "black", fontWeight: club.live ? "bold" : "normal", borderBottom: sep ? "2px dashed black" : "none", px: "3px", backgroundColor: isThird && club.team.endsWith("2") ? "#aaaaaa" : "none" }}>
+      <div sx={{ display: "flex", flexDirection: "row", width: "550px", color: club.live ? "blue" : "black", fontWeight: club.live ? "bold" : "normal", borderBottom: sep ? "2px dashed black" : "none", px: "3px", backgroundColor: isThird && club.team.endsWith("2") ? "#aaaaaa" : bgc }}>
         <div sx={{ width: "26px", textAlign: "center"}}>{club.rank}</div>
         <div sx={{ width: "65px", textAlign: "center"}}><Logo code={club.team} /></div>
         <div sx={{ width: "275px", textAlign: "left"}}>{getTeamName(club.team)}</div>
@@ -26,7 +27,7 @@ const Row = ({club, index, sep, isThird}) => {
     </div>
 )}
 
-const Table = ({ table, separators, isThird = false }) => {
+const Table = ({ table, separators, colors, isThird = false }) => {
   let newSeparators = []
   if (isThird) {
     const secondTeamIndexes = table.map((club, index) => {
@@ -49,7 +50,7 @@ const Table = ({ table, separators, isThird = false }) => {
     <div sx={{ width: "100%", height: "100vh", display: "flex", flexDirection: "column", justifyContent: "center" }}>
       {table.map((club, index) => {
         if (newSeparators.includes(index)) return <Row club={club} key={club.team} index={index} sep={true} isThird={isThird} />
-        return <Row club={club} key={club.team} index={index} isThird={isThird} />
+        return <Row club={club} key={club.team} index={index} isThird={isThird} color={colors[index] || "none"} />
       })
       }
   </div>
