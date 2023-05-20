@@ -9,6 +9,8 @@ function RLNO_22_23 ({ title }) {
   const [matches, setMatches] = useState({})
   const [table, setTable] = useState([])
   const [queryParams] = useSearchParams()
+  const [possible, setPossible] = useState([])
+  const [colors, setColors] = useState([])
   const navigate = useNavigate()
   useEffect(() => {
     document.title = title
@@ -50,14 +52,79 @@ function RLNO_22_23 ({ title }) {
       }
     })
   },[])
-  const separators = [0, 13, 16]
+  const separators = [0, 13, 15]
+  useEffect(() => {
+    const getPossiblePlaces = (sourceTable) => {
+    const totalTeams = sourceTable.length
+    const totalMatches = 2 * (totalTeams - 1)
+    const maxPossiblePoints = sourceTable.map(team => {
+      const playedMatches = team.matches
+      const matchesToPlay = totalMatches - playedMatches
+      const minimalPoints = team.points
+      const maximalPoints = minimalPoints + (3 * matchesToPlay)
+      return maximalPoints
+    })
+    const bestRank = sourceTable.map((team, idx, arr) => {
+      const newTable = arr.map(tm => {
+        if (tm.team === team.team) {
+          return { ...tm, points: maxPossiblePoints[idx]}
+        }
+        return tm
+      })
+      const newSortedTable = newTable.sort((a, b) => {
+        if (a.points > b.points) return -1
+        if (b.points > a.points) return +1
+        if (a.team === team.team) return -1
+        if (b.team === team.team) return +1
+        return 0
+      })
+      const teamRank = newSortedTable.findIndex(tm => tm.team === team.team)
+      return teamRank
+    })
+    const worstRank = sourceTable.map((team, idx, arr) => {
+      const newTable = arr.map((tm, ind) => {
+        if (tm.team === team.team) return tm
+        return { ...tm, points: maxPossiblePoints[ind]}
+      })
+      const newSortedTable = newTable.sort((a, b) => {
+        if (a.points > b.points) return -1
+        if (b.points > a.points) return +1
+        if (a.team === team.team) return +1
+        if (b.team === team.team) return -1
+        return 0
+      })
+      const teamRank = newSortedTable.findIndex(tm => tm.team === team.team)
+      return teamRank
+    })
+    const returnValue = bestRank.map((best, index) => {
+      return { best: best, worst: worstRank[index] }
+    })
+    setPossible(returnValue)
+  }
+    getPossiblePlaces(table)
+  }, [table])
+  useEffect(() => {
+      function getColors() {
+        const myColors = Array.isArray(possible) && possible.length > 0 ? possible.map(team => {
+          // Relegation zum Aufstieg
+          if (team.worst === 0) return "#FFFF00"
+          // Abstieg
+          if (team.best >= 16) return "#CB8D78"
+          // möglicher Abstieg
+          if (team.best >= 14) return "#D79FA6"
+          return "none"
+        }) : []
+        setColors(myColors)
+      }
+      getColors()
+  },[possible])
   return (
     <header className='App-header'>
       <div sx={{ display: "grid", gridTemplateColumns: "250px 1fr", columnGap: "20px", height: "calc(100vh - 50px)" }}>
         {typeof matches && Object.keys(matches).length > 0 && (
           <>
            {Object.keys(matches).length > 0 && (<Matches matches={matches} selDay={queryParams.get("day")} source="/rlno/22-23" />)}
-            {table.length > 0 && <Table table={table} separators={separators} />}
+            {table.length > 0 && <Table table={table} colors={colors} separators={separators} />}
           </>
         )}
       </div>
