@@ -49,7 +49,7 @@ const Table = ({ table, separators, colors, isThird = false }) => {
   return (
     <div sx={{ width: "100%", height: "100vh", display: "flex", flexDirection: "column", justifyContent: "center" }}>
       {table.map((club, index) => {
-        if (newSeparators.includes(index)) return <Row club={club} key={club.team} index={index} sep={true} isThird={isThird} />
+        if (newSeparators.includes(index)) return <Row club={club} key={club.team} index={index} color={colors[index] || "none"} sep={true} isThird={isThird} />
         return <Row club={club} key={club.team} index={index} isThird={isThird} color={colors[index] || "none"} />
       })
       }
