@@ -14,8 +14,8 @@ const Matches = ({ matches, selDay, source }) => {
   const teamColumn = { flexBasis: "50px", flexGrow: 0, flexShrink: 0 }
   return (
     <div sx={{maxHeight: "100vh", overflowY: "auto"}}>
-      <select onChange={onSelectDay}>
-        {Object.keys(matches).map(key => (<option key={key} selected={key === selectedDay} value={key}>{`${key}. Spieltag`}</option>))}
+      <select onChange={onSelectDay} defaultValue={selectedDay}>
+        {Object.keys(matches).map(key => (<option key={key} value={key}>{`${key}. Spieltag`}</option>))}
       </select>
       <div>
         <h5 sx={{ margin: 0 }}>{selectedDay}. Spieltag</h5>
