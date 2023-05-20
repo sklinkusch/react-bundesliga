@@ -9,7 +9,7 @@ function Liga1_22_23 ({title}) {
   const [matches, setMatches] = useState({})
   const [table, setTable] = useState([])
   const [queryParams] = useSearchParams()
-  const [possible, setPossible] = useState({})
+  const [possible, setPossible] = useState([])
   const [colors, setColors] = useState([])
   const navigate = useNavigate()
   useEffect(() => {
