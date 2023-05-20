@@ -111,9 +111,9 @@ function Liga2_22_23 ({ title }) {
           // Relegation zum Aufstieg
           if (team.worst <= 2) return "#CBD0CC"
           // Abstieg
-          if (team.best >= 16) return "#CB8D78"
+          if (team.best >= 16) return "#D79FA6"
           // Relegation zum Abstieg
-          if (team.best >= 15) return "#D79FA6"
+          if (team.best >= 15) return "#FFA421"
           return "none"
         }) : []
         setColors(myColors)

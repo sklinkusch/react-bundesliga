@@ -109,9 +109,9 @@ function RLNO_22_23 ({ title }) {
           // Relegation zum Aufstieg
           if (team.worst === 0) return "#FFFF00"
           // Abstieg
-          if (team.best >= 16) return "#CB8D78"
+          if (team.best >= 16) return "#D79FA6"
           // möglicher Abstieg
-          if (team.best >= 14) return "#D79FA6"
+          if (team.best >= 14) return "#FFA421"
           return "none"
         }) : []
         setColors(myColors)

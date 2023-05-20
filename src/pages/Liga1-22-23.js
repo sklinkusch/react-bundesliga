@@ -117,9 +117,9 @@ function Liga1_22_23 ({title}) {
           // Europa Conference League
           if (team.worst <= 5) return "#B9CEAC"
           // Abstieg
-          if (team.best >= 16) return "#CB8D78"
+          if (team.best >= 16) return "#D79FA6"
           // Relegation
-          if (team.best === 15 && team.worst === 15) return "#D79FA6"
+          if (team.best >= 15) return "#FFA421"
           return "none"
         }) : []
         setColors(myColors)

@@ -119,7 +119,7 @@ function Liga3_22_23 ({ title }) {
           // Teilnahme am DFB-Pokal
           if (team.worst <= dfbPokal) return "#B9CEAC"
           // Abstieg
-          if (team.best >= 16) return "#CB8D78"
+          if (team.best >= 16) return "#D79FA6"
           return "none"
         }) : []
         setColors(myColors)

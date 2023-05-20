@@ -113,7 +113,7 @@ function WLiga1_22_23 ({ title }) {
           // 1. Qualifikationsrunde der Champions League
           if (team.worst <= 2) return "#CBD0CC"
           // Abstieg
-          if (team.best >= 10) return "#CB8D78"
+          if (team.best >= 10) return "#D79FA6"
           return "none"
         }) : []
         setColors(myColors)
