@@ -11,6 +11,7 @@ function RLNO_22_23 ({ title }) {
   const [queryParams] = useSearchParams()
   const [possible, setPossible] = useState([])
   const [colors, setColors] = useState([])
+  const [fColors, setFColors] = useState([])
   const navigate = useNavigate()
   useEffect(() => {
     document.title = title
@@ -107,18 +108,41 @@ function RLNO_22_23 ({ title }) {
       function getColors() {
         const myColors = Array.isArray(possible) && possible.length > 0 ? possible.map(team => {
           // Relegation zum Aufstieg
-          if (team.worst === 0) return "#FFFF00"
+          if (team.worst === 0) return "linear-gradient(to bottom, #e6f0a3 0%, #d2e638 50%, #c3d825 51%, #dbf043 100%)"
           // Klassenerhalt
-          if (team.worst <= 13) return "#D2E2D0"
+          if (team.worst <= 13) return "linear-gradient(to bottom, #d2ff52 0%, #91e842 100%)"
           // Abstieg
-          if (team.best >= 16) return "#D79FA6"
+          if (team.best >= 16) return "linear-gradient(to bottom, #ff3019 0%, #c40404 100%)"
           // möglicher Abstieg
-          if (team.best >= 14) return "#FFA421"
+          if (team.best >= 14) return "linear-gradient(to bottom, #ffaf4b 0%, #ff920a 100%)"
           return "none"
         }) : []
         setColors(myColors)
       }
+      function getFontColors() {
+        const myFColors = Array.isArray(possible) && possible.length > 0 ? possible.map(team => {
+          // direkter Aufstieg
+          if (team.worst <= 1) {
+            return "black"
+          // Relegation zum Aufstieg
+          } else if (team.worst <= 2) {
+            return "black"
+          // Klassenerhalt
+          } else if (team.worst <= 14) {
+            return "black"
+          // Abstieg
+          } else if (team.best >= 16) {
+            return "white"
+          } else if (team.best >= 15) {
+            return "black"
+          } else {
+            return "black"
+          }
+        }) : []
+        setFColors(myFColors)
+      } 
       getColors()
+      getFontColors()
   },[possible])
   return (
     <header className='App-header'>
@@ -126,7 +150,7 @@ function RLNO_22_23 ({ title }) {
         {typeof matches && Object.keys(matches).length > 0 && (
           <>
            {Object.keys(matches).length > 0 && (<Matches matches={matches} selDay={queryParams.get("day")} source="/rlno/22-23" />)}
-            {table.length > 0 && <Table table={table} colors={colors} separators={separators} />}
+            {table.length > 0 && <Table table={table} colors={colors} fontcolors={fColors} separators={separators} />}
           </>
         )}
       </div>
