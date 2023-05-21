@@ -10,6 +10,7 @@ function Liga2_22_23 ({ title }) {
   const [table, setTable] = useState([])
   const [possible, setPossible] = useState([])
   const [colors, setColors] = useState([])
+  const [fColors, setFColors] = useState([])
   const [queryParams] = useSearchParams()
   const navigate = useNavigate()
   useEffect(() => {
@@ -107,20 +108,43 @@ function Liga2_22_23 ({ title }) {
       function getColors() {
         const myColors = Array.isArray(possible) && possible.length > 0 ? possible.map(team => {
           // Aufsteiger
-          if (team.worst <= 1) return "#FFFF00"
+          if (team.worst <= 1) return "linear-gradient(to bottom, #e6f0a3 0%, #d2e638 50%, #c3d825 51%, #dbf043 100%)"
           // Relegation zum Aufstieg
-          if (team.worst <= 2) return "#CBD0CC"
+          if (team.worst <= 2) return "linear-gradient(to bottom, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%)"
           // Klassenerhalt
-          if (team.worst <= 14) return "#D2E2D0"
+          if (team.worst <= 14) return "linear-gradient(to bottom, #d2ff52 0%, #91e842 100%)"
           // Abstieg
-          if (team.best >= 16) return "#D79FA6"
+          if (team.best >= 16) return "linear-gradient(to bottom, #ff3019 0%, #c40404 100%)"
           // Relegation zum Abstieg
-          if (team.best >= 15) return "#FFA421"
+          if (team.best >= 15) return "linear-gradient(to bottom, #ffaf4b 0%, #ff920a 100%)"
           return "none"
         }) : []
         setColors(myColors)
       }
+      function getFontColors() {
+        const myFColors = Array.isArray(possible) && possible.length > 0 ? possible.map(team => {
+          // direkter Aufstieg
+          if (team.worst <= 1) {
+            return "black"
+          // Relegation zum Aufstieg
+          } else if (team.worst <= 2) {
+            return "black"
+          // Klassenerhalt
+          } else if (team.worst <= 14) {
+            return "black"
+          // Abstieg
+          } else if (team.best >= 16) {
+            return "white"
+          } else if (team.best >= 15) {
+            return "black"
+          } else {
+            return "black"
+          }
+        }) : []
+        setFColors(myFColors)
+      } 
       getColors()
+      getFontColors()
   },[possible])
   return (
     <header className='App-header'>
@@ -128,7 +152,7 @@ function Liga2_22_23 ({ title }) {
         {typeof matches === 'object' && Object.keys(matches).length > 0 && (
           <>
             {Object.keys(matches).length > 0 && (<Matches matches={matches} selDay={queryParams.get("day")} source="/liga2/22-23" />)}
-            {table.length > 0 && <Table table={table} colors={colors} separators={separators} />}
+            {table.length > 0 && <Table table={table} colors={colors} fontcolors={fColors} separators={separators} />}
           </>
         )}
       </div>
