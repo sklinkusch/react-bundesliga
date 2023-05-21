@@ -11,6 +11,7 @@ function Liga3_22_23 ({ title }) {
   const [queryParams] = useSearchParams()
   const [possible, setPossible] = useState([])
   const [colors, setColors] = useState([])
+  const [fColors, setFColors] = useState([])
   const navigate = useNavigate()
   useEffect(() => {
     document.title = title
@@ -104,29 +105,53 @@ function Liga3_22_23 ({ title }) {
     getPossiblePlaces(table)
   }, [table])
   useEffect(() => {
+    const teams = table.map(tm => tm.team)
+      const secondTeams = teams.filter(tm => tm.endsWith("2"))
+      const secondTeamsPlaces = secondTeams.map(team => teams.indexOf(team))
+      const aufstieg = 1 + secondTeamsPlaces.filter(ind => ind < 2).length
+      const relegation = 2 + secondTeamsPlaces.filter(ind => ind < 3).length
+      const dfbPokal = 3 + secondTeamsPlaces.filter(ind => ind < 4).length
       function getColors() {
-        const teams = table.map(tm => tm.team)
-        const secondTeams = teams.filter(tm => tm.endsWith("2"))
-        const secondTeamsPlaces = secondTeams.map(team => teams.indexOf(team))
-        const aufstieg = 1 + secondTeamsPlaces.filter(ind => ind < 2).length
-        const relegation = 2 + secondTeamsPlaces.filter(ind => ind < 3).length
-        const dfbPokal = 3 + secondTeamsPlaces.filter(ind => ind < 4).length
         const myColors = Array.isArray(possible) && possible.length > 0 ? possible.map(team => {
           // Aufsteiger
-          if (team.worst <= aufstieg) return "#FFFF00"
+          if (team.worst <= aufstieg) return "linear-gradient(to bottom, #e6f0a3 0%, #d2e638 50%, #c3d825 51%, #dbf043 100%)"
           // Relegation zum Aufstieg
-          if (team.worst <= relegation) return "#CBD0CC"
+          if (team.worst <= relegation) return "linear-gradient(to bottom, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%)"
           // Teilnahme am DFB-Pokal
-          if (team.worst <= dfbPokal) return "#B9CEAC"
+          if (team.worst <= dfbPokal) return "linear-gradient(to bottom, #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%)"
           // Klassenerhalt
-          if (team.worst <= 15) return "#D2E2D0"
+          if (team.worst <= 15) return "linear-gradient(to bottom, #d2ff52 0%, #91e842 100%)"
           // Abstieg
-          if (team.best >= 16) return "#D79FA6"
+          if (team.best >= 16) return "linear-gradient(to bottom, #ff3019 0%, #c40404 100%)"
           return "none"
         }) : []
         setColors(myColors)
       }
+      function getFontColors() {
+        const myFColors = Array.isArray(possible) && possible.length > 0 ? possible.map(team => {
+          // direkter Aufstieg
+          if (team.worst <= aufstieg) {
+            return "black"
+          // Relegation zum Aufstieg
+          } else if (team.worst <= relegation) {
+            return "black"
+          // Teilnahme am DFB-Pokal
+          } else if (team.worst <= dfbPokal) {
+            return "white"
+          // Klassenerhalt
+          } else if (team.worst <= 15) {
+            return "black"
+          // Abstieg
+          } else if (team.best >= 16) {
+            return "white"
+          } else {
+            return "black"
+          }
+        }) : []
+        setFColors(myFColors)
+      } 
       getColors()
+      getFontColors()
   },[possible])
   return (
     <header className='App-header'>
@@ -134,7 +159,7 @@ function Liga3_22_23 ({ title }) {
         {typeof matches === 'object' && Object.keys(matches).length > 0 && (
           <>
             {Object.keys(matches).length > 0 && (<Matches matches={matches} selDay={queryParams.get("day")} source="/liga3/22-23" />)}
-            {table.length > 0 && <Table table={table} separators={separators} colors={colors} isThird={true} />}
+            {table.length > 0 && <Table table={table} separators={separators} colors={colors} fontcolors={fColors} isThird={true} />}
           </>
         )}
       </div>
