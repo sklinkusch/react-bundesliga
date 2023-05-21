@@ -11,13 +11,14 @@ function Liga1_22_23 ({title}) {
   const [queryParams] = useSearchParams()
   const [possible, setPossible] = useState([])
   const [colors, setColors] = useState([])
+  const [fcolors, setFColors] = useState([])
   const navigate = useNavigate()
   useEffect(() => {
     document.title = title
   },[title])
   useEffect(() => {
-    const url = `https://buli-api.vercel.app/liga1men?season=2022-23`
-    // const url = `http://localhost:3500/liga1men?season=2022-23`
+    // const url = `https://buli-api.vercel.app/liga1men?season=2022-23`
+    const url = `http://localhost:3500/liga1men?season=2022-23`
     fetch(url)
     .then(response => response.json())
     .then(data => {
@@ -109,24 +110,53 @@ function Liga1_22_23 ({title}) {
       function getColors() {
         const myColors = Array.isArray(possible) && possible.length > 0 ? possible.map(team => {
           // Meister
-          if (team.worst === 0) return "#F9A800"
+          if (team.worst === 0) return "linear-gradient(to bottom, #e6f0a3 0%, #d2e638 50%, #c3d825 51%, #dbf043 100%)"
           // ChampionsLeague
-          if (team.worst <= 3) return "#FFFF00"
+          if (team.worst <= 3) return "linear-gradient(to bottom, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%)"
           // Europa League
-          if (team.worst <= 4) return "#CBD0CC"
+          if (team.worst <= 4) return "linear-gradient(to bottom, #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%)"
           // Europa Conference League
-          if (team.worst <= 5) return "#B9CEAC"
+          if (team.worst <= 5) return "linear-gradient(to bottom, #b7deed 0%, #71ceef 50%, #21b4e2 51%, #b7deed 100%)"
           // Klassenerhalt
-          if (team.worst <= 14) return "#D2E2D0"
+          if (team.worst <= 14) return "linear-gradient(to bottom, #d2ff52 0%, #91e842 100%)"
           // Abstieg
-          if (team.best >= 16) return "#D79FA6"
+          if (team.best >= 16) return "linear-gradient(to bottom, #ff3019 0%, #c40404 100%)"
           // Relegation
-          if (team.best >= 15) return "#FFA421"
+          if (team.best >= 15) return "linear-gradient(to bottom, #ffaf4b 0%, #ff920a 100%)"
           return "none"
         }) : []
         setColors(myColors)
       }
+      function getFontColors() {
+        const myFColors = Array.isArray(possible) && possible.length > 0 ? possible.map(team => {
+          // Meister
+          if (team.worst === 0) {
+            return "black"
+          // Champions League
+          } else if (team.worst <= 3) {
+            return "black"
+          // Europa League
+          } else if (team.worst <= 4) {
+            return "white"
+          // Europa Conference League
+          } else if (team.worst <= 5) {
+            return "black"
+          // Klassenerhalt
+          } else if (team.worst <= 14) {
+            return "black"
+          // Abstieg
+          } else if (team.best >= 16) {
+            return "white"
+          } else if (team.best >= 15) {
+            return "black"
+          } else {
+            return "black"
+          }
+        }) : []
+        setFColors(myFColors)
+      } 
       getColors()
+      getFontColors()
   },[possible])
   return (
     <header className='App-header'>
@@ -134,7 +164,7 @@ function Liga1_22_23 ({title}) {
         {typeof matches === 'object' && Object.keys(matches).length > 0 && (
           <>
             {Object.keys(matches).length > 0 && (<Matches matches={matches} selDay={queryParams.get("day")} source="/liga1/22-23" />)}
-            {table.length > 0 && <Table table={table} separators={separators} colors={colors} />}
+            {table.length > 0 && <Table table={table} separators={separators} colors={colors} fontcolors={fcolors} />}
           </>
         )}
       </div>
