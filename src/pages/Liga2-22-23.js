@@ -112,7 +112,7 @@ function Liga2_22_23 ({ title }) {
           // Relegation zum Aufstieg
           if (team.worst <= 2) return "linear-gradient(to bottom, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%)"
           // Klassenerhalt
-          if (team.worst <= 14) return "linear-gradient(to bottom, #d2ff52 0%, #91e842 100%)"
+          if (team.worst <= 14) return "linear-gradient(to bottom, #e5ff9e 0%, #b8f084 100%)"
           // Abstieg
           if (team.best >= 16) return "linear-gradient(to bottom, #ff3019 0%, #c40404 100%)"
           // Relegation zum Abstieg

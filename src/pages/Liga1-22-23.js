@@ -118,7 +118,7 @@ function Liga1_22_23 ({title}) {
           // Europa Conference League
           if (team.worst <= 5) return "linear-gradient(to bottom, #b7deed 0%, #71ceef 50%, #21b4e2 51%, #b7deed 100%)"
           // Klassenerhalt
-          if (team.worst <= 14) return "linear-gradient(to bottom, #d2ff52 0%, #91e842 100%)"
+          if (team.worst <= 14) return "linear-gradient(to bottom, #e5ff9e 0%, #b8f084 100%)"
           // Abstieg
           if (team.best >= 16) return "linear-gradient(to bottom, #ff3019 0%, #c40404 100%)"
           // Relegation

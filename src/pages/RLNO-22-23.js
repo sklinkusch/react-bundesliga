@@ -110,7 +110,7 @@ function RLNO_22_23 ({ title }) {
           // Relegation zum Aufstieg
           if (team.worst === 0) return "linear-gradient(to bottom, #e6f0a3 0%, #d2e638 50%, #c3d825 51%, #dbf043 100%)"
           // Klassenerhalt
-          if (team.worst <= 13) return "linear-gradient(to bottom, #d2ff52 0%, #91e842 100%)"
+          if (team.worst <= 13) return "linear-gradient(to bottom, #e5ff9e 0%, #b8f084 100%)"
           // Abstieg
           if (team.best >= 16) return "linear-gradient(to bottom, #ff3019 0%, #c40404 100%)"
           // möglicher Abstieg
