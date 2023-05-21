@@ -112,6 +112,8 @@ function WLiga1_22_23 ({ title }) {
           if (team.worst <= 1) return "#FFFF00"
           // 1. Qualifikationsrunde der Champions League
           if (team.worst <= 2) return "#CBD0CC"
+          // Klassenerhalt
+          if (team.worst <= 9) return "#D2E2D0"
           // Abstieg
           if (team.best >= 10) return "#D79FA6"
           return "none"

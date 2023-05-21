@@ -110,6 +110,8 @@ function Liga2_22_23 ({ title }) {
           if (team.worst <= 1) return "#FFFF00"
           // Relegation zum Aufstieg
           if (team.worst <= 2) return "#CBD0CC"
+          // Klassenerhalt
+          if (team.worst <= 14) return "#D2E2D0"
           // Abstieg
           if (team.best >= 16) return "#D79FA6"
           // Relegation zum Abstieg

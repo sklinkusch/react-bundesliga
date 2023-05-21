@@ -118,6 +118,8 @@ function Liga3_22_23 ({ title }) {
           if (team.worst <= relegation) return "#CBD0CC"
           // Teilnahme am DFB-Pokal
           if (team.worst <= dfbPokal) return "#B9CEAC"
+          // Klassenerhalt
+          if (team.worst <= 15) return "#D2E2D0"
           // Abstieg
           if (team.best >= 16) return "#D79FA6"
           return "none"

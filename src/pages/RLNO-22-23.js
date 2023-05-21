@@ -108,6 +108,8 @@ function RLNO_22_23 ({ title }) {
         const myColors = Array.isArray(possible) && possible.length > 0 ? possible.map(team => {
           // Relegation zum Aufstieg
           if (team.worst === 0) return "#FFFF00"
+          // Klassenerhalt
+          if (team.worst <= 13) return "#D2E2D0"
           // Abstieg
           if (team.best >= 16) return "#D79FA6"
           // möglicher Abstieg
