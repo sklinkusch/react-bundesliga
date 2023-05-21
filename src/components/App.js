@@ -10,7 +10,7 @@ import Home from "../pages/Home";
 
 function App() {
   return (
-    <div className="App" sx={{ textAlign: "center" }}>
+    <div className="App" sx={{ textAlign: "center", backgroundColor: "white" }}>
       <BrowserRouter basename={`${process.env.PUBLIC_URL}`}>
         <Routes>
           <Route path="/liga1/22-23" element={<Liga12223 title="1. Fußball-Bundesliga der Männer, Saison 2022/23" />} />
