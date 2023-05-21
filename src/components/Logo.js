@@ -76,8 +76,8 @@ import ZWI from "../images/ZWI.svg"
 import { getTeamName } from "../data/helpers"
 
 const Logo = ({code}) => {
-  const styles = { height: "18px!important" }
-  const stylesUnion = { height: "16px!important" }
+  const styles = { height: "18px!important", position: "relative", top: "2.5px" }
+  const stylesUnion = { height: "16px!important", position: "relative", top: "3.5px" }
   switch (code) {
     case "AGL":
       return <img src={AGL} alt={getTeamName("AGL")} title={getTeamName("AGL")} sx={styles} />
