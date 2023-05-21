@@ -27,7 +27,7 @@ const Matches = ({ matches, selDay, source }) => {
             return (
               <div sx={{ display: "flex", flexDirection: "row", width: "100%", justifyContent: "space-between" }} key={`${home}-${away}-${index}`}>
                 {home ? <div sx={teamColumn}><Logo code={home} /></div> : <div sx={teamColumn}>&nbsp;</div>}
-                <span sx={{ flexBasis: "100px", flexGrow: 0, flexShrink: 0, textAlign: "center", color: live ? "blue" : "black", fontWeight: live ? "bold" : "normal" }}>{`${homeGoals}:${awayGoals}`}</span>
+                <span sx={{ flexBasis: "100px", flexGrow: 1, flexShrink: 0, textAlign: "center", color: live ? "blue" : "black", fontWeight: live ? "bold" : "normal" }}>{`${homeGoals}:${awayGoals}`}</span>
                 {away ? <div sx={{ flexBasis: "50px", flexGrow: 0, flexShrink: 0 }}><Logo code={away} /></div> : <div sx={teamColumn}>&nbsp;</div>}
               </div>
             )
@@ -36,26 +36,26 @@ const Matches = ({ matches, selDay, source }) => {
             return (
               <div sx={{ display: "flex", flexDirection: "row", width: "100%", justifyContent: "space-between" }} key={`${home}-${away}-${index}`}>
                 {home ? <div sx={teamColumn}><Logo code={home} /></div> : <div sx={teamColumn}>&nbsp;</div>}
-                <span sx={{ flexBasis: "100px", flexGrow: 0, flexShrink: 0}}>{remark}</span>
+                <span sx={{ flexBasis: "100px", flexGrow: 1, flexShrink: 0}}>{remark}</span>
                 {away ? <div sx={{ flexBasis: "50px", flexGrow: 0, flexShrink: 0 }}><Logo code={away} /></div> : <div sx={teamColumn}>&nbsp;</div>}
               </div>
             )
           }
           if (homeGoals == null && awayGoals == null && typeof date === "string") {
-            if (/^[0-9]{1,2}.[0-9]{1,2}.[0-9]{2}/.test(date)) {
+            if (/^[0-9]{1,2}.[0-9]{1,2}.[0-9]{2}$/.test(date)) {
               return (
                 <div sx={{ display: "flex", flexDirection: "row", width: "100%", justifyContent: "space-between" }} key={`${home}-${away}-${index}`}>
                   {home ? <div sx={teamColumn}><Logo code={home} /></div> : <div sx={teamColumn}>&nbsp;</div>}
-                  <span sx={{ flexBasis: "100px", flexGrow: 0, flexShrink: 0}}>{date}</span>
+                  <span sx={{ flexBasis: "100px", flexGrow: 1, flexShrink: 0}}>{date}</span>
                   {away ? <div sx={{ flexBasis: "50px", flexGrow: 0, flexShrink: 0 }}><Logo code={away} /></div> : <div sx={teamColumn}>&nbsp;</div>}
                 </div>
               )  
-            } else if (/^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}/.test(date)) {
+            } else if (/^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}/.test(date)) {
               const formattedDate = (new Date(date)).toLocaleString("de-DE", { timeZone: "Europe/Berlin", year: "2-digit", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" })
               return (
                 <div sx={{ display: "flex", flexDirection: "row", width: "100%", justifyContent: "space-between" }} key={`${home}-${away}-${index}`}>
                   {home ? <div sx={teamColumn}><Logo code={home} /></div> : <div sx={teamColumn}>&nbsp;</div>}
-                  <span sx={{ flexBasis: "100px", flexGrow: 0, flexShrink: 0}}>{formattedDate}</span>
+                  <span sx={{ flexBasis: "100px", flexGrow: 1, flexShrink: 0 }}>{formattedDate}</span>
                   {away ? <div sx={{ flexBasis: "50px", flexGrow: 0, flexShrink: 0 }}><Logo code={away} /></div> : <div sx={teamColumn}>&nbsp;</div>}
                 </div>
               )  
@@ -64,7 +64,7 @@ const Matches = ({ matches, selDay, source }) => {
           return (
             <div sx={{ display: "flex", flexDirection: "row", width: "100%", justifyContent: "space-between" }} key={`${home}-${away}-${index}`}>
               {home ? <div sx={teamColumn}><Logo code={home} /></div> : <div sx={teamColumn}>&nbsp;</div>}
-              <span sx={{ flexBasis: "100px", flexGrow: 0, flexShrink: 0 }}>&nbsp;</span>
+              <span sx={{ flexBasis: "100px", flexGrow: 1, flexShrink: 0 }}>&nbsp;</span>
               {away ? <div sx={{ flexBasis: "50px", flexGrow: 0, flexShrink: 0 }}><Logo code={away} /></div> : <div sx={teamColumn}>&nbsp;</div>}
             </div>
           )})}
