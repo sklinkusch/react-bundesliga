@@ -17,8 +17,8 @@ function WLiga1_22_23 ({ title }) {
     document.title = title
   },[title])
   useEffect(() => {
-    // const url = 'https://buli-api.vercel.app/liga1women?season=2022-23'
-    const url = 'http://localhost:3500/liga1women?season=2022-23'
+    const url = 'https://buli-api.vercel.app/liga1women?season=2022-23'
+    // const url = 'http://localhost:3500/liga1women?season=2022-23'
     fetch(url)
     .then(response => response.json())
     .then(data => {
