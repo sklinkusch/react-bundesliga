@@ -9,7 +9,6 @@ function WLiga1_22_23 ({ title }) {
   const [matches, setMatches] = useState({})
   const [table, setTable] = useState([])
   const [queryParams] = useSearchParams()
-  const [possible, setPossible] = useState([])
   const [colors, setColors] = useState([])
   const [fcolors, setFColors] = useState([])
   const navigate = useNavigate()
@@ -18,7 +17,6 @@ function WLiga1_22_23 ({ title }) {
   },[title])
   useEffect(() => {
     const url = 'https://buli-api.vercel.app/liga1women?season=2022-23'
-    // const url = 'http://localhost:3500/liga1women?season=2022-23'
     fetch(url)
     .then(response => response.json())
     .then(data => {
@@ -57,58 +55,8 @@ function WLiga1_22_23 ({ title }) {
   },[])
   const separators = [0, 1, 2, 9]
   useEffect(() => {
-    const getPossiblePlaces = (sourceTable) => {
-    const totalTeams = sourceTable.length
-    const totalMatches = 2 * (totalTeams - 1)
-    const maxPossiblePoints = sourceTable.map(team => {
-      const playedMatches = team.matches
-      const matchesToPlay = totalMatches - playedMatches
-      const minimalPoints = team.points
-      const maximalPoints = minimalPoints + (3 * matchesToPlay)
-      return maximalPoints
-    })
-    const bestRank = sourceTable.map((team, idx, arr) => {
-      const newTable = arr.map(tm => {
-        if (tm.team === team.team) {
-          return { ...tm, points: maxPossiblePoints[idx]}
-        }
-        return tm
-      })
-      const newSortedTable = newTable.sort((a, b) => {
-        if (a.points > b.points) return -1
-        if (b.points > a.points) return +1
-        if (a.team === team.team) return -1
-        if (b.team === team.team) return +1
-        return 0
-      })
-      const teamRank = newSortedTable.findIndex(tm => tm.team === team.team)
-      return teamRank
-    })
-    const worstRank = sourceTable.map((team, idx, arr) => {
-      const newTable = arr.map((tm, ind) => {
-        if (tm.team === team.team) return tm
-        return { ...tm, points: maxPossiblePoints[ind]}
-      })
-      const newSortedTable = newTable.sort((a, b) => {
-        if (a.points > b.points) return -1
-        if (b.points > a.points) return +1
-        if (a.team === team.team) return +1
-        if (b.team === team.team) return -1
-        return 0
-      })
-      const teamRank = newSortedTable.findIndex(tm => tm.team === team.team)
-      return teamRank
-    })
-    const returnValue = bestRank.map((best, index) => {
-      return { best: best, worst: worstRank[index] }
-    })
-    setPossible(returnValue)
-  }
-    getPossiblePlaces(table)
-  }, [table])
-  useEffect(() => {
       function getColors() {
-        const myColors = Array.isArray(possible) && possible.length > 0 ? possible.map(team => {
+        const myColors = Array.isArray(table) && table.length > 0 ? table.map(team => {
           // Meister und Gruppenphase der Champions League
           if (team.worst === 0) return "linear-gradient(to bottom, #e6f0a3 0%, #d2e638 50%, #c3d825 51%, #dbf043 100%)"
           // 2. Qualifikationsrunde der Champions League
@@ -124,7 +72,7 @@ function WLiga1_22_23 ({ title }) {
         setColors(myColors)
       }
       function getFontColors() {
-        const myFColors = Array.isArray(possible) && possible.length > 0 ? possible.map(team => {
+        const myFColors = Array.isArray(table) && table.length > 0 ? table.map(team => {
           // Meister und Gruppenphase der Champions League
           if (team.worst === 0) return "black"
           // 2. Qualifikationsrunde der Champions League
@@ -141,7 +89,7 @@ function WLiga1_22_23 ({ title }) {
       }
       getColors()
       getFontColors()
-  },[possible])
+  },[table])
   return (
     <header className='App-header'>
       <div sx={{ display: "grid", gridTemplateColumns: "250px 1fr", columnGap: "20px", height: "calc(100vh - 50px)" }}>
