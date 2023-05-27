@@ -14,11 +14,13 @@ const Row = ({club, index, sep, color, fontcolor, isThird}) => {
   }
   let fcol = {}
   if (club.live && isThird && club.team.endsWith("2")) {
-    fcol = { color: "#21b4e2" }
+    // fcol = { color: "#21b4e2" }
+    fcol = { color: "yellow" }
   } else if (isThird && club.team.endsWith("2")) {
     fcol = { color: "white" }
   } else if (club.live && fontcolor === "white") {
-    fcol = { color: "#21b4e2" }
+    // fcol = { color: "#21b4e2" }
+    fcol = { color: "yellow" }
   } else if (club.live) {
     fcol = { color: "blue" }
   } else if (fontcolor) {
