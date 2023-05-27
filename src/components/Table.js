@@ -14,12 +14,10 @@ const Row = ({club, index, sep, color, fontcolor, isThird}) => {
   }
   let fcol = {}
   if (club.live && isThird && club.team.endsWith("2")) {
-    // fcol = { color: "#21b4e2" }
     fcol = { color: "yellow" }
   } else if (isThird && club.team.endsWith("2")) {
     fcol = { color: "white" }
   } else if (club.live && fontcolor === "white") {
-    // fcol = { color: "#21b4e2" }
     fcol = { color: "yellow" }
   } else if (club.live) {
     fcol = { color: "blue" }
@@ -32,7 +30,7 @@ const Row = ({club, index, sep, color, fontcolor, isThird}) => {
     return value > 0 ? '+' : value < 0 ? '–' : '±'
   }
   return (
-    <div sx={{ width: "100%", maxHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+    <div sx={{ width: "100%", maxHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", px: "10px" }}>
       <div sx={{ display: "flex", flexDirection: "row", width: "550px", ...fcol, fontWeight: club.live ? "bold" : "normal", borderBottom: sep ? "2px dashed black" : "none", px: "3px", ...bgcol }}>
         <div sx={{ width: "26px", textAlign: "center"}}>{club.rank}</div>
         <div sx={{ width: "65px", textAlign: "center"}}><Logo code={club.team} /></div>
