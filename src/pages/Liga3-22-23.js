@@ -16,7 +16,9 @@ function Liga3_22_23 ({ title }) {
     document.title = title
   },[title])
   useEffect(() => {
-    fetch('https://buli-api.vercel.app/liga3men?season=2022-23')
+    const url = 'https://buli-api.vercel.app/liga3men?season=2022-23'
+    // const url = 'http://localhost:3500/liga3men?season=2022-23'
+    fetch(url)
     .then(response => response.json())
     .then(data => {
       if (typeof data === 'object' && Object.keys(data).length > 0) {
@@ -57,9 +59,16 @@ function Liga3_22_23 ({ title }) {
     const teams = table.map(tm => tm.team)
       const secondTeams = teams.filter(tm => tm.endsWith("2"))
       const secondTeamsPlaces = secondTeams.map(team => teams.indexOf(team))
-      const aufstieg = 1 + secondTeamsPlaces.filter(ind => ind < 2).length
-      const relegation = 2 + secondTeamsPlaces.filter(ind => ind < 3).length
-      const dfbPokal = 3 + secondTeamsPlaces.filter(ind => ind < 4).length
+      const numberIndexesFirst = secondTeamsPlaces.reduce((acc, curr) => {
+        const arr = [ ...acc ]
+        if (curr <= separators[0]) arr[0]++
+        if (curr <= separators[1]) arr[1]++
+        if (curr <= separators[2]) arr[2]++
+        return arr
+      }, [0, 0, 0])
+      const aufstieg = separators[0] + numberIndexesFirst[0]
+      const relegation = separators[1] + numberIndexesFirst[1]
+      const dfbPokal = separators[2] + numberIndexesFirst[2]
       function getColors() {
         const myColors = Array.isArray(table) && table.length > 0 ? table.map(team => {
           // Aufsteiger
