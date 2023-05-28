@@ -1,6 +1,7 @@
 /** @jsxImportSource theme-ui */
-import React from 'react'
+import React from "react"
 import AGL from "../images/AGL.svg"
+import AND from "../images/AND.gif"
 import AUE from "../images/AUE.svg"
 import B04 from "../images/B04.svg"
 import BAK from "../images/BAK.png"
@@ -31,6 +32,7 @@ import FCN from "../images/FCN.svg"
 import FCS from "../images/FCS.svg"
 import FCU from "../images/FCU.svg"
 import GFC from "../images/GFC.svg"
+import GTL from "../images/GTL.png"
 import H96 from "../images/H96.svg"
 import HBS from "../images/HBS.svg"
 import HFC from "../images/HFC.svg"
@@ -54,6 +56,7 @@ import RBL from "../images/RBL.svg"
 import ROS from "../images/ROS.svg"
 import RWE from "../images/RWE.svg"
 import S04 from "../images/S04.svg"
+import SAN from "../images/SAN.svg"
 import SCF from "../images/SCF.svg"
 import SCV from "../images/SCV.svg"
 import SGE from "../images/SGE.svg"
@@ -75,162 +78,783 @@ import ZFC from "../images/ZFC.svg"
 import ZWI from "../images/ZWI.svg"
 import { getTeamName } from "../data/helpers"
 
-const Logo = ({code}) => {
-  const styles = { height: "18px!important", position: "relative", top: "2.5px" }
-  const stylesUnion = { height: "16px!important", position: "relative", top: "3.5px" }
+const Logo = ({ code }) => {
+  const styles = {
+    height: "18px!important",
+    position: "relative",
+    top: "2.5px"
+  }
+  const stylesUnion = {
+    height: "16px!important",
+    position: "relative",
+    top: "3.5px"
+  }
   switch (code) {
     case "AGL":
-      return <img src={AGL} alt={getTeamName("AGL")} title={getTeamName("AGL")} sx={styles} />
+      return (
+        <img
+          src={AGL}
+          alt={getTeamName("AGL")}
+          title={getTeamName("AGL")}
+          sx={styles}
+        />
+      )
+    case "AND":
+      return (
+        <img
+          src={AND}
+          alt={getTeamName("AND")}
+          title={getTeamName("AND")}
+          sx={styles}
+        />
+      )
     case "AUE":
-      return <img src={AUE} alt={getTeamName("AUE")} title={getTeamName("AUE")} sx={styles} />
+      return (
+        <img
+          src={AUE}
+          alt={getTeamName("AUE")}
+          title={getTeamName("AUE")}
+          sx={styles}
+        />
+      )
     case "B04":
-      return <img src={B04} alt={getTeamName("B04")} title={getTeamName("B04")} sx={styles} />
+      return (
+        <img
+          src={B04}
+          alt={getTeamName("B04")}
+          title={getTeamName("B04")}
+          sx={styles}
+        />
+      )
     case "BAK":
-      return <img src={BAK} alt={getTeamName("BAK")} title={getTeamName("BAK")} sx={styles} />
+      return (
+        <img
+          src={BAK}
+          alt={getTeamName("BAK")}
+          title={getTeamName("BAK")}
+          sx={styles}
+        />
+      )
     case "BAY":
-      return <img src={BAY} alt={getTeamName("BAY")} title={getTeamName("BAY")} sx={styles} />
+      return (
+        <img
+          src={BAY}
+          alt={getTeamName("BAY")}
+          title={getTeamName("BAY")}
+          sx={styles}
+        />
+      )
     case "BFC":
-      return <img src={BFC} alt={getTeamName("BFC")} title={getTeamName("BFC")} sx={styles} />
+      return (
+        <img
+          src={BFC}
+          alt={getTeamName("BFC")}
+          title={getTeamName("BFC")}
+          sx={styles}
+        />
+      )
     case "BIE":
-      return <img src={BIE} alt={getTeamName("BIE")} title={getTeamName("BIE")} sx={styles} />
+      return (
+        <img
+          src={BIE}
+          alt={getTeamName("BIE")}
+          title={getTeamName("BIE")}
+          sx={styles}
+        />
+      )
     case "BOC":
-      return <img src={BOC} alt={getTeamName("BOC")} title={getTeamName("BOC")} sx={styles} />
+      return (
+        <img
+          src={BOC}
+          alt={getTeamName("BOC")}
+          title={getTeamName("BOC")}
+          sx={styles}
+        />
+      )
     case "BSC":
-      return <img src={BSC} alt={getTeamName("BSC")} title={getTeamName("BSC")} sx={styles} />
+      return (
+        <img
+          src={BSC}
+          alt={getTeamName("BSC")}
+          title={getTeamName("BSC")}
+          sx={styles}
+        />
+      )
     case "BSC2":
-      return <img src={BSC} alt={getTeamName("BSC2")} title={getTeamName("BSC2")} sx={styles} />
+      return (
+        <img
+          src={BSC}
+          alt={getTeamName("BSC2")}
+          title={getTeamName("BSC2")}
+          sx={styles}
+        />
+      )
     case "BVB":
-      return <img src={BVB} alt={getTeamName("BVB")} title={getTeamName("BVB")} sx={styles} />
+      return (
+        <img
+          src={BVB}
+          alt={getTeamName("BVB")}
+          title={getTeamName("BVB")}
+          sx={styles}
+        />
+      )
     case "BVB2":
-      return <img src={BVB} alt={getTeamName("BVB2")} title={getTeamName("BVB2")} sx={styles} />
+      return (
+        <img
+          src={BVB}
+          alt={getTeamName("BVB2")}
+          title={getTeamName("BVB2")}
+          sx={styles}
+        />
+      )
     case "CFC":
-      return <img src={CFC} alt={getTeamName("CFC")} title={getTeamName("CFC")} sx={styles} />
+      return (
+        <img
+          src={CFC}
+          alt={getTeamName("CFC")}
+          title={getTeamName("CFC")}
+          sx={styles}
+        />
+      )
     case "CHL":
-      return <img src={CHL} alt={getTeamName("CHL")} title={getTeamName("CHL")} sx={styles} />
+      return (
+        <img
+          src={CHL}
+          alt={getTeamName("CHL")}
+          title={getTeamName("CHL")}
+          sx={styles}
+        />
+      )
     case "CZJ":
-      return <img src={CZJ} alt={getTeamName("CZJ")} title={getTeamName("CZJ")} sx={styles} />
+      return (
+        <img
+          src={CZJ}
+          alt={getTeamName("CZJ")}
+          title={getTeamName("CZJ")}
+          sx={styles}
+        />
+      )
     case "D98":
-      return <img src={D98} alt={getTeamName("D98")} title={getTeamName("D98")} sx={styles} />
+      return (
+        <img
+          src={D98}
+          alt={getTeamName("D98")}
+          title={getTeamName("D98")}
+          sx={styles}
+        />
+      )
     case "DRE":
-      return <img src={DRE} alt={getTeamName("DRE")} title={getTeamName("DRE")} sx={styles} />
+      return (
+        <img
+          src={DRE}
+          alt={getTeamName("DRE")}
+          title={getTeamName("DRE")}
+          sx={styles}
+        />
+      )
     case "DUI":
-      return <img src={DUI} alt={getTeamName("DUI")} title={getTeamName("DUI")} sx={styles} />
+      return (
+        <img
+          src={DUI}
+          alt={getTeamName("DUI")}
+          title={getTeamName("DUI")}
+          sx={styles}
+        />
+      )
     case "DÜS":
-      return <img src={DÜS} alt={getTeamName("DÜS")} title={getTeamName("DÜS")} sx={styles} />
+      return (
+        <img
+          src={DÜS}
+          alt={getTeamName("DÜS")}
+          title={getTeamName("DÜS")}
+          sx={styles}
+        />
+      )
     case "EBS":
-      return <img src={EBS} alt={getTeamName("EBS")} title={getTeamName("EBS")} sx={styles} />
+      return (
+        <img
+          src={EBS}
+          alt={getTeamName("EBS")}
+          title={getTeamName("EBS")}
+          sx={styles}
+        />
+      )
     case "ECB":
-      return <img src={ECB} alt={getTeamName("ECB")} title={getTeamName("ECB")} sx={styles} />
+      return (
+        <img
+          src={ECB}
+          alt={getTeamName("ECB")}
+          title={getTeamName("ECB")}
+          sx={styles}
+        />
+      )
     case "ERF":
-      return <img src={ERF} alt={getTeamName("ERF")} title={getTeamName("ERF")} sx={styles} />
+      return (
+        <img
+          src={ERF}
+          alt={getTeamName("ERF")}
+          title={getTeamName("ERF")}
+          sx={styles}
+        />
+      )
     case "ESS":
-      return <img src={ESS} alt={getTeamName("ESS")} title={getTeamName("ESS")} sx={styles} />
+      return (
+        <img
+          src={ESS}
+          alt={getTeamName("ESS")}
+          title={getTeamName("ESS")}
+          sx={styles}
+        />
+      )
     case "FCA":
-      return <img src={FCA} alt={getTeamName("FCA")} title={getTeamName("FCA")} sx={styles} />
+      return (
+        <img
+          src={FCA}
+          alt={getTeamName("FCA")}
+          title={getTeamName("FCA")}
+          sx={styles}
+        />
+      )
     case "FCB":
-      return <img src={FCB} alt={getTeamName("FCB")} title={getTeamName("FCB")} sx={styles} />
+      return (
+        <img
+          src={FCB}
+          alt={getTeamName("FCB")}
+          title={getTeamName("FCB")}
+          sx={styles}
+        />
+      )
+    case "FCB2":
+      return (
+        <img
+          src={FCB}
+          alt={getTeamName("FCB2")}
+          title={getTeamName("FCB2")}
+          sx={styles}
+        />
+      )
     case "FCH":
-      return <img src={FCH} alt={getTeamName("FCH")} title={getTeamName("FCH")} sx={styles} />
+      return (
+        <img
+          src={FCH}
+          alt={getTeamName("FCH")}
+          title={getTeamName("FCH")}
+          sx={styles}
+        />
+      )
     case "FCI":
-      return <img src={FCI} alt={getTeamName("FCI")} title={getTeamName("FCI")} sx={styles} />
+      return (
+        <img
+          src={FCI}
+          alt={getTeamName("FCI")}
+          title={getTeamName("FCI")}
+          sx={styles}
+        />
+      )
     case "FCK":
-      return <img src={FCK} alt={getTeamName("FCK")} title={getTeamName("FCK")} sx={styles} />
+      return (
+        <img
+          src={FCK}
+          alt={getTeamName("FCK")}
+          title={getTeamName("FCK")}
+          sx={styles}
+        />
+      )
     case "FCM":
-      return <img src={FCM} alt={getTeamName("FCM")} title={getTeamName("FCM")} sx={styles} />
+      return (
+        <img
+          src={FCM}
+          alt={getTeamName("FCM")}
+          title={getTeamName("FCM")}
+          sx={styles}
+        />
+      )
     case "FCN":
-      return <img src={FCN} alt={getTeamName("FCN")} title={getTeamName("FCN")} sx={styles} />
+      return (
+        <img
+          src={FCN}
+          alt={getTeamName("FCN")}
+          title={getTeamName("FCN")}
+          sx={styles}
+        />
+      )
     case "FCS":
-      return <img src={FCS} alt={getTeamName("FCS")} title={getTeamName("FCS")} sx={styles} />
+      return (
+        <img
+          src={FCS}
+          alt={getTeamName("FCS")}
+          title={getTeamName("FCS")}
+          sx={styles}
+        />
+      )
     case "FCU":
-      return <img src={FCU} alt={getTeamName("FCU")} title={getTeamName("FCU")} sx={stylesUnion} />
+      return (
+        <img
+          src={FCU}
+          alt={getTeamName("FCU")}
+          title={getTeamName("FCU")}
+          sx={stylesUnion}
+        />
+      )
     case "GFC":
-      return <img src={GFC} alt={getTeamName("GFC")} title={getTeamName("GFC")} sx={styles} />
+      return (
+        <img
+          src={GFC}
+          alt={getTeamName("GFC")}
+          title={getTeamName("GFC")}
+          sx={styles}
+        />
+      )
+    case "GTL":
+      return (
+        <img
+          src={GTL}
+          alt={getTeamName("GTL")}
+          title={getTeamName("GTL")}
+          sx={styles}
+        />
+      )
     case "H96":
-      return <img src={H96} alt={getTeamName("H96")} title={getTeamName("H96")} sx={styles} />
+      return (
+        <img
+          src={H96}
+          alt={getTeamName("H96")}
+          title={getTeamName("H96")}
+          sx={styles}
+        />
+      )
     case "HBS":
-      return <img src={HBS} alt={getTeamName("HBS")} title={getTeamName("HBS")} sx={styles} />
+      return (
+        <img
+          src={HBS}
+          alt={getTeamName("HBS")}
+          title={getTeamName("HBS")}
+          sx={styles}
+        />
+      )
     case "HFC":
-      return <img src={HFC} alt={getTeamName("HFC")} title={getTeamName("HFC")} sx={styles} />
+      return (
+        <img
+          src={HFC}
+          alt={getTeamName("HFC")}
+          title={getTeamName("HFC")}
+          sx={styles}
+        />
+      )
     case "HOF":
-      return <img src={HOF} alt={getTeamName("HOF")} title={getTeamName("HOF")} sx={styles} />
+      return (
+        <img
+          src={HOF}
+          alt={getTeamName("HOF")}
+          title={getTeamName("HOF")}
+          sx={styles}
+        />
+      )
+    case "HOF2":
+      return (
+        <img
+          src={HOF}
+          alt={getTeamName("HOF2")}
+          title={getTeamName("HOF2")}
+          sx={styles}
+        />
+      )
     case "HSV":
-      return <img src={HSV} alt={getTeamName("HSV")} title={getTeamName("HSV")} sx={styles} />
+      return (
+        <img
+          src={HSV}
+          alt={getTeamName("HSV")}
+          title={getTeamName("HSV")}
+          sx={styles}
+        />
+      )
     case "JRE":
-      return <img src={JRE} alt={getTeamName("JRE")} title={getTeamName("JRE")} sx={styles} />
+      return (
+        <img
+          src={JRE}
+          alt={getTeamName("JRE")}
+          title={getTeamName("JRE")}
+          sx={styles}
+        />
+      )
     case "KIE":
-      return <img src={KIE} alt={getTeamName("KIE")} title={getTeamName("KIE")} sx={styles} />
+      return (
+        <img
+          src={KIE}
+          alt={getTeamName("KIE")}
+          title={getTeamName("KIE")}
+          sx={styles}
+        />
+      )
     case "KÖL":
-      return <img src={KÖL} alt={getTeamName("KÖL")} title={getTeamName("KÖL")} sx={styles} />
+      return (
+        <img
+          src={KÖL}
+          alt={getTeamName("KÖL")}
+          title={getTeamName("KÖL")}
+          sx={styles}
+        />
+      )
+    case "KÖL2":
+      return (
+        <img
+          src={KÖL}
+          alt={getTeamName("KÖL2")}
+          title={getTeamName("KÖL2")}
+          sx={styles}
+        />
+      )
     case "KSC":
-      return <img src={KSC} alt={getTeamName("KSC")} title={getTeamName("KSC")} sx={styles} />
+      return (
+        <img
+          src={KSC}
+          alt={getTeamName("KSC")}
+          title={getTeamName("KSC")}
+          sx={styles}
+        />
+      )
     case "L47":
-      return <img src={L47} alt={getTeamName("L47")} title={getTeamName("L47")} sx={styles} />
+      return (
+        <img
+          src={L47}
+          alt={getTeamName("L47")}
+          title={getTeamName("L47")}
+          sx={styles}
+        />
+      )
     case "LKL":
-      return <img src={LKL} alt={getTeamName("LKL")} title={getTeamName("LKL")} sx={styles} />
+      return (
+        <img
+          src={LKL}
+          alt={getTeamName("LKL")}
+          title={getTeamName("LKL")}
+          sx={styles}
+        />
+      )
     case "LUC":
-      return <img src={LUC} alt={getTeamName("LUC")} title={getTeamName("LUC")} sx={styles} />
+      return (
+        <img
+          src={LUC}
+          alt={getTeamName("LUC")}
+          title={getTeamName("LUC")}
+          sx={styles}
+        />
+      )
     case "M05":
-      return <img src={M05} alt={getTeamName("M05")} title={getTeamName("M05")} sx={styles} />
+      return (
+        <img
+          src={M05}
+          alt={getTeamName("M05")}
+          title={getTeamName("M05")}
+          sx={styles}
+        />
+      )
     case "MGL":
-      return <img src={MGL} alt={getTeamName("MGL")} title={getTeamName("MGL")} sx={styles} />
+      return (
+        <img
+          src={MGL}
+          alt={getTeamName("MGL")}
+          title={getTeamName("MGL")}
+          sx={styles}
+        />
+      )
     case "MÜN":
-      return <img src={MÜN} alt={getTeamName("MÜN")} title={getTeamName("MÜN")} sx={styles} />
+      return (
+        <img
+          src={MÜN}
+          alt={getTeamName("MÜN")}
+          title={getTeamName("MÜN")}
+          sx={styles}
+        />
+      )
     case "OLD":
-      return <img src={OLD} alt={getTeamName("OLD")} title={getTeamName("OLD")} sx={styles} />
+      return (
+        <img
+          src={OLD}
+          alt={getTeamName("OLD")}
+          title={getTeamName("OLD")}
+          sx={styles}
+        />
+      )
     case "OSN":
-      return <img src={OSN} alt={getTeamName("OSN")} title={getTeamName("OSN")} sx={styles} />
+      return (
+        <img
+          src={OSN}
+          alt={getTeamName("OSN")}
+          title={getTeamName("OSN")}
+          sx={styles}
+        />
+      )
     case "P07":
-      return <img src={P07} alt={getTeamName("P07")} title={getTeamName("P07")} sx={styles} />
+      return (
+        <img
+          src={P07}
+          alt={getTeamName("P07")}
+          title={getTeamName("P07")}
+          sx={styles}
+        />
+      )
     case "POT":
-      return <img src={POT} alt={getTeamName("POT")} title={getTeamName("POT")} sx={styles} />
+      return (
+        <img
+          src={POT}
+          alt={getTeamName("POT")}
+          title={getTeamName("POT")}
+          sx={styles}
+        />
+      )
+    case "POT2":
+      return (
+        <img
+          src={POT}
+          alt={getTeamName("POT2")}
+          title={getTeamName("POT2")}
+          sx={styles}
+        />
+      )
     case "RBL":
-      return <img src={RBL} alt={getTeamName("RBL")} title={getTeamName("RBL")} sx={styles} />
+      return (
+        <img
+          src={RBL}
+          alt={getTeamName("RBL")}
+          title={getTeamName("RBL")}
+          sx={styles}
+        />
+      )
     case "ROS":
-      return <img src={ROS} alt={getTeamName("ROS")} title={getTeamName("ROS")} sx={styles} />
+      return (
+        <img
+          src={ROS}
+          alt={getTeamName("ROS")}
+          title={getTeamName("ROS")}
+          sx={styles}
+        />
+      )
     case "RWE":
-      return <img src={RWE} alt={getTeamName("RWE")} title={getTeamName("RWE")} sx={styles} />
+      return (
+        <img
+          src={RWE}
+          alt={getTeamName("RWE")}
+          title={getTeamName("RWE")}
+          sx={styles}
+        />
+      )
     case "S04":
-      return <img src={S04} alt={getTeamName("S04")} title={getTeamName("S04")} sx={styles} />
+      return (
+        <img
+          src={S04}
+          alt={getTeamName("S04")}
+          title={getTeamName("S04")}
+          sx={styles}
+        />
+      )
+    case "SAN":
+      return (
+        <img
+          src={SAN}
+          alt={getTeamName("SAN")}
+          title={getTeamName("SAN")}
+          sx={styles}
+        />
+      )
     case "SCF":
-      return <img src={SCF} alt={getTeamName("SCF")} title={getTeamName("SCF")} sx={styles} />
+      return (
+        <img
+          src={SCF}
+          alt={getTeamName("SCF")}
+          title={getTeamName("SCF")}
+          sx={styles}
+        />
+      )
     case "SCF2":
-      return <img src={SCF} alt={getTeamName("SCF2")} title={getTeamName("SCF2")} sx={styles} />
+      return (
+        <img
+          src={SCF}
+          alt={getTeamName("SCF2")}
+          title={getTeamName("SCF2")}
+          sx={styles}
+        />
+      )
     case "SCV":
-      return <img src={SCV} alt={getTeamName("SCV")} title={getTeamName("SCV")} sx={styles} />
+      return (
+        <img
+          src={SCV}
+          alt={getTeamName("SCV")}
+          title={getTeamName("SCV")}
+          sx={styles}
+        />
+      )
     case "SGE":
-      return <img src={SGE} alt={getTeamName("SGE")} title={getTeamName("SGE")} sx={styles} />
+      return (
+        <img
+          src={SGE}
+          alt={getTeamName("SGE")}
+          title={getTeamName("SGE")}
+          sx={styles}
+        />
+      )
+    case "SGE2":
+      return (
+        <img
+          src={SGE}
+          alt={getTeamName("SGE2")}
+          title={getTeamName("SGE2")}
+          sx={styles}
+        />
+      )
     case "SGF":
-      return <img src={SGF} alt={getTeamName("SGF")} title={getTeamName("SGF")} sx={styles} />
+      return (
+        <img
+          src={SGF}
+          alt={getTeamName("SGF")}
+          title={getTeamName("SGF")}
+          sx={styles}
+        />
+      )
     case "STP":
-      return <img src={STP} alt={getTeamName("STP")} title={getTeamName("STP")} sx={styles} />
+      return (
+        <img
+          src={STP}
+          alt={getTeamName("STP")}
+          title={getTeamName("STP")}
+          sx={styles}
+        />
+      )
     case "SVB":
-      return <img src={SVB} alt={getTeamName("SVB")} title={getTeamName("SVB")} sx={styles} />
+      return (
+        <img
+          src={SVB}
+          alt={getTeamName("SVB")}
+          title={getTeamName("SVB")}
+          sx={styles}
+        />
+      )
     case "SVE":
-      return <img src={SVE} alt={getTeamName("SVE")} title={getTeamName("SVE")} sx={styles} />
+      return (
+        <img
+          src={SVE}
+          alt={getTeamName("SVE")}
+          title={getTeamName("SVE")}
+          sx={styles}
+        />
+      )
     case "SVM":
-      return <img src={SVM} alt={getTeamName("SVM")} title={getTeamName("SVM")} sx={styles} />
+      return (
+        <img
+          src={SVM}
+          alt={getTeamName("SVM")}
+          title={getTeamName("SVM")}
+          sx={styles}
+        />
+      )
     case "SVS":
-      return <img src={SVS} alt={getTeamName("SVS")} title={getTeamName("SVS")} sx={styles} />
+      return (
+        <img
+          src={SVS}
+          alt={getTeamName("SVS")}
+          title={getTeamName("SVS")}
+          sx={styles}
+        />
+      )
     case "SVW":
-      return <img src={SVW} alt={getTeamName("SVW")} title={getTeamName("SVW")} sx={styles} />
+      return (
+        <img
+          src={SVW}
+          alt={getTeamName("SVW")}
+          title={getTeamName("SVW")}
+          sx={styles}
+        />
+      )
     case "TBB":
-      return <img src={TBB} alt={getTeamName("TBB")} title={getTeamName("TBB")} sx={styles} />
+      return (
+        <img
+          src={TBB}
+          alt={getTeamName("TBB")}
+          title={getTeamName("TBB")}
+          sx={styles}
+        />
+      )
     case "VBL":
-      return <img src={VBL} alt={getTeamName("VBL")} title={getTeamName("VBL")} sx={styles} />
+      return (
+        <img
+          src={VBL}
+          alt={getTeamName("VBL")}
+          title={getTeamName("VBL")}
+          sx={styles}
+        />
+      )
     case "VfB":
-      return <img src={VfB} alt={getTeamName("VfB")} title={getTeamName("VfB")} sx={styles} />
+      return (
+        <img
+          src={VfB}
+          alt={getTeamName("VfB")}
+          title={getTeamName("VfB")}
+          sx={styles}
+        />
+      )
     case "VKÖ":
-      return <img src={VKÖ} alt={getTeamName("VKÖ")} title={getTeamName("VKÖ")} sx={styles} />
+      return (
+        <img
+          src={VKÖ}
+          alt={getTeamName("VKÖ")}
+          title={getTeamName("VKÖ")}
+          sx={styles}
+        />
+      )
     case "WIE":
-      return <img src={WIE} alt={getTeamName("WIE")} title={getTeamName("WIE")} sx={styles} />
+      return (
+        <img
+          src={WIE}
+          alt={getTeamName("WIE")}
+          title={getTeamName("WIE")}
+          sx={styles}
+        />
+      )
     case "WMA":
-      return <img src={WMA} alt={getTeamName("WMA")} title={getTeamName("WMA")} sx={styles} />
+      return (
+        <img
+          src={WMA}
+          alt={getTeamName("WMA")}
+          title={getTeamName("WMA")}
+          sx={styles}
+        />
+      )
     case "WOB":
-      return <img src={WOB} alt={getTeamName("WOB")} title={getTeamName("WOB")} sx={styles} />
+      return (
+        <img
+          src={WOB}
+          alt={getTeamName("WOB")}
+          title={getTeamName("WOB")}
+          sx={styles}
+        />
+      )
+    case "WOB2":
+      return (
+        <img
+          src={WOB}
+          alt={getTeamName("WOB2")}
+          title={getTeamName("WOB2")}
+          sx={styles}
+        />
+      )
     case "ZFC":
-      return <img src={ZFC} alt={getTeamName("ZFC")} title={getTeamName("ZFC")} sx={styles} />
+      return (
+        <img
+          src={ZFC}
+          alt={getTeamName("ZFC")}
+          title={getTeamName("ZFC")}
+          sx={styles}
+        />
+      )
     case "ZWI":
-      return <img src={ZWI} alt={getTeamName("ZWI")} title={getTeamName("ZWI")} sx={styles} />
+      return (
+        <img
+          src={ZWI}
+          alt={getTeamName("ZWI")}
+          title={getTeamName("ZWI")}
+          sx={styles}
+        />
+      )
     default:
       return <span sx={styles}>{code}</span>
   }
