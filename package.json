@@ -16,6 +16,9 @@
 		"theme-ui": "^0.14.7",
 		"web-vitals": "^3.0.0"
 	},
+	"devDependencies": {
+		"eslint": "^8.41.0"
+	},
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
