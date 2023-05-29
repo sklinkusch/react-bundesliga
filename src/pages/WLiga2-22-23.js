@@ -16,8 +16,7 @@ function WLiga2_22_23({ title }) {
     document.title = title
   }, [title])
   useEffect(() => {
-    // const url = 'https://buli-api.vercel.app/liga2women?season=2022-23'
-    const url = "http://localhost:3500/liga2women?season=2022-23"
+    const url = "https://buli-api.vercel.app/liga2women?season=2022-23"
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
@@ -121,7 +120,7 @@ function WLiga2_22_23({ title }) {
               <Matches
                 matches={matches}
                 selDay={queryParams.get("day")}
-                source="/wliga1/22-23"
+                source="/wliga2/22-23"
               />
             )}
             {table.length > 0 && (
