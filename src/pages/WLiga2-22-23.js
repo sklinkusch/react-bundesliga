@@ -75,7 +75,7 @@ function WLiga2_22_23({ title }) {
         Array.isArray(table) && table.length > 0
           ? table.map((team) => {
               // Aufsteiger
-              if (team.worst === aufstieg)
+              if (team.worst <= aufstieg)
                 return "linear-gradient(to bottom, #e6f0a3 0%, #d2e638 50%, #c3d825 51%, #dbf043 100%)"
               // Klassenerhalt
               if (team.worst <= 9)
