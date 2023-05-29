@@ -1,11 +1,13 @@
 {
   "files": {
     "main.css": "/react-bundesliga/static/css/main.464f9450.css",
-    "main.js": "/react-bundesliga/static/js/main.0be579fa.js",
-    "static/js/496.86160386.chunk.js": "/react-bundesliga/static/js/496.86160386.chunk.js",
+    "main.js": "/react-bundesliga/static/js/main.0402440b.js",
+    "static/js/496.69602479.chunk.js": "/react-bundesliga/static/js/496.69602479.chunk.js",
     "static/media/LKL.png": "/react-bundesliga/static/media/LKL.dba175225e2b106fab63.png",
     "static/media/BAK.png": "/react-bundesliga/static/media/BAK.2af5be238c36eb4a2595.png",
+    "static/media/GTL.png": "/react-bundesliga/static/media/GTL.4c04f3fd0858967d5c77.png",
     "static/media/ZFC.svg": "/react-bundesliga/static/media/ZFC.311cbc9891eb99afbfc60419f5a876ba.svg",
+    "static/media/AND.gif": "/react-bundesliga/static/media/AND.b9c4c3e078bbfd51298b.gif",
     "static/media/POT.svg": "/react-bundesliga/static/media/POT.08116ccad2f78eac910bc24a263def33.svg",
     "static/media/ESS.png": "/react-bundesliga/static/media/ESS.d9883a86d90d20234c35.png",
     "static/media/CFC.svg": "/react-bundesliga/static/media/CFC.d1d48e5b76c0e948ce2bf025c8e0b29a.svg",
@@ -46,6 +48,7 @@
     "static/media/P07.svg": "/react-bundesliga/static/media/P07.ef0abd9d013fd608cbb8adc70ceafc70.svg",
     "static/media/ECB.svg": "/react-bundesliga/static/media/ECB.4750b5eb01ec05153e6fde4ac0e7b173.svg",
     "static/media/FCA.svg": "/react-bundesliga/static/media/FCA.ec7fd3b85d0080be1b54a93fee82a36c.svg",
+    "static/media/SAN.svg": "/react-bundesliga/static/media/SAN.b30842b95ac1548b6298b93060ecd0c8.svg",
     "static/media/FCU.svg": "/react-bundesliga/static/media/FCU.af4ebcdc90d5f9fa1cc8f13f0702d468.svg",
     "static/media/BOC.svg": "/react-bundesliga/static/media/BOC.e9860b281e5164d5070ff299c7b93cab.svg",
     "static/media/FCS.svg": "/react-bundesliga/static/media/FCS.9dabe78c12d136edf373a749612418c6.svg",
@@ -78,11 +81,11 @@
     "index.html": "/react-bundesliga/index.html",
     "static/media/HSV.svg": "/react-bundesliga/static/media/HSV.c804956066283185bcf92cc69b080e73.svg",
     "main.464f9450.css.map": "/react-bundesliga/static/css/main.464f9450.css.map",
-    "main.0be579fa.js.map": "/react-bundesliga/static/js/main.0be579fa.js.map",
-    "496.86160386.chunk.js.map": "/react-bundesliga/static/js/496.86160386.chunk.js.map"
+    "main.0402440b.js.map": "/react-bundesliga/static/js/main.0402440b.js.map",
+    "496.69602479.chunk.js.map": "/react-bundesliga/static/js/496.69602479.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.464f9450.css",
-    "static/js/main.0be579fa.js"
+    "static/js/main.0402440b.js"
   ]
 }
