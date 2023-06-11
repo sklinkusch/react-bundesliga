@@ -3,7 +3,39 @@ import React from "react"
 import { getTeamName } from "../data/helpers"
 import Logo from "./Logo"
 
-const Row = ({ club, index, sep, color, fontcolor, isThird }) => {
+type Club = {
+  team: string
+  live?: boolean
+  rank: number
+  matches: number
+  victories: number
+  ties: number
+  losses: number
+  goalDifference: number
+  goals: number
+  countergoals: number
+  points: number
+}
+
+type PropsRow = {
+  club: Club
+  isThird: boolean
+  fontcolor: string
+  color: string
+  sep?: boolean
+  index: number
+}
+
+type PropsTable = {
+  separators: number[]
+  colors: string[]
+  fontcolors: string[]
+  isThird?: boolean
+  variableSeparators: number[]
+  table: Club[]
+}
+
+const Row = ({ club, index, sep, color, fontcolor, isThird }: PropsRow) => {
   let bgcol = {}
   if (isThird && club.team.endsWith("2")) {
     bgcol = { backgroundColor: "#666666" }
@@ -26,7 +58,7 @@ const Row = ({ club, index, sep, color, fontcolor, isThird }) => {
   } else {
     fcol = { color: "black" }
   }
-  const getSign = (value) => {
+  const getSign = (value: number) => {
     return value > 0 ? "+" : value < 0 ? "–" : "±"
   }
   return (
@@ -83,28 +115,33 @@ const Table = ({
   colors,
   fontcolors,
   isThird = false,
-  variableSeparators = null
-}) => {
-  let newSeparators = []
+  variableSeparators = []
+}: PropsTable) => {
+  let newSeparators: number[] = []
   if (isThird) {
-    const secondTeamIndexes = table
-      .map((club, index) => {
-        if (club.team.endsWith("2")) return index
-        return null
-      })
-      .filter((item) => typeof item === "number")
-    let initialInd = []
+    const secondTeamIndexes = table.reduce(
+      (acc: number[], club: Club, index: number) => {
+        const arr = [...acc]
+        if (club.team.endsWith("2")) arr.push(index)
+        return arr
+      },
+      []
+    )
+    let initialInd: number[] = []
     variableSeparators.forEach((sep) => initialInd.push(0))
     if (variableSeparators) {
       const varSeparators = variableSeparators.map((index) => separators[index])
       const constSep = separators.slice(varSeparators.length)
-      const numberIndexesFirst = secondTeamIndexes.reduce((acc, curr) => {
-        const arr = [...acc]
-        for (let i = 0; i < acc.length; i++) {
-          if (curr <= separators[i]) arr[i]++
-        }
-        return arr
-      }, initialInd)
+      const numberIndexesFirst = secondTeamIndexes.reduce(
+        (acc: number[], curr: number) => {
+          const arr = [...acc]
+          for (let i = 0; i < acc.length; i++) {
+            if (curr <= separators[i]) arr[i]++
+          }
+          return arr
+        },
+        initialInd
+      )
       newSeparators = []
       varSeparators.forEach((sep, ind) =>
         newSeparators.push(sep + numberIndexesFirst[ind])
@@ -112,7 +149,7 @@ const Table = ({
       newSeparators = newSeparators.concat(constSep)
     } else {
       const numberIndexesFirst = secondTeamIndexes.reduce(
-        (acc, curr) => {
+        (acc: number[], curr: number) => {
           const arr = [...acc]
           if (curr <= separators[0]) arr[0]++
           if (curr <= separators[1]) arr[1]++
