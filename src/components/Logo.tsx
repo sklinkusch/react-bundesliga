@@ -77,14 +77,19 @@ import WOB from "../images/WOB.svg"
 import ZFC from "../images/ZFC.svg"
 import ZWI from "../images/ZWI.svg"
 import { getTeamName } from "../data/helpers"
+import { ThemeUIStyleObject } from "theme-ui"
 
-const Logo = ({ code }) => {
-  const styles = {
+type Props = {
+  code: string
+}
+
+const Logo = ({ code }: Props) => {
+  const styles: ThemeUIStyleObject = {
     height: "18px!important",
     position: "relative",
     top: "2.5px"
   }
-  const stylesUnion = {
+  const stylesUnion: ThemeUIStyleObject = {
     height: "16px!important",
     position: "relative",
     top: "3.5px"
