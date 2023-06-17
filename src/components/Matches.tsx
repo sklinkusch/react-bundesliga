@@ -12,8 +12,8 @@ type Match = {
 }
 
 type Props = {
-  matches: { [key: number]: Match[] }
-  selDay: number
+  matches: { [key: string]: Match[] }
+  selDay: string | null
   source: string
 }
 
