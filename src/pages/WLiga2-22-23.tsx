@@ -1,16 +1,48 @@
 /** @jsxImportSource theme-ui */
-import React, { useEffect, useState } from "react"
+import { useEffect } from "react"
+import { useDebugState } from "use-named-state"
 import Matches from "../components/Matches"
 import Table from "../components/Table"
 import { Link, useNavigate, useSearchParams } from "react-router-dom"
 /* eslint-disable react-hooks/exhaustive-deps */
 
-function WLiga2_22_23({ title }) {
-  const [matches, setMatches] = useState({})
-  const [table, setTable] = useState([])
+type Props = {
+  title: string
+}
+
+type Match = {
+  teams: string[]
+  goals: (number | null)[]
+  date?: string
+  live?: boolean
+  remark?: string
+}
+
+type Club = {
+  team: string
+  live?: boolean
+  rank: number
+  matches: number
+  victories: number
+  ties: number
+  losses: number
+  goalDifference: number
+  goals: number
+  countergoals: number
+  points: number
+  best: number
+  worst: number
+}
+
+function WLiga2_22_23({ title }: Props) {
+  const [matches, setMatches] = useDebugState<{ [key: number]: Match[] }>(
+    "matches",
+    {}
+  )
+  const [table, setTable] = useDebugState<Club[]>("table", [])
   const [queryParams] = useSearchParams()
-  const [colors, setColors] = useState([])
-  const [fcolors, setFColors] = useState([])
+  const [colors, setColors] = useDebugState<string[]>("colors", [])
+  const [fcolors, setFColors] = useDebugState<string[]>("fcolors", [])
   const navigate = useNavigate()
   useEffect(() => {
     document.title = title
@@ -25,27 +57,33 @@ function WLiga2_22_23({ title }) {
           setMatches(apiMatches)
           setTable(apiTable)
           if (apiMatches && !queryParams.get("day")) {
-            const sumObject = Object.keys(apiMatches).reduce((acc, currDay) => {
-              const obj = { ...acc }
-              const origValue = apiMatches[currDay]
-              const sumValue = origValue.reduce((sum, currMatch) => {
-                const sumGoals =
-                  typeof currMatch.goals[0] === "number" &&
-                  typeof currMatch.goals[1] === "number"
-                    ? currMatch.goals[0] + currMatch.goals[1]
-                    : null
-                if (sum && sumGoals) {
-                  return sum + sumGoals
-                } else if (sum) {
-                  return sum
-                } else if (sumGoals) {
-                  return sumGoals
-                }
-                return null
-              }, null)
-              obj[currDay] = sumValue
-              return obj
-            }, {})
+            const sumObject = Object.keys(apiMatches).reduce(
+              (acc: { [key: string]: number | null }, currDay: string) => {
+                const obj = { ...acc }
+                const origValue = apiMatches[currDay]
+                const sumValue = origValue.reduce(
+                  (sum: number | null, currMatch: Match) => {
+                    const sumGoals =
+                      typeof currMatch.goals[0] === "number" &&
+                      typeof currMatch.goals[1] === "number"
+                        ? currMatch.goals[0] + currMatch.goals[1]
+                        : null
+                    if (sum && sumGoals) {
+                      return sum + sumGoals
+                    } else if (sum) {
+                      return sum
+                    } else if (sumGoals) {
+                      return sumGoals
+                    }
+                    return null
+                  },
+                  null
+                )
+                obj[currDay] = sumValue
+                return obj
+              },
+              {}
+            )
             const keysWithNumberVals = Object.keys(sumObject).filter(
               (key) => typeof sumObject[key] === "number"
             )
@@ -61,7 +99,7 @@ function WLiga2_22_23({ title }) {
   }, [])
   const separators = [1, 9]
   useEffect(() => {
-    const teams = table.map((tm) => tm.team)
+    const teams = table.map((tm: Club) => tm.team)
     const secondTeams = teams.filter((tm) => tm.endsWith("2"))
     const secondTeamsPlaces = secondTeams.map((team) => teams.indexOf(team))
     const numberIndexesFirst = secondTeamsPlaces.reduce((acc, curr) => {
@@ -72,7 +110,7 @@ function WLiga2_22_23({ title }) {
     function getColors() {
       const myColors =
         Array.isArray(table) && table.length > 0
-          ? table.map((team) => {
+          ? table.map((team: Club) => {
               // Aufsteiger
               if (team.worst <= aufstieg)
                 return "linear-gradient(to bottom, #e6f0a3 0%, #d2e638 50%, #c3d825 51%, #dbf043 100%)"
@@ -90,7 +128,7 @@ function WLiga2_22_23({ title }) {
     function getFontColors() {
       const myFColors =
         Array.isArray(table) && table.length > 0
-          ? table.map((team) => {
+          ? table.map((team: Club) => {
               // Aufstieg
               if (team.worst === aufstieg) return "black"
               // Klassenerhalt
