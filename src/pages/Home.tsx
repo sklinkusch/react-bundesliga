@@ -3,7 +3,11 @@ import React, { useEffect } from "react"
 import { Link } from "react-router-dom"
 /* eslint-disable react-hooks/exhaustive-deps */
 
-const Home = ({ title }) => {
+type Props = {
+  title: string
+}
+
+const Home = ({ title }: Props) => {
   useEffect(() => {
     document.title = title
   }, [title])
