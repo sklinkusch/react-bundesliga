@@ -20,6 +20,9 @@ const Home = ({ title }: Props) => {
           <h3>1. Bundesliga (♂)</h3>
           <ul sx={{ listStyle: "none" }}>
             <li>
+              <Link to="/liga1/23-24">Saison 2023/24</Link>
+            </li>
+            <li>
               <Link to="/liga1/22-23">Saison 2022/23</Link>
             </li>
           </ul>
