@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Liga12223 from "../pages/Liga1-22-23"
 import Liga12324 from "../pages/Liga1-23-24"
 import Liga22223 from "../pages/Liga2-22-23"
+import Liga22324 from "../pages/Liga2-23-24"
 import Liga32223 from "../pages/Liga3-22-23"
 import RLNO2223 from "../pages/RLNO-22-23"
 import WLiga12223 from "../pages/WLiga1-22-23"
@@ -34,6 +35,12 @@ function App() {
             }
           />
           <Route
+            path="/liga2/23-24"
+            element={
+              <Liga22324 title="2. Fußball-Bundesliga der Männer, Saison 2023/24" />
+            }
+          />
+          <Route
             path="/liga2/22-23"
             element={
               <Liga22223 title="2. Fußball-Bundesliga der Männer, Saison 2022/23" />
@@ -42,7 +49,7 @@ function App() {
           <Route
             path="/liga2/*"
             element={
-              <Liga22223 title="2. Fußball-Bundesliga der Männer, Saison 2022/23" />
+              <Liga22324 title="2. Fußball-Bundesliga der Männer, Saison 2023/24" />
             }
           />
           <Route
