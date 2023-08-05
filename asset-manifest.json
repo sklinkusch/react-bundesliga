@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/react-bundesliga/static/js/main.6c7f44ba.js",
+    "main.js": "/react-bundesliga/static/js/main.eaf3d527.js",
     "static/js/496.9a7301b4.chunk.js": "/react-bundesliga/static/js/496.9a7301b4.chunk.js",
     "static/media/LKL.png": "/react-bundesliga/static/media/LKL.dba175225e2b106fab63.png",
     "static/media/BAK.png": "/react-bundesliga/static/media/BAK.2af5be238c36eb4a2595.png",
@@ -13,6 +13,7 @@
     "static/media/OSN.png": "/react-bundesliga/static/media/OSN.6318ad8ca718e80ca0b7.png",
     "static/media/WIE.png": "/react-bundesliga/static/media/WIE.aa7243f6c3c789b023aa.png",
     "static/media/BFC.svg": "/react-bundesliga/static/media/BFC.3c0614c08bca22d2e08b9107ceb28257.svg",
+    "static/media/UHA.svg": "/react-bundesliga/static/media/UHA.f9c0c992f48d4a8c518df08c9686e299.svg",
     "static/media/L47.png": "/react-bundesliga/static/media/L47.2e5fe8f570b868b67bd5.png",
     "static/media/EBS.svg": "/react-bundesliga/static/media/EBS.bf6e437f51e58a8ba6948faed308d272.svg",
     "static/media/B04.svg": "/react-bundesliga/static/media/B04.9abd2b2ce9cb3786a8c71fe2ec84a767.svg",
@@ -22,6 +23,7 @@
     "static/media/STP.png": "/react-bundesliga/static/media/STP.ab971495515eca310d3d.png",
     "static/media/CZJ.svg": "/react-bundesliga/static/media/CZJ.8f0d1f238b4d23a93f3f458e87a3237a.svg",
     "static/media/D98.svg": "/react-bundesliga/static/media/D98.bf0381f19b9f1d48f4b63384ce0382c3.svg",
+    "static/media/PMS.svg": "/react-bundesliga/static/media/PMS.e449241130453aa00001793ceb19ba0b.svg",
     "static/media/ZWI.svg": "/react-bundesliga/static/media/ZWI.bb3c91ed57f862fecf27c5193b13ead1.svg",
     "static/media/FCI.svg": "/react-bundesliga/static/media/FCI.7499e43e269ebb51cff3d999601a9959.svg",
     "static/media/TBB.svg": "/react-bundesliga/static/media/TBB.f3ff504e05b2306c84a320c7f6178511.svg",
@@ -51,9 +53,11 @@
     "static/media/FCU.svg": "/react-bundesliga/static/media/FCU.af4ebcdc90d5f9fa1cc8f13f0702d468.svg",
     "static/media/BOC.svg": "/react-bundesliga/static/media/BOC.e9860b281e5164d5070ff299c7b93cab.svg",
     "static/media/FCS.svg": "/react-bundesliga/static/media/FCS.9dabe78c12d136edf373a749612418c6.svg",
+    "static/media/ULM.svg": "/react-bundesliga/static/media/ULM.82ee6c568b9af6c529031f4ac30e0d32.svg",
     "static/media/SGE.svg": "/react-bundesliga/static/media/SGE.8f48397ef83620dd5d900f871907797e.svg",
     "static/media/FCM.svg": "/react-bundesliga/static/media/FCM.518cc2154ac5a264e825d95665148b36.svg",
     "static/media/VKÖ.svg": "/react-bundesliga/static/media/VKÖ.246451c52892f498cc683d5b85b27b49.svg",
+    "static/media/LÜB.svg": "/react-bundesliga/static/media/LÜB.8905da6ee11615c52608a0a74f02db89.svg",
     "static/media/SCV.svg": "/react-bundesliga/static/media/SCV.55d06ac51598845482a21429c15ca515.svg",
     "static/media/WMA.svg": "/react-bundesliga/static/media/WMA.dccd2b83e43272ba334704d6ee10d074.svg",
     "static/media/FCB.svg": "/react-bundesliga/static/media/FCB.ca959864c730ea8993f74daee24b7ac6.svg",
@@ -79,10 +83,10 @@
     "static/media/WOB.svg": "/react-bundesliga/static/media/WOB.190e2e6bbc1d22f61dbab2c38aea3ab9.svg",
     "static/media/MGL.svg": "/react-bundesliga/static/media/MGL.f053972bee104b7f932fc61e2172c459.svg",
     "static/media/HSV.svg": "/react-bundesliga/static/media/HSV.c804956066283185bcf92cc69b080e73.svg",
-    "main.6c7f44ba.js.map": "/react-bundesliga/static/js/main.6c7f44ba.js.map",
+    "main.eaf3d527.js.map": "/react-bundesliga/static/js/main.eaf3d527.js.map",
     "496.9a7301b4.chunk.js.map": "/react-bundesliga/static/js/496.9a7301b4.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.6c7f44ba.js"
+    "static/js/main.eaf3d527.js"
   ]
 }
