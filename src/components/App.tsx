@@ -6,6 +6,7 @@ import Liga12324 from "../pages/Liga1-23-24"
 import Liga22223 from "../pages/Liga2-22-23"
 import Liga22324 from "../pages/Liga2-23-24"
 import Liga32223 from "../pages/Liga3-22-23"
+import Liga32324 from "../pages/Liga3-23-24"
 import RLNO2223 from "../pages/RLNO-22-23"
 import WLiga12223 from "../pages/WLiga1-22-23"
 import WLiga22223 from "../pages/WLiga2-22-23"
@@ -53,6 +54,12 @@ function App() {
             }
           />
           <Route
+            path="/liga3/23-24"
+            element={
+              <Liga32324 title="3. Fußball-Liga der Männer, Saison 2023/24" />
+            }
+          />
+          <Route
             path="/liga3/22-23"
             element={
               <Liga32223 title="3. Fußball-Liga der Männer, Saison 2022/23" />
@@ -61,7 +68,7 @@ function App() {
           <Route
             path="/liga3/*"
             element={
-              <Liga32223 title="3. Fußball-Liga der Männer, Saison 2022/23" />
+              <Liga32324 title="3. Fußball-Liga der Männer, Saison 2023/24" />
             }
           />
           <Route
