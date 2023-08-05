@@ -34,7 +34,7 @@ type Club = {
   worst: number
 }
 
-function Liga3_22_23({ title }: Props) {
+function Liga3_23_24({ title }: Props) {
   const [matches, setMatches] = useDebugState<{ [key: number]: Match[] }>(
     "matches",
     {}
@@ -184,7 +184,7 @@ function Liga3_22_23({ title }: Props) {
               <Matches
                 matches={matches}
                 selDay={queryParams.get("day")}
-                source="/liga3/22-23"
+                source="/liga3/23-24"
               />
             )}
             {table.length > 0 && (
@@ -208,4 +208,4 @@ function Liga3_22_23({ title }: Props) {
   )
 }
 
-export default Liga3_22_23
+export default Liga3_23_24

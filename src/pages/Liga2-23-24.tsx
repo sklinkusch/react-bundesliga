@@ -167,7 +167,7 @@ function Liga2_23_24({ title }: Props) {
               <Matches
                 matches={matches}
                 selDay={queryParams.get("day")}
-                source="/liga2/22-23"
+                source="/liga2/23-24"
               />
             )}
             {table.length > 0 && (
