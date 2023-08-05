@@ -60,7 +60,12 @@ const Home = ({ title }: Props) => {
       </div>
       <h2>3. Liga</h2>
       <ul sx={{ listStyle: "none" }}>
-        <Link to="/liga3/22-23">Saison 2022/23</Link>
+        <li>
+          <Link to="/liga3/23-24">Saison 2023/24</Link>
+        </li>
+        <li>
+          <Link to="/liga3/22-23">Saison 2022/23</Link>
+        </li>
       </ul>
       <h2>Fußball-Regionalligen</h2>
       {/* <h3>Regionalliga Nord</h3>
