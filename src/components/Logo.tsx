@@ -45,6 +45,7 @@ import KSC from "../images/KSC.svg"
 import L47 from "../images/L47.png"
 import LKL from "../images/LKL.png"
 import LUC from "../images/LUC.svg"
+import LÜB from "../images/LÜB.svg"
 import M05 from "../images/M05.svg"
 import MGL from "../images/MGL.svg"
 import MÜN from "../images/MÜN.svg"
@@ -52,6 +53,7 @@ import OLD from "../images/OLD.svg"
 import OSN from "../images/OSN.png"
 import P07 from "../images/P07.svg"
 import POT from "../images/POT.svg"
+import PMS from "../images/PMS.svg"
 import RBL from "../images/RBL.svg"
 import ROS from "../images/ROS.svg"
 import RWE from "../images/RWE.svg"
@@ -68,6 +70,8 @@ import SVM from "../images/SVM.svg"
 import SVS from "../images/SVS.svg"
 import SVW from "../images/SVW.svg"
 import TBB from "../images/TBB.svg"
+import UHA from "../images/UHA.svg"
+import ULM from "../images/ULM.svg"
 import VBL from "../images/VBL.svg"
 import VfB from "../images/VfB.svg"
 import VKÖ from "../images/VKÖ.svg"
@@ -545,6 +549,15 @@ const Logo = ({ code }: Props) => {
           sx={styles}
         />
       )
+    case "LÜB":
+      return (
+        <img
+          src={LÜB}
+          alt={getTeamName("LÜB")}
+          title={getTeamName("LÜB")}
+          sx={styles}
+        />
+      )
     case "M05":
       return (
         <img
@@ -596,6 +609,15 @@ const Logo = ({ code }: Props) => {
           src={P07}
           alt={getTeamName("P07")}
           title={getTeamName("P07")}
+          sx={styles}
+        />
+      )
+    case "PMS":
+      return (
+        <img
+          src={PMS}
+          alt={getTeamName("PMS")}
+          title={getTeamName("PMS")}
           sx={styles}
         />
       )
@@ -776,6 +798,24 @@ const Logo = ({ code }: Props) => {
           src={TBB}
           alt={getTeamName("TBB")}
           title={getTeamName("TBB")}
+          sx={styles}
+        />
+      )
+    case "UHA":
+      return (
+        <img
+          src={UHA}
+          alt={getTeamName("UHA")}
+          title={getTeamName("UHA")}
+          sx={styles}
+        />
+      )
+    case "ULM":
+      return (
+        <img
+          src={ULM}
+          alt={getTeamName("ULM")}
+          title={getTeamName("ULM")}
           sx={styles}
         />
       )
