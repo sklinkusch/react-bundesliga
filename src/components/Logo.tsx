@@ -20,6 +20,7 @@ import DUI from "../images/DUI.svg"
 import DÜS from "../images/DÜS.svg"
 import EBS from "../images/EBS.svg"
 import ECB from "../images/ECB.svg"
+import EIL from "../images/EIL.gif"
 import ERF from "../images/ERF.svg"
 import ESS from "../images/ESS.png"
 import FCA from "../images/FCA.svg"
@@ -294,6 +295,15 @@ const Logo = ({ code }: Props) => {
           src={ECB}
           alt={getTeamName("ECB")}
           title={getTeamName("ECB")}
+          sx={styles}
+        />
+      )
+    case "EIL":
+      return (
+        <img
+          src={EIL}
+          alt={getTeamName("EIL")}
+          title={getTeamName("EIL")}
           sx={styles}
         />
       )
@@ -649,6 +659,15 @@ const Logo = ({ code }: Props) => {
         />
       )
     case "ROS":
+      return (
+        <img
+          src={ROS}
+          alt={getTeamName("ROS")}
+          title={getTeamName("ROS")}
+          sx={styles}
+        />
+      )
+    case "ROS2":
       return (
         <img
           src={ROS}
