@@ -7,6 +7,7 @@ import Liga22223 from "../pages/Liga2-22-23"
 import Liga22324 from "../pages/Liga2-23-24"
 import Liga32223 from "../pages/Liga3-22-23"
 import Liga32324 from "../pages/Liga3-23-24"
+import RLNO2324 from "../pages/RLNO-23-24"
 import RLNO2223 from "../pages/RLNO-22-23"
 import WLiga12223 from "../pages/WLiga1-22-23"
 import WLiga22223 from "../pages/WLiga2-22-23"
@@ -72,6 +73,12 @@ function App() {
             }
           />
           <Route
+            path="/rlno/23-24"
+            element={
+              <RLNO2324 title="Fußball-Regionalliga Nordost der Männer, Saison 2023/24" />
+            }
+          />
+          <Route
             path="/rlno/22-23"
             element={
               <RLNO2223 title="Fußball-Regionalliga Nordost der Männer, Saison 2022/23" />
@@ -80,7 +87,7 @@ function App() {
           <Route
             path="/rlno/*"
             element={
-              <RLNO2223 title="Fußball-Regionalliga Nordost der Männer, Saison 2022/23" />
+              <RLNO2324 title="Fußball-Regionalliga Nordost der Männer, Saison 2023/24" />
             }
           />
           <Route
