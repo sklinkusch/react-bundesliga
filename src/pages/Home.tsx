@@ -82,7 +82,12 @@ const Home = ({ title }: Props) => {
         <div>
           <h4>Regionalliga Nordost (♂)</h4>
           <ul>
-            <Link to="/rlno/22-23">Saison 2022/23</Link>
+            <li>
+              <Link to="/rlno/23-24">Saison 2023/24</Link>
+            </li>
+            <li>
+              <Link to="/rlno/22-23">Saison 2022/23</Link>
+            </li>
           </ul>
         </div>
       </div>
