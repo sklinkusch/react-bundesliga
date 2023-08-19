@@ -18,7 +18,7 @@ type Props = {
 }
 
 const Matches = ({ matches, selDay, source }: Props) => {
-  const [selectedDay, setSelectedDay] = useState(selDay || 1)
+  const [selectedDay, setSelectedDay] = useState<string>(selDay || "1")
   const navigate = useNavigate()
   const onSelectDay = (event: any) => {
     const value = event.target.value
