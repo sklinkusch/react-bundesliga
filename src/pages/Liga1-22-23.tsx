@@ -48,8 +48,11 @@ function Liga1_22_23({ title }: Props) {
     document.title = title
   }, [title])
   useEffect(() => {
-    const url = `https://buli-api.vercel.app/liga1men?season=2022-23`
-    // const url = `http://localhost:3500/liga1men?season=2022-23`
+    const baseUrl =
+      process.env.NODE_ENV === "development"
+        ? "http://localhost:3500"
+        : "https://buli-api.vercel.app"
+    const url = baseUrl + "/liga1men?season=2022-23"
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
