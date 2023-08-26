@@ -1,5 +1,5 @@
 /** @jsxImportSource theme-ui */
-import React, { useState } from "react"
+import React from "react"
 import { useNavigate } from "react-router-dom"
 import Logo from "./Logo"
 
@@ -18,24 +18,31 @@ type Props = {
 }
 
 const Matches = ({ matches, selDay, source }: Props) => {
-  const [selectedDay, setSelectedDay] = useState<string>(selDay || "1")
   const navigate = useNavigate()
   const onSelectDay = (event: any) => {
     const value = event.target.value
-    setSelectedDay(value)
     navigate(`${source}?day=${value}`)
   }
   const teamColumn = { flexBasis: "50px", flexGrow: 0, flexShrink: 0 }
   return (
     <div sx={{ maxHeight: "100vh", overflowY: "auto" }}>
-      <select onChange={onSelectDay} defaultValue={selectedDay}>
+      <select
+        onChange={onSelectDay}
+        defaultValue={
+          typeof selDay === "string" && /^\d$/.test(selDay) ? selDay : "1"
+        }>
         {Object.keys(matches).map((key) => (
           <option key={key} value={key}>{`${key}. Spieltag`}</option>
         ))}
       </select>
       <div>
-        <h5 sx={{ margin: 0 }}>{selectedDay}. Spieltag</h5>
-        {matches[selectedDay].map((match: Match, index: number) => {
+        <h5 sx={{ margin: 0 }}>
+          {typeof selDay === "string" && /^\d$/.test(selDay) ? selDay : "1"}.
+          Spieltag
+        </h5>
+        {matches[
+          typeof selDay === "string" && /^\d$/.test(selDay) ? selDay : "1"
+        ].map((match: Match, index: number) => {
           const {
             teams = [],
             goals = [],
