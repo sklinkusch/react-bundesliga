@@ -48,7 +48,12 @@ function RLNO_23_24({ title }: Props) {
     document.title = title
   }, [title])
   useEffect(() => {
-    fetch("https://buli-api.vercel.app/rlnomen?season=2023-24")
+    const baseUrl =
+      process.env.NODE_ENV === "development"
+        ? "http://localhost:3500"
+        : "https://buli-api.vercel.app"
+    const url = baseUrl + "/rlnomen?season=2023-24"
+    fetch(url)
       .then((response) => response.json())
       .then((data) => {
         if (typeof data === "object" && Object.keys(data).length > 0) {
