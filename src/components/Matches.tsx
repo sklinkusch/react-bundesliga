@@ -26,14 +26,36 @@ const Matches = ({ matches, selDay, source }: Props) => {
   const teamColumn = { flexBasis: "50px", flexGrow: 0, flexShrink: 0 }
   return (
     <div sx={{ maxHeight: "100vh", overflowY: "auto" }}>
-      <select
-        onChange={onSelectDay}
-        defaultValue={
-          typeof selDay === "string" && /^\d$/.test(selDay) ? selDay : "1"
-        }>
-        {Object.keys(matches).map((key) => (
-          <option key={key} value={key}>{`${key}. Spieltag`}</option>
-        ))}
+      <select onChange={onSelectDay}>
+        {Object.keys(matches).map((key) => {
+          if (
+            typeof selDay === "string" &&
+            /^\d$/.test(selDay) &&
+            key === selDay
+          ) {
+            return (
+              <option
+                key={key}
+                value={key}
+                selected={true}>{`${key}. Spieltag`}</option>
+            )
+          } else if (
+            typeof selDay === "string" &&
+            /^\d$/.test(selDay) &&
+            key !== selDay
+          ) {
+            return <option key={key} value={key}>{`${key}. Spieltag`}</option>
+          } else if (key === "1") {
+            return (
+              <option
+                key={key}
+                value={key}
+                selected={true}>{`${key}. Spieltag`}</option>
+            )
+          } else {
+            return <option key={key} value={key}>{`${key}. Spieltag`}</option>
+          }
+        })}
       </select>
       <div>
         <h5 sx={{ margin: 0 }}>
