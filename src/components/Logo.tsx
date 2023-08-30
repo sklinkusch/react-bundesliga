@@ -76,6 +76,7 @@ import ULM from "../images/ULM.svg"
 import VBL from "../images/VBL.svg"
 import VfB from "../images/VfB.svg"
 import VKÖ from "../images/VKÖ.svg"
+import WEI from "../images/WEI.gif"
 import WIE from "../images/WIE.png"
 import WMA from "../images/WMA.svg"
 import WOB from "../images/WOB.svg"
@@ -862,6 +863,15 @@ const Logo = ({ code }: Props) => {
           src={VKÖ}
           alt={getTeamName("VKÖ")}
           title={getTeamName("VKÖ")}
+          sx={styles}
+        />
+      )
+    case "WEI":
+      return (
+        <img
+          src={WEI}
+          alt={getTeamName("WEI")}
+          title={getTeamName("WEI")}
           sx={styles}
         />
       )
