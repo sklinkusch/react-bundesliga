@@ -11,6 +11,7 @@ import RLNO2324 from "../pages/RLNO-23-24"
 import RLNO2223 from "../pages/RLNO-22-23"
 import WLiga12223 from "../pages/WLiga1-22-23"
 import WLiga22223 from "../pages/WLiga2-22-23"
+import WLiga22324 from "../pages/WLiga2-23-24"
 import Home from "../pages/Home"
 
 function App() {
@@ -100,6 +101,12 @@ function App() {
             path="/wliga1/*"
             element={
               <WLiga12223 title="1. Fußball-Bundesliga der Frauen, Saison 2022/23" />
+            }
+          />
+          <Route
+            path="/wliga2/23-24"
+            element={
+              <WLiga22324 title="2. Fußball-Bundesliga der Frauen, Saison 2023/24" />
             }
           />
           <Route
