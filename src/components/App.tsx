@@ -9,6 +9,7 @@ import Liga32223 from "../pages/Liga3-22-23"
 import Liga32324 from "../pages/Liga3-23-24"
 import RLNO2324 from "../pages/RLNO-23-24"
 import RLNO2223 from "../pages/RLNO-22-23"
+import WLiga12324 from "../pages/WLiga1-23-24"
 import WLiga12223 from "../pages/WLiga1-22-23"
 import WLiga22223 from "../pages/WLiga2-22-23"
 import WLiga22324 from "../pages/WLiga2-23-24"
@@ -92,6 +93,12 @@ function App() {
             }
           />
           <Route
+            path="/wliga1/23-24"
+            element={
+              <WLiga12324 title="1. Fußball-Bundesliga der Frauen, Saison 2023/24" />
+            }
+          />
+          <Route
             path="/wliga1/22-23"
             element={
               <WLiga12223 title="1. Fußball-Bundesliga der Frauen, Saison 2022/23" />
@@ -100,7 +107,7 @@ function App() {
           <Route
             path="/wliga1/*"
             element={
-              <WLiga12223 title="1. Fußball-Bundesliga der Frauen, Saison 2022/23" />
+              <WLiga12324 title="1. Fußball-Bundesliga der Frauen, Saison 2023/24" />
             }
           />
           <Route
