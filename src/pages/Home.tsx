@@ -87,7 +87,7 @@ const Home = ({ title }: Props) => {
       <div sx={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
         <div>
           <h4>Regionalliga Nordost (♂)</h4>
-          <ul>
+          <ul sx={{ listStyle: "none" }}>
             <li>
               <Link to="/rlno/23-24">Saison 2023/24</Link>
             </li>
