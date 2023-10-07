@@ -23,47 +23,40 @@ const Matches = ({ matches, selDay, source }: Props) => {
     const value = event.target.value
     navigate(`${source}?day=${value}`)
   }
+  const dayGoals = Object.keys(matches)
+    .sort((a, b) => Number(a) - Number(b))
+    .map((day) =>
+      matches[day].reduce((sum, match) => {
+        if (
+          typeof match.goals[0] === "number" &&
+          typeof match.goals[1] === "number"
+        ) {
+          return sum + match.goals[0] + match.goals[1]
+        }
+        return sum
+      }, 0)
+    )
+  const minZeroDay = dayGoals.indexOf(0)
+  const maxDay = minZeroDay > -1 ? minZeroDay + 1 : dayGoals.length
   const teamColumn = { flexBasis: "50px", flexGrow: 0, flexShrink: 0 }
   return (
     <div sx={{ maxHeight: "100vh", overflowY: "auto" }}>
-      <select onChange={onSelectDay}>
+      <select onChange={onSelectDay} value={selDay ? selDay : maxDay}>
         {Object.keys(matches).map((key) => {
-          if (
-            typeof selDay === "string" &&
-            /^\d$/.test(selDay) &&
-            key === selDay
-          ) {
-            return (
-              <option
-                key={key}
-                value={key}
-                selected={true}>{`${key}. Spieltag`}</option>
-            )
-          } else if (
-            typeof selDay === "string" &&
-            /^\d$/.test(selDay) &&
-            key !== selDay
-          ) {
-            return <option key={key} value={key}>{`${key}. Spieltag`}</option>
-          } else if (key === "1") {
-            return (
-              <option
-                key={key}
-                value={key}
-                selected={true}>{`${key}. Spieltag`}</option>
-            )
-          } else {
-            return <option key={key} value={key}>{`${key}. Spieltag`}</option>
-          }
+          return (
+            <option
+              key={`${key}`}
+              value={`${key}`}>{`${key}. Spieltag`}</option>
+          )
         })}
       </select>
       <div>
         <h5 sx={{ margin: 0 }}>
-          {typeof selDay === "string" && /^\d$/.test(selDay) ? selDay : "1"}.
+          {typeof selDay === "string" && /^\d+$/.test(selDay) ? selDay : "1"}.
           Spieltag
         </h5>
         {matches[
-          typeof selDay === "string" && /^\d$/.test(selDay) ? selDay : "1"
+          typeof selDay === "string" && /^\d+$/.test(selDay) ? selDay : "1"
         ].map((match: Match, index: number) => {
           const {
             teams = [],
