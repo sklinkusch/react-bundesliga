@@ -129,7 +129,7 @@ const Table = ({
     )
     let initialInd: number[] = []
     variableSeparators.forEach((sep) => initialInd.push(0))
-    if (variableSeparators) {
+    if (variableSeparators.length > 0) {
       const varSeparators = variableSeparators.map((index) => separators[index])
       const constSep = separators.slice(varSeparators.length)
       const numberIndexesFirst = secondTeamIndexes.reduce(
