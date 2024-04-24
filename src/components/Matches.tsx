@@ -32,6 +32,7 @@ const Match = ({
           year: "numeric",
           month: "long",
           day: "2-digit",
+          weekday: "short",
           hour: "2-digit",
           minute: "2-digit"
         })
