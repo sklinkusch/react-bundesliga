@@ -136,7 +136,7 @@ function WLiga1_22_23({ title }: Props) {
               // 2. Qualifikationsrunde der Champions League
               if (team.worst <= 1) return "black"
               // 1. Qualifikationsrunde der Champions League
-              if (team.worst <= 2) return "white"
+              if (team.worst <= 2) return "cyan"
               // Klassenerhalt
               if (team.worst <= 9) return "black"
               // Abstieg

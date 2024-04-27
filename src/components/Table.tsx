@@ -69,6 +69,8 @@ const Row = ({
     fcol = { color: "white" }
   } else if (club.live && fontcolor === "white") {
     fcol = { color: "yellow" }
+  } else if (club.live && fontcolor !== "black") {
+    fcol = { color: fontcolor }
   } else if (club.live) {
     fcol = { color: "blue" }
   } else if (fontcolor) {

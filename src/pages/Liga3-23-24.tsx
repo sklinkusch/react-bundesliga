@@ -155,7 +155,7 @@ function Liga3_23_24({ title }: Props) {
                 return "black"
                 // Teilnahme am DFB-Pokal
               } else if (team.worst <= dfbPokal) {
-                return "white"
+                return "cyan"
                 // Klassenerhalt
               } else if (team.worst <= 15) {
                 return "black"

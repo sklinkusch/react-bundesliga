@@ -146,7 +146,7 @@ function Liga1_22_23({ title }: Props) {
                 return "black"
                 // Europa League
               } else if (team.worst <= 4) {
-                return "white"
+                return "cyan"
                 // Europa Conference League
               } else if (team.worst <= 5) {
                 return "black"
