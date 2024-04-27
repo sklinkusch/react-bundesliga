@@ -24,6 +24,7 @@ type PropsRow = {
   color: string
   sep?: boolean
   index: number
+  separators: number[]
 }
 
 type PropsTable = {
@@ -35,9 +36,21 @@ type PropsTable = {
   table: Club[]
 }
 
-const Row = ({ club, index, sep, color, fontcolor, isThird }: PropsRow) => {
+const Row = ({
+  club,
+  index,
+  sep,
+  color,
+  fontcolor,
+  isThird,
+  separators
+}: PropsRow) => {
   let bgcol = {}
-  if (isThird && club.team.endsWith("2")) {
+  const maxSeparator = separators[separators.length - 1]
+  const halfMax = maxSeparator / 2
+  const allLowerSeps = separators.filter((s) => s < halfMax)
+  const lastLowerSep = allLowerSeps[allLowerSeps.length - 1]
+  if (isThird && club.team.endsWith("2") && index <= lastLowerSep) {
     bgcol = { backgroundColor: "#666666" }
   } else if (color) {
     bgcol = { background: color }
@@ -45,9 +58,14 @@ const Row = ({ club, index, sep, color, fontcolor, isThird }: PropsRow) => {
     bgcol = { backgroundColor: "none" }
   }
   let fcol = {}
-  if (club.live && isThird && club.team.endsWith("2")) {
+  if (
+    club.live &&
+    isThird &&
+    club.team.endsWith("2") &&
+    index <= lastLowerSep
+  ) {
     fcol = { color: "yellow" }
-  } else if (isThird && club.team.endsWith("2")) {
+  } else if (isThird && club.team.endsWith("2") && index <= lastLowerSep) {
     fcol = { color: "white" }
   } else if (club.live && fontcolor === "white") {
     fcol = { color: "yellow" }
@@ -189,6 +207,7 @@ const Table = ({
               sep={true}
               isThird={isThird}
               fontcolor={fontcolors[index] || "black"}
+              separators={newSeparators}
             />
           )
         return (
@@ -199,6 +218,7 @@ const Table = ({
             isThird={isThird}
             color={colors[index] || "none"}
             fontcolor={fontcolors[index] || "black"}
+            separators={newSeparators}
           />
         )
       })}
