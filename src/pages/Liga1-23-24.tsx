@@ -102,7 +102,7 @@ function Liga1_23_24({ title }: Props) {
       })
       .catch((error) => console.debug(error))
   }, [])
-  const separators = [0, 3, 4, 5, 14, 15]
+  const separators = [0, 4, 5, 6, 14, 15]
   useEffect(() => {
     function getColors() {
       const myColors =
@@ -112,13 +112,13 @@ function Liga1_23_24({ title }: Props) {
               if (team.worst === 0)
                 return "linear-gradient(to bottom, #e6f0a3 0%, #d2e638 50%, #c3d825 51%, #dbf043 100%)"
               // ChampionsLeague
-              if (team.worst <= 3)
+              if (team.worst <= 4)
                 return "linear-gradient(to bottom, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%)"
               // Europa League
-              if (team.worst <= 4)
+              if (team.worst <= 5)
                 return "linear-gradient(to bottom, #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%)"
               // Europa Conference League
-              if (team.worst <= 5)
+              if (team.worst <= 6)
                 return "linear-gradient(to bottom, #b7deed 0%, #71ceef 50%, #21b4e2 51%, #b7deed 100%)"
               // Klassenerhalt
               if (team.worst <= 14)
@@ -142,13 +142,13 @@ function Liga1_23_24({ title }: Props) {
               if (team.worst === 0) {
                 return "black"
                 // Champions League
-              } else if (team.worst <= 3) {
+              } else if (team.worst <= 4) {
                 return "black"
                 // Europa League
-              } else if (team.worst <= 4) {
+              } else if (team.worst <= 5) {
                 return "cyan"
                 // Europa Conference League
-              } else if (team.worst <= 5) {
+              } else if (team.worst <= 6) {
                 return "black"
                 // Klassenerhalt
               } else if (team.worst <= 14) {
