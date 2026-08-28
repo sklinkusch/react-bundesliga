@@ -1,5 +1,4 @@
 /** @jsxImportSource theme-ui */
-import React from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Liga12223 from "../pages/Liga1-22-23"
 import Liga12324 from "../pages/Liga1-23-24"
@@ -18,7 +17,7 @@ import Home from "../pages/Home"
 function App() {
   return (
     <div className="App" sx={{ textAlign: "center", backgroundColor: "white" }}>
-      <BrowserRouter basename={`${process.env.PUBLIC_URL}`}>
+      <BrowserRouter basename="/react-bundesliga">
         <Routes>
           <Route
             path="liga1/23-24"

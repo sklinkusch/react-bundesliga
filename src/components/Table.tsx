@@ -1,5 +1,4 @@
 /** @jsxImportSource theme-ui */
-import React from "react"
 import { getTeamName } from "../data/helpers"
 import Logo from "./Logo"
 
@@ -148,7 +147,7 @@ const Table = ({
       []
     )
     let initialInd: number[] = []
-    variableSeparators.forEach((sep) => initialInd.push(0))
+    variableSeparators.forEach(() => initialInd.push(0))
     if (variableSeparators.length > 0) {
       const varSeparators = variableSeparators.map((index) => separators[index])
       const constSep = separators.slice(varSeparators.length)
