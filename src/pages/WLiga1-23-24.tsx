@@ -49,7 +49,7 @@ function WLiga1_23_24({ title }: Props) {
   }, [title])
   useEffect(() => {
     const baseUrl =
-      process.env.NODE_ENV === "development"
+      import.meta.env.MODE === "development"
         ? "http://localhost:3500"
         : "https://buli-api.vercel.app"
     const url = baseUrl + "/liga1women?season=2023-24"

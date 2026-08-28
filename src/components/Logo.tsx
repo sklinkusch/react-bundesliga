@@ -1,5 +1,4 @@
 /** @jsxImportSource theme-ui */
-import React from "react"
 import AGL from "../images/AGL.svg"
 import AND from "../images/AND.gif"
 import AUE from "../images/AUE.svg"
